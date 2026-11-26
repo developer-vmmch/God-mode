@@ -16,6 +16,7 @@ All notable changes to this project are documented in this file in chronological
 - **Gameplay Screenshot Capture**: Verified rendering pipeline and captured live gameplay screenshot to `D:\Development\CSVS-GodMode\Screenshots\gameplay_v012.png`.
 
 ### Fixed
+- **URP Render Pipeline & Shaders Hotfix**: Created and assigned `UniversalRendererData` and `UniversalRenderPipelineAsset` in `GraphicsSettings.asset` and `QualitySettings.asset`. Generated URP Lit materials (`RoadMaterial`, `BuildingMaterial`, `BuildingChunkMaterial`, `PlayerMaterial`), and wired them into `CityGenerator.cs`, `Main Camera`, and `Directional Light`, completely resolving the magenta/pink shader rendering failure (verified 0.00% magenta pixels in live gameplay).
 - **YAML Scene Component Binding**: Corrected placeholder GUIDs in `Assets/Scenes/MainCityScene.unity` to match exact runtime script GUIDs, completely eliminating "referenced script is missing" warnings.
 - **Batchmode Multi-Instance Lock Conflict**: Added automated process hygiene and `Temp/UnityLockfile` cleanup to build runners.
 - **Headless Camera Fallback**: Resolved null camera dereferences in headless batchmode test runs inside `SuperheroFlightController.cs`.

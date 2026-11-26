@@ -5,8 +5,11 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
+    smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -15,17 +18,107 @@ RenderSettings:
   m_FogColor: {r: 0.72, g: 0.82, b: 0.95, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.003
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
   m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 1
+    m_PVRFilteringGaussRadiusAO: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &100
 GameObject:
   m_ObjectHideFlags: 0
@@ -36,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101}
   - component: {fileID: 102}
+  - component: {fileID: 103}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -100,6 +194,52 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!114 &103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &200
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +252,7 @@ GameObject:
   - component: {fileID: 202}
   - component: {fileID: 203}
   - component: {fileID: 204}
+  - component: {fileID: 205}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -170,6 +311,21 @@ Camera:
   field of view: 65
   orthographic: 0
   orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!81 &203
 AudioListener:
   m_ObjectHideFlags: 0
@@ -190,6 +346,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c532fee076c4dfe4b83aa8f202df0fd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Player:SuperheroCameraController
+  _target: {fileID: 0}
+  _perspective: 0
+  _camera: {fileID: 0}
+  _thirdPersonOffset: {x: 0, y: 2.2, z: -5.5}
+  _firstPersonOffset: {x: 0, y: 1.6, z: 0.3}
+  _followSmoothTime: 0.06
+  _collisionLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  _mouseSensitivity: 2
+  _minPitch: -75
+  _maxPitch: 85
+  _normalFOV: 60
+  _supersonicFOV: 85
+  _fovLerpSpeed: 5
+  _traumaDecayRate: 2
+  _maxShakeOffset: 0.4
+--- !u!114 &205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &300
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,13 +491,10 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
+  serializedVersion: 2
   m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &304
 MonoBehaviour:
@@ -294,6 +508,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05bf91a8ee2046c4ebf7512083edbbaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Player:SuperheroFlightController
+  _currentMode: 2
+  _abilityState: 0
+  _baseFlightSpeed: 35
+  _boostFlightSpeed: 95
+  _flightAcceleration: 45
+  _flightDrag: 4
+  _hoverVerticalSpeed: 15
+  _hoverBobbingFrequency: 1.5
+  _hoverBobbingAmplitude: 0.25
+  _walkSpeed: 8
+  _runSpeed: 16
+  _jumpForce: 8
+  _groundGravity: 25
+  _groundLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  _groundSlamMinSpeed: 40
+  _groundSlamSystem: {fileID: 0}
 --- !u!114 &305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +538,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885e0fc5c0ff19340985a76d997d9606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Powers:HeatVisionSystem
+  _leftEyeSocket: {fileID: 0}
+  _rightEyeSocket: {fileID: 0}
+  _leftBeam: {fileID: 0}
+  _rightBeam: {fileID: 0}
+  _maxRange: 250
+  _hitMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  _damagePerSecond: 350
+  _kineticPushPerSecond: 80
+  _impactSparks: {fileID: 0}
 --- !u!114 &306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +561,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50a92fc4082c02b45afe21ac68dfd998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Powers:GroundSlamSystem
+  _maxForce: 1500
+  _radius: 25
+  _damage: 500
+  _upwardModifier: 1.5
+  _shockwavePrefab: {fileID: 0}
+  _slamAudio: {fileID: 0}
 --- !u!114 &307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +579,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958ddc653c1e8a94ea0df336d507d812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Powers:SuperStrengthGrab
+  _grabRange: 12
+  _holdSocket: {fileID: 0}
+  _springStrength: 300
+  _damping: 25
+  _grabbableMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  _throwForce: 60
+  _crushDamage: 1000
 --- !u!114 &308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +600,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d0530a84e9dd24090054978076981f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Powers:GravityTetherSystem
+  _tetherRange: 100
+  _tetherSpringForce: 250
+  _tetherDamping: 15
+  _tetherBeam: {fileID: 0}
+  _tetherMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,6 +619,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2decd32e6c8ec30438584dea7251edac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Powers:SuperPunchSystem
+  _punchRange: 3.5
+  _punchDamage: 450
+  _punchImpulse: 85
+  _punchLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  _punchImpactFX: {fileID: 0}
+  _punchAudio: {fileID: 0}
 --- !u!1 &400
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +690,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57af6f91195760443aa556c6150c5b0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Core:ChaosSystem
+  _currentChaosScore: 0
+  _chaosMultiplier: 1
+  _policeThreshold: 10000
+  _swatThreshold: 50000
+  _militaryThreshold: 200000
+  _helicopterThreshold: 500000
 --- !u!114 &404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,6 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b1ab1e40360ad429afe0696643e4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Core:ObjectPooler
+  itemsToPool: []
 --- !u!114 &405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,6 +721,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb68722a86a75e94885a05e3e35922a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Destruction:DebrisPoolManager
+  _activeDebrisBudget: 50
+  _hardCapCeiling: 150
+  _defaultDespawnTime: 12
 --- !u!114 &406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,6 +736,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ed3e6729d12e3438fa643a81c68e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Environment:CityGenerator
+  _gridWidth: 6
+  _gridLength: 6
+  _blockSpacing: 45
+  _buildingHeightScale: 50
+  _buildingMaterial: {fileID: 2100000, guid: 0097ab78ef33d75459a7b579e09d442a, type: 2}
+  _roadMaterial: {fileID: 2100000, guid: d35611f151f9b614fa885f9d8aba5291, type: 2}
+  _chunkMaterial: {fileID: 2100000, guid: 7f4ae98ae88192d4d995076f12d81ede, type: 2}
+  _heroMaterial: {fileID: 2100000, guid: 802acb16ac40a734a8fe184cf2f82732, type: 2}
 --- !u!114 &407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +756,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a663d94f2df024c912bb7ac8c02876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.AI:ThreatResponseManager
+  _policePrefab: {fileID: 0}
+  _swatPrefab: {fileID: 0}
+  _tankPrefab: {fileID: 0}
+  _helicopterPrefab: {fileID: 0}
+  _spawnRadius: 80
+  _helicopterAltitude: 40
+  _playerTransform: {fileID: 0}
 --- !u!114 &408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -477,6 +775,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec520799258bfd4408ca21ecb4b2b45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.Settings:QualitySettingsManager
+  initialPreset: 0
+  urpAsset: {fileID: 11400000, guid: b395526b1225b2541b1a88ce6641726a, type: 2}
 --- !u!114 &409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,6 +789,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3532d8775763a7d4f84744f35ca3e7fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CSVS.GodMode.UI:HUDController
+  _chaosScoreText: {fileID: 0}
+  _wantedTierText: {fileID: 0}
+  _speedometerText: {fileID: 0}
+  _abilityStateText: {fileID: 0}
+  _cameraModeText: {fileID: 0}
+  _graphicsTierText: {fileID: 0}
+  _tutorialPanel: {fileID: 0}
+  _pauseMenuPanel: {fileID: 0}
+  _crosshair: {fileID: 0}
+  _playerFlight: {fileID: 0}
+  _cameraController: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

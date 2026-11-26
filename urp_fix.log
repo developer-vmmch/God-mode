@@ -1,0 +1,2216 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin" at "2026-11-26T07:26:52.3048325Z"
+Built from '6000.0/staging' branch; Version is '6000.0.84f1 (78ab6fc243d5) revision 7908207'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 8065 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-26T07:26:52Z
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Editors\6000.0.84f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+D:\Development\CSVS-GodMode\UnityProject
+-executeMethod
+CSVS.GodMode.Editor.URPSetupFixer.FixAndConfigureURP
+-logFile
+D:\Development\CSVS-GodMode\urp_fix.log
+Successfully changed project path to: D:\Development\CSVS-GodMode\UnityProject
+D:/Development/CSVS-GodMode/UnityProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18452]  Target information:
+
+Player connection [18452]  * "[IP] 192.168.1.103 [Port] 55504 [Flags] 2 [Guid] 1239368465 [EditorId] 1239368465 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q81DUC0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [18452] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18452] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 9568, path: "C:/Program Files/WindowsApps/UnityTechnologies.UnityHub_4.0.2.65535_x64__2vrhnee42bhxm/app/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.19.0+4cc3dda
+  Session Id:              619e58d286dd4a408f3e67a6ba2177d5
+  Correlation Id:          cfdac8bf3c85a1653f0e7dec3f925a6a
+  External correlation Id: 794656504834363153
+  Machine Id:              bJ6jtSnQ9w0IafvvSmKm3cZz9Ak=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Admin" (connect: 0.00s, validation: 0.01s, handshake: 0.84s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin-notifications" at "2026-11-26T07:26:53.1512339Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 13470007174292-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.86s
+[Package Manager] Connected to IPC stream "Upm-14920" after 0.7 seconds.
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 2 unused hashed content filesRefreshing native plugins compatible for Editor in 2.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.84f1 (78ab6fc243d5)
+[Subsystems] Discovering subsystems at path D:/Unity/Editors/6000.0.84f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Development/CSVS-GodMode/UnityProject/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 630 (ID=0x9bc8)
+    Vendor:   Intel
+    VRAM:     4032 MB
+    Driver:   31.0.101.2140
+Initialize mono
+Mono path[0] = 'D:/Unity/Editors/6000.0.84f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Editors/6000.0.84f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Editors/6000.0.84f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Editors/6000.0.84f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/Editors/6000.0.84f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007148 seconds.
+- Loaded All Assemblies, in  1.527 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.528 seconds
+Domain Reload Profiling: 2057ms
+	BeginReloadAssembly (952ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (6ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (396ms)
+		LoadAssemblies (943ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (389ms)
+			TypeCache.Refresh (385ms)
+				TypeCache.ScanAssembly (360ms)
+			BuildScriptInfoCaches (1ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (531ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (463ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (230ms)
+			ProcessInitializeOnLoadMethodAttributes (100ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 31 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.cinemachine@3.1.2 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.cinemachine@b2e7bffab772)
+    com.unity.ide.visualstudio@2.0.22 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e)
+    com.unity.inputsystem@1.11.2 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.inputsystem@3c4a97c3950f)
+    com.unity.mathematics@1.3.2 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.mathematics@8017b507cc74)
+    com.unity.splines@2.8.4 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.splines@9b00833aca09)
+    com.unity.searcher@4.9.3 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.searcher@1e17ce91558d)
+    com.unity.burst@1.8.30 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.burst@2f3d916873ea)
+    com.unity.collections@2.6.8 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.collections@84e8eb3fc12e)
+    com.unity.settings-manager@2.1.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.settings-manager@41738c275190)
+    com.unity.nuget.mono-cecil@1.11.6 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.0.4 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.render-pipelines.universal@ab605b8cbe5e)
+    com.unity.test-framework@1.6.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.test-framework@082c24152fd4)
+    com.unity.textmeshpro@5.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.textmeshpro@53f43edfd2e0)
+    com.unity.modules.ai@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.animation@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.audio@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.physics@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.ui@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.ui)
+    com.unity.ugui@2.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.ugui@5d6a93c81cc4)
+    com.unity.ext.nunit@2.0.5 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.ext.nunit@031a54704bff)
+    com.unity.modules.imgui@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.render-pipelines.core@17.0.4 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.render-pipelines.core@36dd213002aa)
+    com.unity.shadergraph@17.0.4 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.shadergraph@867249b1c940)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.render-pipelines.universal-config@dd206bf35d04)
+    com.unity.modules.uielements@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.terrain@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.rendering.light-transport@1.0.1 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.rendering.light-transport@9bd588f963c0)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.hierarchycore)
+[Package Manager] com.unity.textmeshpro is deprecated: This package is no longer supported. TextMeshPro functionalities are now included in the com.unity.ugui package. To continue using them, consider adding it to your project dependencies.
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.04 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[ScriptCompilation] Requested script compilation because: Assembly Definition File(s) changed
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:80
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: D:\Development\CSVS-GodMode\UnityProject\
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 61.0687ms
+Starting: D:\Unity\Editors\6000.0.84f1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/2000b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/Development/CSVS-GodMode/UnityProject
+ExitCode: 4 Duration: 0s93ms
+[             ] Require frontend run.  Library/Bee/2000b0aE.dag couldn't be loaded
+DisplayProgressbar: Compiling Scripts
+Starting: D:\Unity\Editors\6000.0.84f1\Editor\Data\Tools\netcorerun\netcorerun.exe "D:\Unity\Editors\6000.0.84f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/2000b0aE.dag.json" "Library/Bee/2000b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/Development/CSVS-GodMode/UnityProject
+ExitCode: 0 Duration: 0s877ms
+Starting: D:\Unity\Editors\6000.0.84f1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/2000b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\2000b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/Development/CSVS-GodMode/UnityProject
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "D:\Unity\Editors\6000.0.84f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "D:\Unity\Editors\6000.0.84f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "D:\Unity\Editors\6000.0.84f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll" in favor of "D:\Unity\Editors\6000.0.84f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll"
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@2f3d916873ea\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 898.4708ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll, with 114 defines and 221 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll, with 111 defines and 223 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll, with 110 defines and 223 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Runtime.dll, with 110 defines and 226 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.dll, with 111 defines and 219 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Shaders.dll, with 110 defines and 223 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 94.0595ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 129.4155ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll, with 111 defines and 221 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 217.7308ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 217.7967ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 143.5347ms
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library\Bee\artifacts\2000b0aE.dag\Unity.Collections.dll
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.dll, with 110 defines and 221 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 480.5100ms
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.dll, with 112 defines and 225 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.dll, with 111 defines and 227 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.dll, with 110 defines and 223 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll, with 110 defines and 224 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with D:\Unity\Editors\6000.0.84f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with D:\Unity\Editors\6000.0.84f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil.Rocks, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.Rocks.dll
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@2f3d916873ea\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 1706.6552ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 1755.4696ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 1782.2286ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.dll, with 110 defines and 224 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.dll, with 110 defines and 224 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 23.1691ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 20.1775ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.dll, with 110 defines and 227 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll, with 118 defines and 223 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 103.3873ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 3444.4375ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.dll, with 112 defines and 225 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 375.0714ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Utilities.dll, with 108 defines and 259 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.dll, with 110 defines and 223 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 90.8410ms
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 550.1219ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.Editor.dll, with 108 defines and 260 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.dll, with 108 defines and 260 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 3211.2382ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 7244.2747ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 7521.0794ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Searcher.Editor.dll, with 108 defines and 259 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll, with 110 defines and 258 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 14.3175ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.dll, with 110 defines and 224 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.Editor.dll, with 108 defines and 262 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 11.8030ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll, with 108 defines and 261 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 280.0032ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 332.1432ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 6851.5665ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 5610.4221ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 3514.0632ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Editor.dll, with 108 defines and 259 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 18.4635ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.Analytics.dll, with 108 defines and 260 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Runtime.dll, with 113 defines and 230 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.dll, with 108 defines and 260 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 1356.3689ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 1482.2567ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.Editor.dll, with 109 defines and 260 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.dll, with 109 defines and 265 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Runtime.Tests.dll, with 110 defines and 221 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.dll, with 110 defines and 228 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 2131.9589ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 453.4628ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 278.0691ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll, with 108 defines and 259 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.dll, with 110 defines and 227 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.Editor.dll, with 109 defines and 257 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.Tests.dll, with 108 defines and 257 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 4549.3397ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 4449.3192ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 4447.7992ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 4480.7814ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 5144.9853ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 5354.7918ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.dll, with 117 defines and 229 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 12.8003ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.dll, with 108 defines and 264 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Editor.dll, with 108 defines and 269 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/PPv2URPConverters.dll, with 108 defines and 263 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Editor.dll, with 108 defines and 263 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 102.8340ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 113.1097ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 115.3231ms
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 96.2836ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.Editor.dll, with 114 defines and 268 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 3.3434ms
+ExitCode: 0 Duration: 52s
+Finished compiling graph: 649 nodes, 9653 flattened edges (7913 ToBuild, 98 ToUse), maximum node priority 705
+[ 14/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.rsp2
+[ 17/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.UnityAdditionalFile.txt
+[ 89/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.UnityAdditionalFile.txt
+[ 91/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.rsp2
+[132/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.dll.mvfrm.rsp
+[133/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.UnityAdditionalFile.txt
+[134/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.rsp2
+[135/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.rsp
+[136/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.rsp
+[137/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.dll.mvfrm.rsp
+[138/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.rsp2
+[139/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.rsp
+[140/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll.mvfrm.rsp
+[141/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.UnityAdditionalFile.txt
+[142/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll.mvfrm.rsp
+[143/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.rsp
+[144/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.UnityAdditionalFile.txt
+[146/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.rsp2
+[147/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.dll.mvfrm.rsp
+[148/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.UnityAdditionalFile.txt
+[149/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.rsp2
+[150/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.rsp
+[151/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.UnityAdditionalFile.txt
+[152/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.rsp
+[153/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.rsp2
+[154/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.dll.mvfrm.rsp
+[155/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.UnityAdditionalFile.txt
+[156/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.rsp
+[157/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.dll.mvfrm.rsp
+[158/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.rsp
+[159/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.rsp2
+[160/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.rsp2
+[161/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.UnityAdditionalFile.txt
+[162/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.dll.mvfrm.rsp
+[163/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll.mvfrm.rsp
+[164/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.CodeGen.UnityAdditionalFile.txt
+[165/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.CodeGen.rsp2
+[166/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.rsp2
+[167/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.UnityAdditionalFile.txt
+[168/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.rsp
+[169/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.rsp2
+[170/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.CodeGen.UnityAdditionalFile.txt
+[175/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.rsp2
+[177/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.UnityAdditionalFile.txt
+[178/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.rsp2
+[179/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.UnityAdditionalFile.txt
+[180/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.UnityAdditionalFile.txt
+[181/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.CodeGen.dll.mvfrm.rsp
+[182/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.CodeGen.rsp
+[183/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.dll.mvfrm.rsp
+[184/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.CodeGen.rsp
+[185/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.CodeGen.rsp2
+[186/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.CodeGen.dll.mvfrm.rsp
+[187/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.dll.mvfrm.rsp
+[188/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.rsp
+[189/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Runtime.rsp2
+[190/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.dll.mvfrm.rsp
+[191/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Runtime.UnityAdditionalFile.txt
+[192/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.rsp
+[193/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.rsp
+[194/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.rsp
+[195/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.dll.mvfrm.rsp
+[196/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Runtime.rsp2
+[197/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Runtime.dll.mvfrm.rsp
+[198/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Runtime.UnityAdditionalFile.txt
+[199/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.rsp2
+[200/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Runtime.dll.mvfrm.rsp
+[201/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Runtime.rsp
+[202/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.dll.mvfrm.rsp
+[203/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.UnityAdditionalFile.txt
+[204/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Searcher.Editor.rsp2
+[205/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.rsp
+[206/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Utilities.rsp2
+[207/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Utilities.UnityAdditionalFile.txt
+[208/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Searcher.Editor.UnityAdditionalFile.txt
+[209/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Runtime.rsp
+[210/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/4747638433968585886.rsp
+[211/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Utilities.dll.mvfrm.rsp
+[212/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Utilities.rsp
+[213/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.rsp2
+[214/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Searcher.Editor.dll.mvfrm.rsp
+[215/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.UnityAdditionalFile.txt
+[216/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.rsp2
+[217/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.UnityAdditionalFile.txt
+[218/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Editor.rsp2
+[219/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Searcher.Editor.rsp
+[220/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.UnityAdditionalFile.txt
+[221/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.rsp2
+[222/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.rsp2
+[223/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.UnityAdditionalFile.txt
+[224/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Editor.UnityAdditionalFile.txt
+[225/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.rsp2
+[226/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.UnityAdditionalFile.txt
+[227/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.rsp
+[228/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.dll.mvfrm.rsp
+[229/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.Editor.rsp2
+[230/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.dll.mvfrm.rsp
+[231/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.Editor.dll.mvfrm.rsp
+[232/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll.mvfrm.rsp
+[233/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.dll.mvfrm.rsp
+[234/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Editor.dll.mvfrm.rsp
+[235/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Editor.rsp
+[236/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.rsp
+[237/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.dll.mvfrm.rsp
+[238/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.rsp
+[239/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.rsp
+[240/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.UnityAdditionalFile.txt
+[241/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.Editor.rsp
+[242/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.Editor.UnityAdditionalFile.txt
+[243/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.rsp2
+[244/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.rsp
+[245/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Editor.rsp2
+[246/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Editor.UnityAdditionalFile.txt
+[247/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll.mvfrm.rsp
+[248/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Editor.dll.mvfrm.rsp
+[249/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.rsp
+[250/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Editor.rsp
+[251/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.UnityAdditionalFile.txt
+[252/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.rsp2
+[253/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.rsp2
+[254/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.rsp2
+[255/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.Editor.rsp2
+[256/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.UnityAdditionalFile.txt
+[257/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.Editor.UnityAdditionalFile.txt
+[258/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.UnityAdditionalFile.txt
+[259/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.dll.mvfrm.rsp
+[260/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.Editor.dll.mvfrm.rsp
+[261/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.dll.mvfrm.rsp
+[262/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.dll.mvfrm.rsp
+[263/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.Editor.rsp
+[264/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.rsp
+[265/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.rsp
+[266/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll.mvfrm.rsp
+[267/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.rsp
+[268/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll.mvfrm.rsp
+[269/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Runtime.Tests.dll.mvfrm.rsp
+[270/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll.mvfrm.rsp
+[271/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.Editor.dll.mvfrm.rsp
+[272/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.rsp2
+[273/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.Editor.dll.mvfrm.rsp
+[274/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.UnityAdditionalFile.txt
+[275/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.dll.mvfrm.rsp
+[276/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Shaders.rsp2
+[277/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Shaders.UnityAdditionalFile.txt
+[278/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/PPv2URPConverters.dll.mvfrm.rsp
+[279/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.UnityAdditionalFile.txt
+[280/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.dll.mvfrm.rsp
+[281/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.Analytics.dll.mvfrm.rsp
+[282/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.Editor.dll.mvfrm.rsp
+[283/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.rsp2
+[284/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Runtime.Tests.rsp2
+[285/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm.rsp
+[286/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Runtime.Tests.UnityAdditionalFile.txt
+[287/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Editor.dll.mvfrm.rsp
+[288/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.Tests.dll.mvfrm.rsp
+[289/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.rsp2
+[290/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.UnityAdditionalFile.txt
+[291/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Shaders.dll.mvfrm.rsp
+[292/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.UnityAdditionalFile.txt
+[293/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.rsp2
+[294/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.Editor.rsp2
+[295/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.rsp
+[296/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.Editor.UnityAdditionalFile.txt
+[297/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/PPv2URPConverters.rsp2
+[298/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.Editor.rsp2
+[299/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Editor.rsp2
+[300/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.rsp2
+[301/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.Tests.UnityAdditionalFile.txt
+[302/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.UnityAdditionalFile.txt
+[303/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.Tests.rsp2
+[304/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/PPv2URPConverters.UnityAdditionalFile.txt
+[305/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.Editor.UnityAdditionalFile.txt
+[306/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Runtime.Tests.rsp
+[307/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.Analytics.rsp2
+[308/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.rsp
+[309/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Editor.UnityAdditionalFile.txt
+[310/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.rsp
+[311/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.Analytics.UnityAdditionalFile.txt
+[312/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.Editor.UnityAdditionalFile.txt
+[313/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.Editor.rsp2
+[314/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.rsp2
+[315/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Shaders.rsp
+[316/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.Editor.rsp
+[317/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/PPv2URPConverters.rsp
+[318/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.UnityAdditionalFile.txt
+[319/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Editor.rsp
+[320/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.Analytics.rsp
+[321/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.dll.mvfrm.rsp
+[322/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.UnityAdditionalFile.txt
+[323/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.rsp
+[324/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.rsp2
+[325/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.Editor.rsp
+[326/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.rsp
+[327/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/4014880287252381842.rsp
+[328/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/2359241780799432324.rsp
+[329/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/4791036871885797247.rsp
+[330/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/628646688752965343.rsp
+[331/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/13533216416878207048.rsp
+[332/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/9594543228266602487.rsp
+[333/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/6987655401940753962.rsp
+[334/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/13375157831338593117.rsp
+[335/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/16991194940733997725.rsp
+[336/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/2212137967894916463.rsp
+[337/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/13928283897259147783.rsp
+[338/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/8542837875481535423.rsp
+[339/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/16417722742493843564.rsp
+[340/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/6832337476128879279.rsp
+[341/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/3729887623031042230.rsp
+[342/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/10746227388266335481.rsp
+[343/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.Editor.rsp
+[344/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/10984066652519248485.rsp
+[345/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/4769955788402727329.rsp
+[346/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/1930223300244423128.rsp
+[347/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/12783842955110642247.rsp
+[348/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/10376552923787358332.rsp
+[349/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/9138376835669937927.rsp
+[350/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/17392071123951179896.rsp
+[351/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/1626365193864338622.rsp
+[352/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/1153222045816729849.rsp
+[353/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.rsp
+[354/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.Tests.rsp
+[355/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/5427167397233511250.rsp
+[356/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/12176746820506266677.rsp
+[357/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/6675480975834226854.rsp
+[358/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/7668679593555154362.rsp
+[359/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/1579935477863604384.rsp
+[360/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/5674956039949290316.rsp
+[361/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/16148781348983234511.rsp
+[362/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/12301629935973794103.rsp
+[363/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/11274696157529038857.rsp
+[364/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/16564247277992918903.rsp
+[365/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/8824286945966794202.rsp
+[366/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/15138774623803097380.rsp
+[367/646    0s] WriteText Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.rsp
+[368/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/2900160241823690998.rsp
+[369/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/15569745926999849003.rsp
+[370/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/1317364399733402406.rsp
+[371/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/8070994851108164409.rsp
+[372/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/12961513509507677992.rsp
+[373/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/13821562750565263257.rsp
+[374/646    0s] WriteResponseFile Library/Bee/artifacts/rsp/11777448413204399724.rsp
+[375/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.dll.mvfrm
+[376/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll.mvfrm
+[BUSY       6s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll (+2 others)
+[377/646    6s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll (+2 others)
+[378/646    6s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEngine.TestRunner.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[379/646    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+[380/646    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+[381/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UI.ref.dll_7A28423D4A766FDA.mvfrm
+[382/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TestRunner.ref.dll_50E26CF31C06CD18.mvfrm
+[383/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.dll.mvfrm
+[384/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEditor.TestRunner.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[385/646    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+[386/646    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+[387/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TestRunner.ref.dll_84C42244F0436F2D.mvfrm
+[388/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll.mvfrm
+[389/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[390/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UI.ref.dll_BDC26BE24454476F.mvfrm
+[391/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.dll.mvfrm
+[392/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll.mvfrm
+[393/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Utilities.dll.mvfrm
+[394/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.dll.mvfrm
+[395/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Searcher.Editor.dll.mvfrm
+[396/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll.mvfrm
+[397/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll.mvfrm
+[398/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.dll.mvfrm
+[399/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Utilities.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Utilities.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[400/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Searcher.Editor.dll (+2 others)
+[401/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Searcher.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[402/646    2s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.dll (+2 others)
+[403/646    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.ShaderGraph.Utilities.ref.dll_51678CFD4C3F7803.mvfrm
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[404/646    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Searcher.Editor.ref.dll_0B020369C2B9D134.mvfrm
+[405/646    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Settings.Editor.ref.dll_77A5373D6A1F93D6.mvfrm
+[406/646    4s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.dll (+2 others)
+[407/646    1s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Shaders.dll.mvfrm
+[           1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[408/646    1s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Runtime.Tests.dll.mvfrm
+[409/646    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.PerformanceTesting.ref.dll_C41144C1FA8DF118.mvfrm
+[410/646    1s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll.mvfrm
+[411/646    1s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.dll.mvfrm
+[412/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Editor.dll.mvfrm
+[413/646    6s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll (+2 others)
+[414/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.Editor.dll.mvfrm
+[415/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.Tests.dll.mvfrm
+[416/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Burst.ref.dll_75A67EE1951F90CE.mvfrm
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[417/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.CodeGen.dll.mvfrm
+[418/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.Editor.dll.mvfrm
+[419/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll (+2 others)
+[420/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Shaders.dll (+2 others)
+[421/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Shaders.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[422/646    7s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[423/646    7s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll (+2 others)
+[424/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[425/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.dll.mvfrm
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[426/646    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.TextMeshPro.ref.dll_3701448EC0EF5C81.mvfrm
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[427/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.CodeGen.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.CodeGen.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[428/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.CodeGen.pdb
+[429/646    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Mathematics.ref.dll_9B4CF66C9079F0F4.mvfrm
+[430/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.CodeGen.dll
+[431/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.Analytics.dll.mvfrm
+[432/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.InputSystem.ref.dll_AF8BE3CD1809BA27.mvfrm
+[433/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Editor.dll (+2 others)
+[434/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.dll.mvfrm
+[435/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.dll.mvfrm
+[436/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.dll.mvfrm
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[437/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll.mvfrm
+[438/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll.mvfrm
+[439/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.Analytics.dll (+2 others)
+[440/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.Analytics.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[441/646    2s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll (+2 others)
+[442/646    2s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[443/646    3s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.dll (+2 others)
+[444/646    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Mathematics.Editor.ref.dll_64944B6DD477E1FD.mvfrm
+[445/646    2s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[446/646    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualStudio.Editor.pdb
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[447/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Splines.ref.dll_10707690479E18D0.mvfrm
+[448/646    0s] CopyFiles Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+[449/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.Editor.dll.mvfrm
+[450/646    4s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[451/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Collections.ref.dll_17CA8F61EA9E7873.mvfrm
+[452/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.Editor.dll (+2 others)
+[453/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.Editor.dll.mvfrm
+[454/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.CodeGen.dll.mvfrm
+[455/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Runtime.dll.mvfrm
+[456/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.dll.mvfrm
+[457/646    8s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[458/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Splines.Editor.ref.dll_47F52B70AECB6BE1.mvfrm
+[459/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.Editor.dll (+2 others)
+[460/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Burst.Editor.ref.dll_030BCB777AA5BDC3.mvfrm
+[461/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.CodeGen.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.CodeGen.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[462/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.CodeGen.pdb
+[463/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.CodeGen.dll
+[464/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Runtime.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Runtime.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[465/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Rendering.LightTransport.Runtime.ref.dll_207F21C8D3D24A17.mvfrm
+[466/646    2s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.dll (+2 others)
+[467/646    1s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[468/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Universal.Shaders.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Shaders.dll, with 110 defines and 223 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[469/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/UnityEngine.UI.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.dll, with 114 defines and 221 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[470/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.PerformanceTesting.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.dll, with 111 defines and 219 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[471/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.InputSystem.TestFramework.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.TestFramework.dll, with 111 defines and 221 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[472/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.TextMeshPro.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.dll, with 111 defines and 223 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[473/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipelines.Core.Runtime.ref.dll_CF30EDBCD4D1A604.mvfrm
+[474/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll, with 110 defines and 223 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[475/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.dll.mvfrm
+[476/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.dll.mvfrm
+[477/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.dll.mvfrm
+[478/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.dll (+2 others)
+[479/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[480/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.dll.mvfrm
+[481/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[482/646    2s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Core.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.dll, with 111 defines and 227 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[483/646    2s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Mathematics.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.dll, with 110 defines and 223 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[484/646    2s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.InputSystem.ForUI.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ForUI.dll, with 110 defines and 224 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[485/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipelines.GPUDriven.Runtime.ref.dll_2F5494688F06E385.mvfrm
+[486/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipeline.Universal.ShaderLibrary.ref.dll_E247BC73EF2948C5.mvfrm
+[487/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipelines.Core.Runtime.Shared.ref.dll_AF1BF085D695BD65.mvfrm
+[488/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm
+[489/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipeline.Universal.ShaderLibrary.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.dll, with 110 defines and 224 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[490/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Core.Runtime.Shared.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.dll, with 110 defines and 224 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[491/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.dll.mvfrm
+[492/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.InputSystem.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.dll, with 118 defines and 223 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[493/646    3s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Rendering.LightTransport.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Runtime.dll, with 110 defines and 226 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[494/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Splines.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.dll, with 112 defines and 225 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[495/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.ShaderGraph.Utilities.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Utilities.dll, with 108 defines and 259 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[496/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Core.ShaderLibrary.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.dll, with 110 defines and 223 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[497/646    2s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[498/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipelines.Universal.Config.Runtime.ref.dll_A3C85FC5BF68AEBA.mvfrm
+[499/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Runtime.dll.mvfrm
+[500/646    4s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[501/646    3s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Mathematics.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.dll, with 108 defines and 260 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[502/646    7s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Collections.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.dll, with 112 defines and 225 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[503/646    7s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Burst.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.dll, with 110 defines and 221 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[504/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Searcher.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Searcher.Editor.dll, with 108 defines and 259 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[505/646    5s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[506/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipelines.Core.Editor.ref.dll_DCDF94754BA77937.mvfrm
+[507/646    1s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Splines.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Splines.Editor.dll, with 108 defines and 262 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[508/646    1s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.TextMeshPro.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.dll, with 108 defines and 261 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[509/646    1s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Universal.Config.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.dll, with 110 defines and 224 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[510/646    2s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Runtime.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Runtime.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[511/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.dll.mvfrm
+[512/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Editor.dll.mvfrm
+[513/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipelines.Universal.Runtime.ref.dll_EE5FEFE6147E65D0.mvfrm
+[514/646    7s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.GPUDriven.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.dll, with 110 defines and 227 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[515/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.dll (+2 others)
+[516/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.dll.mvfrm
+[517/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.dll.mvfrm
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[518/646    7s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Burst.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Burst.Editor.dll, with 108 defines and 260 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[519/646    3s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/UnityEditor.UI.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.dll, with 110 defines and 258 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[520/646    2s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Rendering.LightTransport.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Rendering.LightTransport.Editor.dll, with 108 defines and 259 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[521/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipelines.Core.Editor.Shared.ref.dll_5F111106198CBE62.mvfrm
+[522/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.dll (+2 others)
+Assets\Scripts\Player\SuperheroFlightController.cs(29,40): warning CS0414: The field 'SuperheroFlightController._hoverVerticalSpeed' is assigned but its value is never used
+
+Assets\Scripts\Destruction\DebrisPoolManager.cs(19,40): warning CS0414: The field 'DebrisPoolManager._defaultDespawnTime' is assigned but its value is never used
+[523/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[524/646    1s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Core.Editor.Shared.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.dll, with 108 defines and 260 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[525/646    4s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/UnityEditor.UI.Analytics.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.Analytics.dll, with 108 defines and 260 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[526/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Runtime.Tests.dll (+2 others)
+[527/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipelines.Universal.2D.Runtime.ref.dll_572C5AFCCE99246A.mvfrm
+[528/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.Tests.dll (+2 others)
+[529/646    2s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Universal.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Runtime.dll, with 113 defines and 230 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[530/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.dll.mvfrm
+[531/646    2s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Collections.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Collections.Editor.dll, with 109 defines and 260 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[532/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/CSVS.GodMode.Runtime.Tests.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Runtime.Tests.dll, with 110 defines and 221 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[533/646    4s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[534/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.ShaderGraph.Editor.ref.dll_D9C390C28F91CC8A.mvfrm
+[535/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Editor.dll.mvfrm
+[536/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[537/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Cinemachine.ref.dll_2A492A86C69479C8.mvfrm
+[538/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[539/646    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.RenderPipelines.Universal.Editor.ref.dll_FA965DB48716C02B.mvfrm
+[540/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.Editor.dll.mvfrm
+[541/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.dll.mvfrm
+[542/646    0s] MovedFromExtractor-Combine Library/Bee/artifacts/2000b0aE.dag/PPv2URPConverters.dll.mvfrm
+[543/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/PPv2URPConverters.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/PPv2URPConverters.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[544/646    0s] Csc Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.dll (+2 others)
+[545/646    4s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.PerformanceTesting.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.PerformanceTesting.Editor.dll, with 109 defines and 257 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[546/646    4s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/CSVS.GodMode.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.dll, with 110 defines and 227 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[547/646    4s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Settings.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Settings.Editor.dll, with 108 defines and 259 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[548/646    4s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/CSVS.GodMode.Editor.Tests.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.Tests.dll, with 108 defines and 257 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[549/646    7s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Core.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Core.Editor.dll, with 109 defines and 265 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[550/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.dll
+[551/646    0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.dll
+[552/646    5s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Universal.2D.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.dll, with 110 defines and 228 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[553/646    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll
+[554/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll
+[555/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll
+[556/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll
+[557/646    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.dll
+[558/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll
+[559/646    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Runtime.Tests.dll
+[560/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll
+[561/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll
+[562/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll
+[563/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+[564/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll
+[565/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.dll
+[566/646    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
+[567/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll
+[568/646    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.dll
+[569/646    2s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Cinemachine.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.dll, with 117 defines and 229 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[570/646    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.dll
+[571/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Splines.dll
+[572/646    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.UI.dll
+[573/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.dll
+[574/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Cinemachine.pdb
+[575/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.pdb
+[576/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.pdb
+[577/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll
+[578/646    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.Tests.pdb
+[579/646    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.Tests.dll
+[580/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Settings.Editor.pdb
+[581/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Settings.Editor.dll
+[582/646    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.pdb
+[583/646    0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.Editor.dll
+[584/646    0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.Editor.pdb
+[585/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.Editor.pdb
+[586/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.Editor.dll
+[587/646    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Runtime.Tests.pdb
+[588/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.pdb
+[589/646    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.Analytics.dll
+[590/646    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.Analytics.pdb
+[591/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll
+[592/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.pdb
+[593/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.pdb
+[594/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll
+[595/646    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.dll
+[596/646    0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.pdb
+[597/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.Editor.dll
+[598/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.Editor.pdb
+[599/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.pdb
+[600/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.pdb
+[601/646    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+[602/646    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+[603/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Splines.Editor.dll
+[604/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Splines.Editor.pdb
+[605/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Searcher.Editor.pdb
+[606/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Searcher.Editor.dll
+[607/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.pdb
+[608/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.pdb
+[609/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.Editor.pdb
+[610/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.Editor.dll
+[611/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.pdb
+[612/646    0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.pdb
+[613/646    0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.dll
+[614/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Splines.pdb
+[615/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.pdb
+[616/646    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.pdb
+[617/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.pdb
+[618/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.pdb
+[619/646    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.ForUI.pdb
+[620/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.pdb
+[621/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.pdb
+[622/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.pdb
+[623/646    0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+[624/646    0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.TestFramework.pdb
+[625/646    0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.pdb
+[626/646    0s] CopyFiles Library/ScriptAssemblies/UnityEngine.UI.pdb
+[627/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.pdb
+[628/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Cinemachine.dll
+[629/646    1s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/CSVS.GodMode.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/CSVS.GodMode.Editor.dll, with 108 defines and 264 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[630/646    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.pdb
+[631/646    1s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/PPv2URPConverters.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/PPv2URPConverters.dll, with 108 defines and 263 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[632/646    0s] CopyFiles Library/ScriptAssemblies/PPv2URPConverters.dll
+[633/646    0s] CopyFiles Library/ScriptAssemblies/PPv2URPConverters.pdb
+[634/646    1s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.RenderPipelines.Universal.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.RenderPipelines.Universal.Editor.dll, with 108 defines and 269 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[635/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.pdb
+[636/646    1s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.ShaderGraph.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.ShaderGraph.Editor.dll, with 108 defines and 263 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[637/646    0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Editor.pdb
+[638/646    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.dll
+[639/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll
+[640/646    1s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.Editor.dll (+2 others) [CacheWrite 00000000000000000000000000000004]
+[641/646    0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll
+[642/646    0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll
+[643/646    0s] ILPostProcess Library/Bee/artifacts/2000b0aE.dag/post-processed/Unity.Cinemachine.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2000b0aE.dag/Unity.Cinemachine.Editor.dll, with 114 defines and 268 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[644/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Cinemachine.Editor.pdb
+[645/646    0s] CopyFiles Library/ScriptAssemblies/Unity.Cinemachine.Editor.dll
+*** Tundra build success (51.96 seconds), 512 items updated, 646 evaluated
+Assets\Scripts\Player\SuperheroFlightController.cs(29,40): warning CS0414: The field 'SuperheroFlightController._hoverVerticalSpeed' is assigned but its value is never used
+Assets\Scripts\Destruction\DebrisPoolManager.cs(19,40): warning CS0414: The field 'DebrisPoolManager._defaultDespawnTime' is assigned but its value is never used
+AssetDatabase: script compilation time: 54.198274s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  8.156 seconds
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Start importing Assets/Editor/CSVS.GodMode.Editor.asmdef using Guid(28641efa150c937408aa5d741e49465c) (AssemblyDefinitionImporter) -> (artifact id: 'd5f6c75d70d13b1d322396cae9e10c61') in 0.0855059 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Licensing::Client] Successfully resolved entitlement details
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.732 seconds
+Domain Reload Profiling: 11889ms
+	BeginReloadAssembly (497ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (174ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (7550ms)
+		LoadAssemblies (7516ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (254ms)
+			TypeCache.Refresh (183ms)
+				TypeCache.ScanAssembly (161ms)
+			BuildScriptInfoCaches (49ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (3733ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3403ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (193ms)
+			ProcessInitializeOnLoadAttributes (3012ms)
+			ProcessInitializeOnLoadMethodAttributes (160ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (4ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (36ms)
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=083c6279bcc7d1243bc73c021c74e7bf): Total: 68.597 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=6 ms, native=4889 ms
+		Asset DB Callback time: managed=1223 ms, native=76 ms
+		Scripting: domain reloads=1, domain reload time=8157 ms, compile time=54202 ms, other=40 ms
+		Project Asset Count: scripts=822, non-scripts=1577
+		Asset File Changes: new=1, changed=3, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.003ms
+	InvokePackagesCallback: 51.323ms
+	ApplyChangesToAssetFolders: 1.591ms
+	Scan: 378.509ms
+	OnSourceAssetsModified: 3.044ms
+	CategorizeAssetsWithTransientArtifact: 55.169ms
+	ProcessAssetsWithTransientArtifactChanges: 168.957ms
+	CategorizeAssets: 162.887ms
+	ImportOutOfDateAssets: 3864.225ms (-50448.262ms without children)
+		ImportManagerImport: 106.773ms (17.880ms without children)
+			ImportInProcess: 88.601ms
+			UpdateCategorizedAssets: 0.292ms
+		CompileScripts: 54201.860ms
+		ReloadNativeAssets: 0.000ms
+		UnloadImportedAssets: 0.549ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.784ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 2.518ms
+	PostProcessAllAssets: 1234.232ms
+	Hotreload: 14.761ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 1.437ms
+	PersistCurrentRevisions: 0.361ms
+	UnloadStreamsEnd: 0.004ms
+	GenerateScriptTypeHashes: 6.692ms
+	Untracked: 62660.977ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 9.713ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-CSVS-GodMode
+Unloading 111 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3940 unused Assets / (6.0 MB). Loaded Objects now: 4640.
+Memory consumption went from 171.1 MB to 165.1 MB.
+Total: 23.755400 ms (FindLiveObjects: 0.790500 ms CreateObjectMapping: 2.777700 ms MarkObjects: 12.579700 ms  DeleteObjects: 7.604600 ms)
+
+[URPSetupFixer] Starting URP configuration hotfix...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:16)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 16)
+
+Start importing Assets/Settings using Guid(c13064493002611419efc0288aa132f6) (DefaultImporter) -> (artifact id: 'd41b8ec1ca48f9fa023076b6f83c5588') in 0.0252154 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7efcacd3c378b1049a358800284fb023): Total: 0.162 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Materials using Guid(0ae40089d46f1cc498b10c868de47e71) (DefaultImporter) -> (artifact id: 'e044462f97da009e05a40d5fde3a866b') in 0.0160942 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7b8a31819cce6114b9d886a2fa2a3917): Total: 0.063 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Settings/UniversalRendererData.asset using Guid(9c58732e9851f35428856e4c4027e484) (NativeFormatImporter) -> (artifact id: '97b358afe9f6d7bafb9556d633c0752f') in 0.0026787 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a3bfc0af7e0129b438ab12d74f35e14e): Total: 0.070 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[URPSetupFixer] Created UniversalRendererData at Assets/Settings/UniversalRendererData.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:35)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 35)
+
+Start importing Assets/Settings/UniversalRenderPipelineAsset.asset using Guid(b395526b1225b2541b1a88ce6641726a) (NativeFormatImporter) -> (artifact id: 'c04bd6bfd23e0c893e69edbe64a91a71') in 0.0058773 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=10ca2be0ee56e204090383246819f656): Total: 0.072 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[URPSetupFixer] Created UniversalRenderPipelineAsset at Assets/Settings/UniversalRenderPipelineAsset.asset
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:45)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 45)
+
+[URPSetupFixer] Assigned defaultRenderPipeline in GraphicsSettings
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:57)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 57)
+
+[URPSetupFixer] Assigned renderPipeline across all 6 Quality levels
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:65)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 65)
+
+[URPSetupFixer] Using URP Shader: Universal Render Pipeline/Lit
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:71)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 71)
+
+Start importing Assets/Materials/RoadMaterial.mat using Guid(d35611f151f9b614fa885f9d8aba5291) (NativeFormatImporter) -> (artifact id: '09b9e1bb5086809785d2fc6cc1041255') in 0.0019174 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debug/ProbeSamplingDebugMesh.fbx using Guid(20be25aac4e22ee49a7db76fb3df6de2) (FBXImporter) -> (artifact id: '7c3c7e36fce51d79dc637ed5be73a50a') in 0.1177528 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/UnityMaterialBall.fbx using Guid(39857cfad1651644682ff5b772e6e697) (FBXImporter) -> (artifact id: 'b6ea88418b4cc9845a5ce3bde584d85d') in 0.1587698 seconds
+Start importing Packages/com.unity.render-pipelines.core/Editor/Resources/DebugProbe.fbx using Guid(9e1c97fc44f9a8744b61b58f72c56de4) (FBXImporter) -> (artifact id: 'e0f5cb562bf4053312c6f2db15c374c7') in 0.0588957 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3d55ef89379cb194aa5a1637c036e7da): Total: 0.516 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=3 (actual=3, local cache=0, cache server=0)
+		Asset DB Process Time: managed=27 ms, native=396 ms
+		Asset DB Callback time: managed=82 ms, native=8 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=824, non-scripts=1580
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 3
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.142ms
+	Scan: 28.039ms
+	OnSourceAssetsModified: 0.065ms
+	CategorizeAssetsWithTransientArtifact: 0.010ms
+	ProcessAssetsWithTransientArtifactChanges: 0.262ms
+	CategorizeAssets: 29.869ms
+	ImportOutOfDateAssets: 358.072ms (-9.115ms without children)
+		ImportManagerImport: 355.679ms (10.897ms without children)
+			ImportInProcess: 344.739ms
+			UpdateCategorizedAssets: 0.043ms
+		ReloadNativeAssets: 0.045ms
+		UnloadImportedAssets: 0.520ms
+		ReloadImportedAssets: 9.903ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.539ms
+		InitializingProgressBar: 0.013ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.002ms
+		OnDemandSchedulerStart: 0.486ms
+	PostProcessAllAssets: 81.728ms
+	Hotreload: 10.139ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.333ms
+	UnloadStreamsBegin: 0.005ms
+	PersistCurrentRevisions: 0.200ms
+	UnloadStreamsEnd: 0.002ms
+	Untracked: 6.741ms
+
+[URPSetupFixer] Created material at Assets/Materials/RoadMaterial.mat
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:CreateOrUpdateMaterial (string,UnityEngine.Shader,UnityEngine.Color,single) (at Assets/Editor/URPSetupFixer.cs:149)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:73)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 149)
+
+Start importing Assets/Materials/BuildingMaterial.mat using Guid(0097ab78ef33d75459a7b579e09d442a) (NativeFormatImporter) -> (artifact id: 'd1b2e963ae51732a6caef89592d9c840') in 0.0031517 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ac9d22746fdc36d449c2fb6323f84718): Total: 0.064 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[URPSetupFixer] Created material at Assets/Materials/BuildingMaterial.mat
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:CreateOrUpdateMaterial (string,UnityEngine.Shader,UnityEngine.Color,single) (at Assets/Editor/URPSetupFixer.cs:149)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:74)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 149)
+
+Start importing Assets/Materials/BuildingChunkMaterial.mat using Guid(7f4ae98ae88192d4d995076f12d81ede) (NativeFormatImporter) -> (artifact id: '178cfb2d6b0a0cfb076d13c45268e517') in 0.0020747 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fbf756e9f12fe4e45abf1f219972e405): Total: 0.055 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[URPSetupFixer] Created material at Assets/Materials/BuildingChunkMaterial.mat
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:CreateOrUpdateMaterial (string,UnityEngine.Shader,UnityEngine.Color,single) (at Assets/Editor/URPSetupFixer.cs:149)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:75)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 149)
+
+Start importing Assets/Materials/PlayerMaterial.mat using Guid(802acb16ac40a734a8fe184cf2f82732) (NativeFormatImporter) -> (artifact id: '59db8f4a9836ad21ec9a815406566812') in 0.0045558 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=205711e7ebd190e4aa59f0e6dab7161d): Total: 0.071 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[URPSetupFixer] Created material at Assets/Materials/PlayerMaterial.mat
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:CreateOrUpdateMaterial (string,UnityEngine.Shader,UnityEngine.Color,single) (at Assets/Editor/URPSetupFixer.cs:149)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:76)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 149)
+
+Opening scene 'Assets/Scenes/MainCityScene.unity'
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+[Licensing::Client] Successfully resolved entitlement details
+Loaded scene 'Assets/Scenes/MainCityScene.unity'
+	Deserialize:            21.323 ms
+	Integration:            332.241 ms
+	Integration of assets:  0.006 ms
+	Thread Wait Time:       19.520 ms
+	Total Operation Time:   373.090 ms
+Unloading 13 unused Assets / (295.6 KB). Loaded Objects now: 4684.
+Memory consumption went from 148.5 MB to 148.2 MB.
+Total: 13.654400 ms (FindLiveObjects: 0.863400 ms CreateObjectMapping: 0.646100 ms MarkObjects: 11.755100 ms  DeleteObjects: 0.387300 ms)
+
+[URPSetupFixer] Added UniversalAdditionalCameraData to Main Camera
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:90)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 90)
+
+[URPSetupFixer] Added UniversalAdditionalLightData to Directional Light
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:104)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 104)
+
+[URPSetupFixer] Serialized materials on CityGenerator
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:123)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 123)
+
+[URPSetupFixer] Serialized urpAsset on QualitySettingsManager
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:134)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 134)
+
+Start importing ProjectSettings/QualitySettings.asset using Guid(00000000000000009000000000000000) (LibraryAssetImporter) -> (artifact id: 'ef876289f8995e2cebf3545df8122173') in 0.0033107 seconds
+Start importing ProjectSettings/GraphicsSettings.asset using Guid(00000000000000006100000000000000) (LibraryAssetImporter) -> (artifact id: 'c4de0c19a544c8c28c26a38711784078') in 0.0020233 seconds
+Start importing Assets/Materials/BuildingMaterial.mat using Guid(0097ab78ef33d75459a7b579e09d442a) (NativeFormatImporter) -> (artifact id: 'c6501dca45b758677724d8d04a5d0e0e') in 0.0017491 seconds
+Start importing Assets/Materials/PlayerMaterial.mat using Guid(802acb16ac40a734a8fe184cf2f82732) (NativeFormatImporter) -> (artifact id: 'c09748b80be8c6f5c2a2e0eff9266278') in 0.0026362 seconds
+Start importing Assets/Materials/RoadMaterial.mat using Guid(d35611f151f9b614fa885f9d8aba5291) (NativeFormatImporter) -> (artifact id: 'b45da328d8dc4918b6e8b2a96fd31ee1') in 0.0040474 seconds
+Start importing Assets/Materials/BuildingChunkMaterial.mat using Guid(7f4ae98ae88192d4d995076f12d81ede) (NativeFormatImporter) -> (artifact id: '0d3c318ba350836bfc91a51a1512f7ff') in 0.0019649 seconds
+Start importing Assets/Settings/UniversalRenderPipelineAsset.asset using Guid(b395526b1225b2541b1a88ce6641726a) (NativeFormatImporter) -> (artifact id: '4dc427d9ebb2ad29b148fadcec233543') in 0.0021666 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2901a3dc291e009488fa5768c96776d8): Total: 0.069 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Scenes/MainCityScene.unity using Guid(049d340263a401c42a9ccca0ce49956b) (DefaultImporter) -> (artifact id: '6e8d0acc49a042952acb5520e4877762') in 0.001422 seconds
+Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3c513482d51b7bc40971dc3f2e5cb167): Total: 0.057 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[URPSetupFixer] Hotfix completed and scene saved successfully!
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+CSVS.GodMode.Editor.URPSetupFixer:FixAndConfigureURP () (at Assets/Editor/URPSetupFixer.cs:139)
+
+(Filename: Assets/Editor/URPSetupFixer.cs Line: 139)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backned.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-Admin-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-Admin channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+abort_threads: Failed aborting id: 0000000000004884, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000003B2C, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000004884, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000003B2C, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 1836
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0
