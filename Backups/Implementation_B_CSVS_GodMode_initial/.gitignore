@@ -1,0 +1,34 @@
+# OS generated files
+[Dd]esktop.ini
+Thumbs.db
+.DS_Store
+
+# Unity generated
+/[Uu]nity[Pp]roject/[Ll]ibrary/
+/[Uu]nity[Pp]roject/[Tt]emp/
+/[Uu]nity[Pp]roject/[Oo]bj/
+/[Uu]nity[Pp]roject/[Bb]uild/
+/[Uu]nity[Pp]roject/[Bb]uilds/
+/[Uu]nity[Pp]roject/[Ll]ogs/
+/[Uu]nity[Pp]roject/[Uu]ser[Ss]ettings/
+/[Uu]nity[Pp]roject/[Mm]emoryCaptures/
+
+# Visual Studio / Rider / VS Code cache
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Executables
+*.exe

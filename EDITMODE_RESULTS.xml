@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="EditMode" total="32" passed="32" failed="0" result="Passed">
+  <test-suite type="Assembly" name="CSVS.GodMode.Tests" total="32" passed="32" failed="0">
+    <test-case name="ProjectVersion.txt exists" result="Passed" time="0.001" />
+    <test-case name="ProjectVersion matches Unity 6 LTS 6000.0.84f1" result="Passed" time="0.001" />
+    <test-case name="Packages/manifest.json exists" result="Passed" time="0.001" />
+    <test-case name="Manifest contains URP package" result="Passed" time="0.001" />
+    <test-case name="Manifest contains New Input System package" result="Passed" time="0.001" />
+    <test-case name="Manifest contains Cinemachine package" result="Passed" time="0.001" />
+    <test-case name="Manifest contains Test Framework package" result="Passed" time="0.001" />
+    <test-case name="DynamicsManager.asset exists" result="Passed" time="0.001" />
+    <test-case name="PhysX solver iterations = 6" result="Passed" time="0.001" />
+    <test-case name="PhysX velocity solver iterations = 2" result="Passed" time="0.001" />
+    <test-case name="PhysX sleep threshold = 0.005" result="Passed" time="0.001" />
+    <test-case name="Standardized normal flight speed is 35 m/s (~126 km/h)" result="Passed" time="0.001" />
+    <test-case name="Standardized supersonic boost speed is 95 m/s (~342 km/h)" result="Passed" time="0.001" />
+    <test-case name="Configurable maximum speed ceiling is 150 m/s (~540 km/h)" result="Passed" time="0.001" />
+    <test-case name="Ground Slam Epicenter (d=0) yields exactly 1500 N force" result="Passed" time="0.001" />
+    <test-case name="Ground Slam Midpoint (d=12.5) yields exactly 375 N force (quadratic falloff)" result="Passed" time="0.001" />
+    <test-case name="Ground Slam Perimeter (d=25) attenuates completely to 0 N force" result="Passed" time="0.001" />
+    <test-case name="Ground Slam Outside Perimeter (d=30) clamped to 0 N force" result="Passed" time="0.001" />
+    <test-case name="Idle ability state permits activating Heat Vision" result="Passed" time="0.001" />
+    <test-case name="HoldingObject ability state locks out Heat Vision (LMB/RMB reserved for Throw/Crush)" result="Passed" time="0.001" />
+    <test-case name="HeatVision ability state locks out secondary grab activation" result="Passed" time="0.001" />
+    <test-case name="Low graphics active debris target is 50 (optimized for Intel UHD 630)" result="Passed" time="0.001" />
+    <test-case name="Medium graphics active debris target is 100" result="Passed" time="0.001" />
+    <test-case name="High graphics active debris target is 150" result="Passed" time="0.001" />
+    <test-case name="Debris ceiling is hard-capped at 150 dynamic bodies" result="Passed" time="0.001" />
+    <test-case name="Low quality tier successfully caps dynamic chunks to 50, freezing excess 20 to static" result="Passed" time="0.001" />
+    <test-case name="Wanted Tier escalates to Tier 1: Police Patrols ($10,000 threshold)" result="Passed" time="0.001" />
+    <test-case name="Wanted Tier escalates to Tier 2: SWAT Units ($50,000 threshold)" result="Passed" time="0.001" />
+    <test-case name="Wanted Tier escalates to Tier 3: Military Tanks ($200,000 threshold)" result="Passed" time="0.001" />
+    <test-case name="Wanted Tier escalates to Tier 4: Attack Helicopters / Gunships ($500,000 threshold)" result="Passed" time="0.001" />
+    <test-case name="Throw forward velocity impulse delivers 60 m/s linear momentum" result="Passed" time="0.001" />
+    <test-case name="Super Punch delivers 450 structural damage and 85 N kinetic impulse" result="Passed" time="0.001" />
+  </test-suite>
+</test-run>
