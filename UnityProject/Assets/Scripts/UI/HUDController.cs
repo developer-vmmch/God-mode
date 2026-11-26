@@ -153,5 +153,58 @@ namespace CSVS.GodMode.UI
                 _pauseMenuPanel.SetActive(isPaused);
             }
         }
+
+        private float _fpsAccumulator = 0f;
+        private int _fpsFrames = 0;
+        private float _fpsTimeLeft = 0.5f;
+        private float _currentFps = 60f;
+
+        private void OnGUI()
+        {
+            _fpsFrames++;
+            _fpsAccumulator += Time.unscaledDeltaTime;
+            if (_fpsAccumulator >= _fpsTimeLeft)
+            {
+                _currentFps = _fpsFrames / _fpsAccumulator;
+                _fpsFrames = 0;
+                _fpsAccumulator = 0f;
+            }
+
+            GUIStyle titleStyle = new GUIStyle(GUI.skin.box);
+            titleStyle.fontSize = 14;
+            titleStyle.fontStyle = FontStyle.Bold;
+            titleStyle.normal.textColor = Color.yellow;
+            titleStyle.alignment = TextAnchor.UpperLeft;
+
+            GUIStyle hudStyle = new GUIStyle(GUI.skin.box);
+            hudStyle.fontSize = 12;
+            hudStyle.normal.textColor = Color.white;
+            hudStyle.alignment = TextAnchor.UpperLeft;
+
+            // HUD Top-Left Panel
+            GUILayout.BeginArea(new Rect(15, 15, 340, 240), titleStyle);
+            GUILayout.Label("CSVS GOD MODE — V0.1.2 PROTOTYPE", titleStyle);
+            GUILayout.Space(5);
+
+            float speed = _playerFlight != null ? _playerFlight.CurrentSpeed : 0f;
+            string mode = _playerFlight != null ? _playerFlight.CurrentLocomotionMode.ToString().ToUpper() : "FLIGHT";
+            string boost = (_playerFlight != null && _playerFlight.IsBoosting) ? " [SUPERSONIC]" : "";
+            string ability = _playerFlight != null ? _playerFlight.CurrentAbilityState.ToString().ToUpper() : "IDLE";
+            long chaos = ChaosSystem.Instance != null ? ChaosSystem.Instance.CurrentChaosScore : 0;
+            string threat = ChaosSystem.Instance != null ? ChaosSystem.Instance.CurrentWantedTier.ToString().ToUpper() : "NONE";
+
+            GUILayout.Label($"SPEED: {speed * 3.6f:F0} KM/H ({speed:F1} m/s) [{mode}]{boost}");
+            GUILayout.Label($"CHAOS SCORE: ${chaos:N0}");
+            GUILayout.Label($"THREAT TIER: {threat}");
+            GUILayout.Label($"ACTIVE ABILITY: {ability}");
+            GUILayout.Label($"FPS: {_currentFps:F0} | TARGET: 30-60 FPS");
+            GUILayout.Space(5);
+            GUILayout.Label("CONTROLS:", titleStyle);
+            GUILayout.Label("WASD: Move | Shift: Supersonic Boost");
+            GUILayout.Label("Space: Ascend | Ctrl: Descend");
+            GUILayout.Label("L-Click: Punch/Laser | R-Click: Grab/Throw");
+            GUILayout.Label("F: Ground Slam | V: Toggle Camera");
+            GUILayout.EndArea();
+        }
     }
 }

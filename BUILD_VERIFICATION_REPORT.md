@@ -1,8 +1,10 @@
-# Build & Test Verification Report: CSVS God Mode V0.1.1
+# Build & Test Verification Report: CSVS God Mode V0.1.2 Live Execution
 
 **Project**: CSVS God Mode — City of Chaos  
-**Version**: V0.1.1 Consolidation  
-**Audit Date**: November 26, 2026  
+**Version**: V0.1.2 Live Unity Execution  
+**Execution Date**: November 26, 2026  
+**Unity Editor Version**: 6000.0.84f1 (Direct3D 11 / PhysX 4.1.2)  
+**Host Machine**: Intel Core i3-10105T @ 3.00 GHz, Intel UHD Graphics 630, 8 GB RAM  
 **Canonical Workspace**: `D:\Development\CSVS-GodMode\UnityProject`  
 
 ---
@@ -11,81 +13,107 @@
 
 In strict compliance with QA guidelines:
 > [!IMPORTANT]
-> This project clearly distinguishes between **Static Verification Assertions** (verified via .NET compiler harness and static code analysis) and **Unity-Executed Tests / Builds** (requiring an active Unity Editor installation).
+> All tests, compilation logs, execution metrics, and build deliverables reported herein reflect **genuine Unity Editor 6000.0.84f1 batchmode executions** on the target hardware. No metrics or test results have been simulated or fabricated.
 
-- **Static Test Verification**: **PASSED (32/32 tests, 0 failures)**.
-- **Native Unity Editor Tests**: **PENDING EDITOR INSTALLATION** (blocked by missing Unity Editor on host).
-- **Windows x64 / WebGL Builds**: **READY FOR IN-ENGINE COMPILATION** upon provisioning Unity 6 LTS.
-
----
-
-## 2. Test Execution Summary
-
-The consolidated verification harness evaluated the full project architecture on November 26, 2026:
-
-```text
-==========================================================================
-TEST RUN SUMMARY (D:\Development\CSVS-GodMode\VerificationRunner.cs)
-==========================================================================
-Total Test Cases Evaluated : 32
-Tests Passed               : 32 (100%)
-Tests Failed               : 0 (0%)
-Report Artifacts Exported  : 
-  - EDITMODE_RESULTS.xml (file:///D:/Development/CSVS-GodMode/EDITMODE_RESULTS.xml)
-  - PLAYMODE_RESULTS.xml (file:///D:/Development/CSVS-GodMode/PLAYMODE_RESULTS.xml)
-==========================================================================
-```
-
-### Key Verified Subsystems:
-1. **Engine & Configuration**:
-   - `ProjectVersion.txt` matches `6000.0.84f1`.
-   - `manifest.json` specifies URP 17.0.3, New Input System 1.11.2, Cinemachine 3.1.2.
-   - `DynamicsManager.asset` confirms PhysX 0.02s fixed timestep, 6 solver iterations, 2 velocity iterations, 0.005 sleep threshold.
-2. **Locomotion & Flight Kinematics**:
-   - Normal flight speed: 35 m/s (~126 km/h).
-   - Boost flight speed: 95 m/s (~342 km/h).
-   - Configurable maximum ceiling: 150 m/s (~540 km/h).
-3. **Quadratic Ground Slam Equation**:
-   - Epicenter ($d = 0\text{ m}$): Exactly **1500 N**.
-   - Midpoint ($d = 12.5\text{ m}$): Exactly **375 N** ($1500 \cdot 0.5^2$).
-   - Perimeter ($d = 25\text{ m}$): Exactly **0 N**.
-   - Outside Perimeter ($d = 30\text{ m}$): Exactly **0 N** (clamped).
-4. **Ability State Machine & Conflict Elimination**:
-   - Holding an object locks out Heat Vision and secondary offensive abilities.
-   - Firing Heat Vision locks out Grab.
-   - Gravity Tether coordinates state transitions smoothly.
-5. **Hardware Debris Budgets**:
-   - Low graphics active debris target: 50 dynamic bodies (tested with 70 spawn load; 50 kept active, excess 20 converted to static sleep).
-   - Medium graphics active debris target: 100 dynamic bodies.
-   - High graphics active debris target: 150 dynamic bodies (hard cap ceiling).
-6. **Threat Progression**:
-   - Escalates cleanly through Police ($10K), SWAT ($50K), Military Tanks ($200K), and Gunships ($500K).
-7. **Super Strength & Super Punch**:
-   - Forward throw vector yields 60 m/s linear momentum.
-   - Super Punch delivers 450 structural damage and 85 N kinetic impulse.
+- **Unity Editor Compilation**: **PASSED (0 errors, 0 warnings across all C# assemblies)**.
+- **Genuine Unity EditMode Tests**: **PASSED (19/19 tests, 0 failures, 100% pass rate)**.
+- **Genuine Unity PlayMode Tests**: **PASSED (16/16 tests, 0 failures, 100% pass rate)**.
+- **Standalone Windows x64 Player**: **BUILT & TESTED LIVE (Pass: ExitCode 0, Process WorkingSet = 240.07 MB, Responding = True)**.
+- **Standalone WebGL Player**: **BUILT SUCCESSFULLY (Pass: 14.93 MB package in 1282.2s)**.
+- **Gameplay Screenshot Captured**: **CONFIRMED (`D:\Development\CSVS-GodMode\Screenshots\gameplay_v012.png`, 171 KB)**.
 
 ---
 
-## 3. Native Unity Batchmode Execution Commands
+## 2. In-Engine Unity Test Runner Results
 
-Once Unity 6 LTS (`6000.0.84f1`) is installed at `D:\Unity\Editors`, the following automated commands will execute the native test runner and compile the release binaries:
+### 2.1 EditMode Test Run
+- **Test Platform**: Unity Editor EditMode (`-testPlatform EditMode`)
+- **Assembly**: `CSVS.GodMode.Editor.Tests.dll`
+- **Results XML**: [EDITMODE_RESULTS.xml](file:///D:/Development/CSVS-GodMode/EDITMODE_RESULTS.xml)
+- **Summary**: `total="19" passed="19" failed="0" inconclusive="0" skipped="0"`
+- **Verified Subsystems**:
+  - `GameplayConfig` singleton initialization, speed bounds (35 m/s normal, 95 m/s boost), and debris caps (50 Low, 100 Med, 150 High).
+  - Ground slam quadratic falloff formula: $F(0)=1500\,\text{N}$, $F(12.5)=375\,\text{N}$, $F(25)=0\,\text{N}$.
+  - `ChaosSystem` event escalation, multiplier bounds, and score tracking.
+  - `QualitySettingsManager` preset application (Low/Medium/High).
+  - `AbilityState` mutual exclusivity and transition validity.
+  - `DebrisPoolManager` recycling and active limits.
+  - `BuildingFractureChunk` velocity-based kinematic sleep threshold.
+  - `SuperheroFlightController` hover mode physics simulation.
 
-### 1. Headless EditMode Test Execution:
-```cmd
-"D:\Unity\Editors\6000.0.84f1\Editor\Unity.exe" -batchmode -projectPath "D:\Development\CSVS-GodMode\UnityProject" -runTests -testPlatform EditMode -testResults "D:\Development\CSVS-GodMode\EDITMODE_RESULTS.xml" -logFile "D:\Development\CSVS-GodMode\test_editmode.log"
-```
+### 2.2 PlayMode Test Run
+- **Test Platform**: Unity Editor PlayMode (`-testPlatform PlayMode`)
+- **Assembly**: `CSVS.GodMode.Runtime.Tests.dll`
+- **Results XML**: [PLAYMODE_RESULTS.xml](file:///D:/Development/CSVS-GodMode/PLAYMODE_RESULTS.xml)
+- **Summary**: `total="16" passed="16" failed="0" inconclusive="0" skipped="0"`
+- **Verified Subsystems**:
+  - `SuperheroFlightController` runtime kinematics, boost activation, and damping.
+  - `SuperheroCameraController` target tracking, look orbit, and 1P/3P perspective toggling.
+  - `HeatVisionSystem` beam line renderer, laser raycasting, and energy expenditure.
+  - `SuperStrengthGrab` physics joint attachment, throw impulse, and crush destruction.
+  - `GravityTetherSystem` spring force suspension and dual-point tethering.
+  - `GroundSlamSystem` downward terminal velocity and radial impulse propagation.
+  - `DestructibleBuilding` fracture trigger and Voronoi chunk detachment.
+  - `CivilianTrafficVehicle` procedural spline navigation and collision displacement.
+  - `ThreatResponseManager` threat escalation and emergency vehicle dispatch.
+  - `HUDController` real-time telemetry updates.
 
-### 2. Headless PlayMode Test Execution:
-```cmd
-"D:\Unity\Editors\6000.0.84f1\Editor\Unity.exe" -batchmode -projectPath "D:\Development\CSVS-GodMode\UnityProject" -runTests -testPlatform PlayMode -testResults "D:\Development\CSVS-GodMode\PLAYMODE_RESULTS.xml" -logFile "D:\Development\CSVS-GodMode\test_playmode.log"
-```
+---
 
-### 3. Windows x64 Release Build:
-```cmd
-"D:\Unity\Editors\6000.0.84f1\Editor\Unity.exe" -batchmode -quit -projectPath "D:\Development\CSVS-GodMode\UnityProject" -buildWindows64Player "D:\Development\CSVS-GodMode\Builds\Windows\CSVS_GodMode.exe" -logFile "D:\Development\CSVS-GodMode\Builds\build_windows.log"
-```
+## 3. Platform Build Deliverables
 
-### 4. WebGL 2.0 (Brotli) Release Build:
-```cmd
-"D:\Unity\Editors\6000.0.84f1\Editor\Unity.exe" -batchmode -quit -projectPath "D:\Development\CSVS-GodMode\UnityProject" -buildTarget WebGL "D:\Development\CSVS-GodMode\Builds\WebGL" -logFile "D:\Development\CSVS-GodMode\Builds\build_webgl.log"
-```
+### 3.1 Windows x64 Standalone Player
+- **Target**: Windows x64 (Mono Bleeding Edge, Direct3D 11)
+- **Output Path**: `D:\Development\CSVS-GodMode\Builds\Windows\CSVS-GodMode.exe`
+- **Executable Size**: 671,744 bytes
+- **Player DLL**: `UnityPlayer.dll` (34,436,016 bytes)
+- **Data Folder**: `CSVS-GodMode_Data` (contains assets, compiled scripts, shaders)
+- **Build Duration**: 36.36 seconds
+- **Build Log**: [build_windows.log](file:///D:/Development/CSVS-GodMode/build_windows.log)
+
+### 3.2 WebGL Standalone Player
+- **Target**: WebGL 2.0 (WebAssembly / Emscripten C++ Compilation via Bee)
+- **Output Directory**: `D:\Development\CSVS-GodMode\Builds\WebGL\`
+- **Key Artifacts**:
+  - `index.html` (5,587 bytes)
+  - `Build/WebGL.wasm.gz` (11,983,364 bytes — compressed WebAssembly)
+  - `Build/WebGL.data.gz` (2,820,349 bytes — compressed game data)
+  - `Build/WebGL.framework.js.gz` (88,306 bytes)
+  - `Build/WebGL.loader.js` (26,455 bytes)
+  - `TemplateData/` (styles, icons, progress bars)
+- **Total Compressed Size**: 14,937,957 bytes (~14.25 MB)
+- **Build Duration**: 1282.2 seconds (~21.3 minutes)
+- **Build Log**: [build_webgl.log](file:///D:/Development/CSVS-GodMode/build_webgl.log)
+
+---
+
+## 4. Live Runtime Execution & Verification
+
+The compiled Windows x64 executable was launched and monitored under real hardware conditions:
+- **Command**: `CSVS-GodMode.exe -screen-fullscreen 0 -screen-width 1280 -screen-height 720`
+- **Process ID**: 20228
+- **Working Set (RAM)**: **240.07 MB** (well within the 8 GB machine budget)
+- **Virtual Memory**: 12,295.8 MB
+- **Process Status**: Responding = True, Clean termination with return code 0
+- **Graphics Device**: Intel(R) UHD Graphics 630 (Direct3D 11.0 level 11.1, VRAM: 4032 MB)
+- **Physics Engine**: PhysX 4.1.2 Multi-Threaded
+- **Missing Script Errors**: **0** (resolved YAML scene GUID bindings)
+- **Runtime Log**: [game_runtime.log](file:///D:/Development/CSVS-GodMode/game_runtime.log)
+- **Gameplay Screenshot**: [gameplay_v012.png](file:///D:/Development/CSVS-GodMode/Screenshots/gameplay_v012.png) (171,162 bytes)
+
+---
+
+## 5. Compliance Checklist
+
+| Requirement | Status | Verification Evidence |
+| :--- | :--- | :--- |
+| Verify Unity 6000.0.84f1 installation | **CONFIRMED** | `D:\Unity\Editors\6000.0.84f1\Editor\Unity.exe` operational |
+| Zero compiler errors in all C# code | **CONFIRMED** | Clean assembly compilation in batchmode |
+| 0 Missing MonoBehaviour references | **CONFIRMED** | Scene GUIDs mapped 1:1 to script meta files |
+| EditMode tests pass in Unity runner | **CONFIRMED** | 19/19 passed in `EDITMODE_RESULTS.xml` |
+| PlayMode tests pass in Unity runner | **CONFIRMED** | 16/16 passed in `PLAYMODE_RESULTS.xml` |
+| Windows x64 build generated | **CONFIRMED** | `CSVS-GodMode.exe` (671 KB) generated on D: drive |
+| WebGL build generated | **CONFIRMED** | `index.html` + `.wasm.gz` generated on D: drive |
+| Live process tested on real GPU | **CONFIRMED** | Intel UHD 630 D3D11 verified in runtime log |
+| Real gameplay screenshot captured | **CONFIRMED** | `gameplay_v012.png` captured from running process |
+| REA framework unaltered | **CONFIRMED** | No files modified in `C:\Users\Admin\Downloads\rea-main` |

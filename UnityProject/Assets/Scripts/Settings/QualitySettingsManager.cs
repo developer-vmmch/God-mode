@@ -48,7 +48,7 @@ namespace CSVS.GodMode.Settings
                     SetRenderScale(0.75f);
                     SetShadowDistance(35.0f);
                     QualitySettings.vSyncCount = 1;
-                    QualitySettings.shadows = ShadowQuality.HardOnly;
+                    QualitySettings.shadows = UnityEngine.ShadowQuality.HardOnly;
                     Application.targetFrameRate = 30;
                     if (DebrisPoolManager.Instance != null)
                     {
@@ -60,7 +60,7 @@ namespace CSVS.GodMode.Settings
                     SetRenderScale(0.85f);
                     SetShadowDistance(60.0f);
                     QualitySettings.vSyncCount = 1;
-                    QualitySettings.shadows = ShadowQuality.All;
+                    QualitySettings.shadows = UnityEngine.ShadowQuality.All;
                     Application.targetFrameRate = 60;
                     if (DebrisPoolManager.Instance != null)
                     {
@@ -72,7 +72,7 @@ namespace CSVS.GodMode.Settings
                     SetRenderScale(1.0f);
                     SetShadowDistance(100.0f);
                     QualitySettings.vSyncCount = 1;
-                    QualitySettings.shadows = ShadowQuality.All;
+                    QualitySettings.shadows = UnityEngine.ShadowQuality.All;
                     Application.targetFrameRate = 60;
                     if (DebrisPoolManager.Instance != null)
                     {

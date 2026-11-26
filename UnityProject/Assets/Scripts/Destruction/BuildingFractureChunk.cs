@@ -66,6 +66,7 @@ namespace CSVS.GodMode.Destruction
         public void FreezeToStatic()
         {
             _isFrozen = true;
+            if (_rigidbody == null) _rigidbody = GetComponent<Rigidbody>();
             if (_rigidbody != null)
             {
                 _rigidbody.linearVelocity = Vector3.zero;

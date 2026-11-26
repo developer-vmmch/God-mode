@@ -1,0 +1,344 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.0/staging' branch; Version is '6000.0.84f1 (78ab6fc243d5) revision 7908207'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 8065 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin" at "2026-11-26T05:41:14.9931122Z"
+Process architecture: x64
+Date: 2026-11-26T05:41:14Z
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Editors\6000.0.84f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+D:\Development\CSVS-GodMode\UnityProject
+-logFile
+D:\Development\CSVS-GodMode\unity_compile.log
+Successfully changed project path to: D:\Development\CSVS-GodMode\UnityProject
+D:/Development/CSVS-GodMode/UnityProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19548]  Target information:
+
+Player connection [19548]  * "[IP] 192.168.1.103 [Port] 55504 [Flags] 2 [Guid] 1212368107 [EditorId] 1212368107 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q81DUC0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [19548] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19548] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-18248" after 0.6 seconds.
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.84f1 (78ab6fc243d5)
+[Subsystems] Discovering subsystems at path D:/Unity/Editors/6000.0.84f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Development/CSVS-GodMode/UnityProject/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 630 (ID=0x9bc8)
+    Vendor:   Intel
+    VRAM:     4032 MB
+    Driver:   31.0.101.2140
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 9568, path: "C:/Program Files/WindowsApps/UnityTechnologies.UnityHub_4.0.2.65535_x64__2vrhnee42bhxm/app/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.19.0+4cc3dda
+  Session Id:              020ff456c03e47c8a33b2c35504101dc
+  Correlation Id:          cfdac8bf3c85a1653f0e7dec3f925a6a
+  External correlation Id: 5412224404788043957
+  Machine Id:              bJ6jtSnQ9w0IafvvSmKm3cZz9Ak=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Admin" (connect: 0.00s, validation: 0.00s, handshake: 0.98s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin-notifications" at "2026-11-26T05:41:15.9715781Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 13470007174292-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.99s
+Initialize mono
+Mono path[0] = 'D:/Unity/Editors/6000.0.84f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Editors/6000.0.84f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Editors/6000.0.84f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Editors/6000.0.84f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/Editors/6000.0.84f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003948 seconds.
+- Loaded All Assemblies, in  0.666 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.682 seconds
+Domain Reload Profiling: 1348ms
+	BeginReloadAssembly (188ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (338ms)
+		LoadAssemblies (188ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (331ms)
+			TypeCache.Refresh (328ms)
+				TypeCache.ScanAssembly (298ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (684ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (608ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (118ms)
+			ProcessInitializeOnLoadAttributes (325ms)
+			ProcessInitializeOnLoadMethodAttributes (121ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 31 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.cinemachine@3.1.2 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.cinemachine@b2e7bffab772)
+    com.unity.ide.visualstudio@2.0.22 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e)
+    com.unity.inputsystem@1.11.2 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.inputsystem@3c4a97c3950f)
+    com.unity.mathematics@1.3.2 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.mathematics@8017b507cc74)
+    com.unity.splines@2.8.4 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.splines@9b00833aca09)
+    com.unity.searcher@4.9.3 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.searcher@1e17ce91558d)
+    com.unity.burst@1.8.30 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.burst@2f3d916873ea)
+    com.unity.collections@2.6.8 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.collections@84e8eb3fc12e)
+    com.unity.settings-manager@2.1.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.settings-manager@41738c275190)
+    com.unity.nuget.mono-cecil@1.11.6 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.0.4 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.render-pipelines.universal@ab605b8cbe5e)
+    com.unity.test-framework@1.6.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.test-framework@082c24152fd4)
+    com.unity.textmeshpro@5.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.textmeshpro@53f43edfd2e0)
+    com.unity.modules.ai@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.animation@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.audio@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.physics@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.ui@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.ui)
+    com.unity.ugui@2.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.ugui@5d6a93c81cc4)
+    com.unity.ext.nunit@2.0.5 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.ext.nunit@031a54704bff)
+    com.unity.modules.imgui@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.render-pipelines.core@17.0.4 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.render-pipelines.core@36dd213002aa)
+    com.unity.shadergraph@17.0.4 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.shadergraph@867249b1c940)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.render-pipelines.universal-config@dd206bf35d04)
+    com.unity.modules.uielements@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.terrain@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.rendering.light-transport@1.0.1 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.rendering.light-transport@9bd588f963c0)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.hierarchycore)
+[Package Manager] com.unity.textmeshpro is deprecated: This package is no longer supported. TextMeshPro functionalities are now included in the com.unity.ugui package. To continue using them, consider adding it to your project dependencies.
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.04 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Starting: D:\Unity\Editors\6000.0.84f1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/Development/CSVS-GodMode/UnityProject
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s959ms
+[496/625    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[617/625    0s] Csc Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.dll (+2 others)
+Assets\Scripts\Player\SuperheroFlightController.cs(29,40): warning CS0414: The field 'SuperheroFlightController._hoverVerticalSpeed' is assigned but its value is never used
+
+Assets\Scripts\Destruction\DebrisPoolManager.cs(19,40): warning CS0414: The field 'DebrisPoolManager._defaultDespawnTime' is assigned but its value is never used
+[618/625    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.dll, with 132 defines and 231 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[619/625    0s] Csc Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Tests.dll (+2 others)
+[620/625    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.pdb
+[621/625    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.dll
+[622/625    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.Tests.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Tests.dll, with 132 defines and 225 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[623/625    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Tests.pdb
+[624/625    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Tests.dll
+*** Tundra build success (0.91 seconds), 9 items updated, 625 evaluated
+Assets\Scripts\Player\SuperheroFlightController.cs(29,40): warning CS0414: The field 'SuperheroFlightController._hoverVerticalSpeed' is assigned but its value is never used
+Assets\Scripts\Destruction\DebrisPoolManager.cs(19,40): warning CS0414: The field 'DebrisPoolManager._defaultDespawnTime' is assigned but its value is never used
+AssetDatabase: script compilation time: 1.737200s
+Begin MonoManager ReloadAssembly
+Total cache size 47707868
+Total cache size after purge 47707868, took 00:00:00.0897064
+- Loaded All Assemblies, in  3.519 seconds
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (artifact id: '5d7aea19ae95f80a06b4ef5e1121ae0b') in 0.0497663 seconds
+Start importing ProjectSettings/EditorBuildSettings.asset using Guid(0000000000000000b000000000000000) (LibraryAssetImporter) -> (artifact id: 'cc6a43f1fff4b05716526a27614f34ff') in 0.0082967 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.178 seconds
+Domain Reload Profiling: 7697ms
+	BeginReloadAssembly (359ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (3050ms)
+		LoadAssemblies (2980ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (270ms)
+			TypeCache.Refresh (198ms)
+				TypeCache.ScanAssembly (184ms)
+			BuildScriptInfoCaches (51ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (4179ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3883ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (199ms)
+			ProcessInitializeOnLoadAttributes (3396ms)
+			ProcessInitializeOnLoadMethodAttributes (254ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2ea49190daff0c34b84ab226943e2010): Total: 11.135 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=9 ms, native=5034 ms
+		Asset DB Callback time: managed=670 ms, native=105 ms
+		Scripting: domain reloads=1, domain reload time=3520 ms, compile time=1745 ms, other=49 ms
+		Project Asset Count: scripts=819, non-scripts=1577
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokePackagesCallback: 48.539ms
+	ApplyChangesToAssetFolders: 0.598ms
+	Scan: 210.131ms
+	OnSourceAssetsModified: 1.371ms
+	CategorizeAssetsWithTransientArtifact: 80.136ms
+	ProcessAssetsWithTransientArtifactChanges: 132.692ms
+	CategorizeAssets: 151.276ms
+	ImportOutOfDateAssets: 4273.899ms (2442.898ms without children)
+		ImportManagerImport: 82.018ms (17.932ms without children)
+			ImportInProcess: 63.650ms
+			UpdateCategorizedAssets: 0.435ms
+		CompileScripts: 1745.161ms
+		ReloadNativeAssets: 0.001ms
+		UnloadImportedAssets: 0.249ms
+		ReloadImportedAssets: 0.001ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.110ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.002ms
+		OnDemandSchedulerStart: 2.458ms
+	PostProcessAllAssets: 718.269ms
+	Hotreload: 10.353ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 1.855ms
+	PersistCurrentRevisions: 0.470ms
+	UnloadStreamsEnd: 0.002ms
+	GenerateScriptTypeHashes: 8.361ms
+	Untracked: 5505.500ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 6.261ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-CSVS-GodMode
+Unloading 111 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3933 unused Assets / (5.1 MB). Loaded Objects now: 4633.
+Memory consumption went from 173.0 MB to 167.9 MB.
+Total: 17.979800 ms (FindLiveObjects: 0.742300 ms CreateObjectMapping: 0.863500 ms MarkObjects: 12.305300 ms  DeleteObjects: 4.067200 ms)
+
+Batchmode quit successfully invoked - shutting down!
+Curl error 42: Callback aborted
+[Physics::Module] Cleanup current backned.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-Admin-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-Admin channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

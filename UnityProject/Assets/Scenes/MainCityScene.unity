@@ -128,7 +128,7 @@ Transform:
   m_GameObject: {fileID: 200}
   serializedVersion: 2
   m_LocalRotation: {x: 0.1305262, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 0, y: 3.5, z: -5}
+  m_LocalPosition: {x: 0, y: 18, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -187,9 +187,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0000000000000000000000000000001, type: 3}
+  m_Script: {fileID: 11500000, guid: c532fee076c4dfe4b83aa8f202df0fd2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Camera:SuperheroCameraController
+  m_EditorClassIdentifier: CSVS.GodMode.Player:SuperheroCameraController
 --- !u!1 &300
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,14 +223,41 @@ Transform:
   m_GameObject: {fileID: 300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &302
-CharacterController:
+--- !u!54 &302
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300}
+  serializedVersion: 4
+  m_Mass: 85
+  m_Drag: 4
+  m_AngularDrag: 8
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 2
+--- !u!136 &303
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -255,18 +282,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0000000000000000000000000000002, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: CSVS.Controllers:SuperheroController
 --- !u!114 &304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,9 +291,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0000000000000000000000000000003, type: 3}
+  m_Script: {fileID: 11500000, guid: 05bf91a8ee2046c4ebf7512083edbbaf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Input:SuperheroInput
+  m_EditorClassIdentifier: CSVS.GodMode.Player:SuperheroFlightController
 --- !u!114 &305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,9 +303,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0000000000000000000000000000004, type: 3}
+  m_Script: {fileID: 11500000, guid: 885e0fc5c0ff19340985a76d997d9606, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Superpowers:HeatVisionSystem
+  m_EditorClassIdentifier: CSVS.GodMode.Powers:HeatVisionSystem
 --- !u!114 &306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,9 +315,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0000000000000000000000000000005, type: 3}
+  m_Script: {fileID: 11500000, guid: 50a92fc4082c02b45afe21ac68dfd998, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Superpowers:GroundSlamSystem
+  m_EditorClassIdentifier: CSVS.GodMode.Powers:GroundSlamSystem
 --- !u!114 &307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,9 +327,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0000000000000000000000000000006, type: 3}
+  m_Script: {fileID: 11500000, guid: 958ddc653c1e8a94ea0df336d507d812, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Superpowers:SuperStrengthGrab
+  m_EditorClassIdentifier: CSVS.GodMode.Powers:SuperStrengthGrab
 --- !u!114 &308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,9 +339,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0000000000000000000000000000007, type: 3}
+  m_Script: {fileID: 11500000, guid: f1d0530a84e9dd24090054978076981f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Superpowers:GravityTetherSystem
+  m_EditorClassIdentifier: CSVS.GodMode.Powers:GravityTetherSystem
 --- !u!114 &309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,9 +351,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0000000000000000000000000000008, type: 3}
+  m_Script: {fileID: 11500000, guid: 2decd32e6c8ec30438584dea7251edac, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Superpowers:SuperPunchSystem
+  m_EditorClassIdentifier: CSVS.GodMode.Powers:SuperPunchSystem
 --- !u!1 &400
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +368,9 @@ GameObject:
   - component: {fileID: 404}
   - component: {fileID: 405}
   - component: {fileID: 406}
+  - component: {fileID: 407}
+  - component: {fileID: 408}
+  - component: {fileID: 409}
   m_Layer: 0
   m_Name: Game_Systems
   m_TagString: Untagged
@@ -384,9 +402,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0000000000000000000000000000009, type: 3}
+  m_Script: {fileID: 11500000, guid: c4b047b31d98d5e47a25b26b199cc096, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Core:GameManager
+  m_EditorClassIdentifier: CSVS.GodMode.Core:GameManager
 --- !u!114 &403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,9 +414,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a000000000000000000000000000000a, type: 3}
+  m_Script: {fileID: 11500000, guid: 57af6f91195760443aa556c6150c5b0d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Core:ChaosManager
+  m_EditorClassIdentifier: CSVS.GodMode.Core:ChaosSystem
 --- !u!114 &404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,9 +426,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a000000000000000000000000000000b, type: 3}
+  m_Script: {fileID: 11500000, guid: f5b1ab1e40360ad429afe0696643e4cf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Core:ObjectPooler
+  m_EditorClassIdentifier: CSVS.GodMode.Core:ObjectPooler
 --- !u!114 &405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,9 +438,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a000000000000000000000000000000c, type: 3}
+  m_Script: {fileID: 11500000, guid: eb68722a86a75e94885a05e3e35922a7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.Destruction:DebrisManager
+  m_EditorClassIdentifier: CSVS.GodMode.Destruction:DebrisPoolManager
 --- !u!114 &406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,6 +450,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a000000000000000000000000000000d, type: 3}
+  m_Script: {fileID: 11500000, guid: 48ed3e6729d12e3438fa643a81c68e64, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: CSVS.World:ProceduralCityGenerator
+  m_EditorClassIdentifier: CSVS.GodMode.Environment:CityGenerator
+--- !u!114 &407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a663d94f2df024c912bb7ac8c02876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CSVS.GodMode.AI:ThreatResponseManager
+--- !u!114 &408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec520799258bfd4408ca21ecb4b2b45a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CSVS.GodMode.Settings:QualitySettingsManager
+--- !u!114 &409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3532d8775763a7d4f84744f35ca3e7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CSVS.GodMode.UI:HUDController
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 101}
+  - {fileID: 201}
+  - {fileID: 301}
+  - {fileID: 401}

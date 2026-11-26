@@ -178,15 +178,19 @@ namespace CSVS.GodMode.Player
 
         public void SimulateFlightPhysics(float deltaTime)
         {
-            if (_cameraTransform == null) return;
+            if (_rigidbody == null) _rigidbody = GetComponent<Rigidbody>();
+            if (_rigidbody == null) return;
+
+            Vector3 camForward = _cameraTransform != null ? _cameraTransform.forward : transform.forward;
+            Vector3 camRight = _cameraTransform != null ? _cameraTransform.right : transform.right;
 
             Vector3 moveInput = Vector3.zero;
             if (Keyboard.current != null)
             {
-                if (Keyboard.current.wKey.isPressed) moveInput += _cameraTransform.forward;
-                if (Keyboard.current.sKey.isPressed) moveInput -= _cameraTransform.forward;
-                if (Keyboard.current.dKey.isPressed) moveInput += _cameraTransform.right;
-                if (Keyboard.current.aKey.isPressed) moveInput -= _cameraTransform.right;
+                if (Keyboard.current.wKey.isPressed) moveInput += camForward;
+                if (Keyboard.current.sKey.isPressed) moveInput -= camForward;
+                if (Keyboard.current.dKey.isPressed) moveInput += camRight;
+                if (Keyboard.current.aKey.isPressed) moveInput -= camRight;
                 if (Keyboard.current.spaceKey.isPressed) moveInput += Vector3.up;
                 if (Keyboard.current.cKey.isPressed || Keyboard.current.leftCtrlKey.isPressed) moveInput += Vector3.down;
             }
@@ -220,7 +224,7 @@ namespace CSVS.GodMode.Player
                 _rigidbody.linearVelocity = dampenedVelocity;
 
                 // Stabilize rotation to horizon
-                Vector3 forwardFlat = Vector3.ProjectOnPlane(_cameraTransform.forward, Vector3.up).normalized;
+                Vector3 forwardFlat = Vector3.ProjectOnPlane(camForward, Vector3.up).normalized;
                 if (forwardFlat.sqrMagnitude > 0.01f)
                 {
                     Quaternion horizonRot = Quaternion.LookRotation(forwardFlat, Vector3.up);
@@ -231,13 +235,17 @@ namespace CSVS.GodMode.Player
 
         public void SimulateGroundPhysics(float deltaTime)
         {
-            if (_cameraTransform == null) return;
+            if (_rigidbody == null) _rigidbody = GetComponent<Rigidbody>();
+            if (_rigidbody == null) return;
+
+            Vector3 camForward = _cameraTransform != null ? _cameraTransform.forward : transform.forward;
+            Vector3 camRight = _cameraTransform != null ? _cameraTransform.right : transform.right;
 
             Vector3 moveInput = Vector3.zero;
             if (Keyboard.current != null)
             {
-                Vector3 flatForward = Vector3.ProjectOnPlane(_cameraTransform.forward, Vector3.up).normalized;
-                Vector3 flatRight = Vector3.ProjectOnPlane(_cameraTransform.right, Vector3.up).normalized;
+                Vector3 flatForward = Vector3.ProjectOnPlane(camForward, Vector3.up).normalized;
+                Vector3 flatRight = Vector3.ProjectOnPlane(camRight, Vector3.up).normalized;
 
                 if (Keyboard.current.wKey.isPressed) moveInput += flatForward;
                 if (Keyboard.current.sKey.isPressed) moveInput -= flatForward;

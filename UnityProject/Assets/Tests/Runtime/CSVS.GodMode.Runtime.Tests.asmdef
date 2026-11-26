@@ -1,6 +1,6 @@
 {
-    "name": "CSVS.GodMode.Tests",
-    "rootNamespace": "CSVS.GodMode.Tests",
+    "name": "CSVS.GodMode.Runtime.Tests",
+    "rootNamespace": "CSVS.GodMode.Tests.Runtime",
     "references": [
         "CSVS.GodMode",
         "UnityEngine.TestRunner",
