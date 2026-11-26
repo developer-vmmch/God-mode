@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using CSVS.GodMode.Core;
 using CSVS.GodMode.Destruction;
@@ -7,17 +8,16 @@ using CSVS.GodMode.Powers;
 namespace CSVS.GodMode.Environment
 {
     /// <summary>
-    /// Procedural sandbox city generator.
-    /// Automatically builds road planes, Voronoi-fracturable skyscrapers with URP-compatible materials,
-    /// and instantiates the superhero actor and camera if not already present.
+    /// Master Open-World Generator for Karaikal, Puducherry, India.
+    /// Replaces generic city blocks with geographically grounded Karaikal districts,
+    /// authentic South Indian architecture, Kamarajar Salai (NH 32), Bharathiyar Road,
+    /// Karaikal Beach, Arasalar River & Bridge, and modular destructible structures.
     /// </summary>
     public class CityGenerator : MonoBehaviour
     {
-        [Header("Grid Layout")]
-        [SerializeField] private int _gridWidth = 6;
-        [SerializeField] private int _gridLength = 6;
-        [SerializeField] private float _blockSpacing = 45.0f;
-        [SerializeField] private float _buildingHeightScale = 50.0f;
+        [Header("Modular Systems")]
+        [SerializeField] private KaraikalRoadNetwork _roadNetwork;
+        [SerializeField] private ModularIndianBuildingSystem _buildingSystem;
 
         [Header("Materials")]
         [SerializeField] private Material _buildingMaterial;
@@ -25,8 +25,22 @@ namespace CSVS.GodMode.Environment
         [SerializeField] private Material _chunkMaterial;
         [SerializeField] private Material _heroMaterial;
 
+        private GameObject _environmentRoot;
+
         private void Awake()
         {
+            if (_roadNetwork == null)
+            {
+                _roadNetwork = GetComponent<KaraikalRoadNetwork>();
+                if (_roadNetwork == null) _roadNetwork = gameObject.AddComponent<KaraikalRoadNetwork>();
+            }
+
+            if (_buildingSystem == null)
+            {
+                _buildingSystem = GetComponent<ModularIndianBuildingSystem>();
+                if (_buildingSystem == null) _buildingSystem = gameObject.AddComponent<ModularIndianBuildingSystem>();
+            }
+
             EnsureMaterials();
         }
 
@@ -40,147 +54,148 @@ namespace CSVS.GodMode.Environment
         {
             Shader uShader = Shader.Find("Universal Render Pipeline/Lit");
             if (uShader == null) uShader = Shader.Find("Universal Render Pipeline/Simple Lit");
-            if (uShader == null) uShader = Shader.Find("Universal Render Pipeline/Unlit");
             if (uShader == null) uShader = Shader.Find("Standard");
-            if (uShader == null) uShader = Shader.Find("Diffuse");
 
             if (_roadMaterial == null && uShader != null)
             {
                 _roadMaterial = new Material(uShader);
                 _roadMaterial.name = "Runtime_RoadMaterial";
-                SetMaterialColor(_roadMaterial, new Color(0.18f, 0.20f, 0.22f, 1.0f));
-                if (_roadMaterial.HasProperty("_Smoothness")) _roadMaterial.SetFloat("_Smoothness", 0.1f);
+                SetMatColor(_roadMaterial, new Color(0.18f, 0.20f, 0.22f, 1.0f));
             }
 
             if (_buildingMaterial == null && uShader != null)
             {
                 _buildingMaterial = new Material(uShader);
                 _buildingMaterial.name = "Runtime_BuildingMaterial";
-                SetMaterialColor(_buildingMaterial, new Color(0.72f, 0.76f, 0.80f, 1.0f));
-                if (_buildingMaterial.HasProperty("_Smoothness")) _buildingMaterial.SetFloat("_Smoothness", 0.35f);
+                SetMatColor(_buildingMaterial, new Color(0.75f, 0.78f, 0.82f, 1.0f));
             }
 
             if (_chunkMaterial == null && uShader != null)
             {
                 _chunkMaterial = new Material(uShader);
                 _chunkMaterial.name = "Runtime_ChunkMaterial";
-                SetMaterialColor(_chunkMaterial, new Color(0.58f, 0.54f, 0.50f, 1.0f));
-                if (_chunkMaterial.HasProperty("_Smoothness")) _chunkMaterial.SetFloat("_Smoothness", 0.15f);
+                SetMatColor(_chunkMaterial, new Color(0.58f, 0.54f, 0.50f, 1.0f));
             }
 
             if (_heroMaterial == null && uShader != null)
             {
                 _heroMaterial = new Material(uShader);
                 _heroMaterial.name = "Runtime_HeroMaterial";
-                SetMaterialColor(_heroMaterial, new Color(0.12f, 0.38f, 0.85f, 1.0f));
-                if (_heroMaterial.HasProperty("_Smoothness")) _heroMaterial.SetFloat("_Smoothness", 0.65f);
+                SetMatColor(_heroMaterial, new Color(0.12f, 0.38f, 0.85f, 1.0f));
             }
         }
 
-        private void SetMaterialColor(Material mat, Color col)
+        private void SetMatColor(Material mat, Color col)
         {
-            if (mat.HasProperty("_BaseColor"))
-                mat.SetColor("_BaseColor", col);
-            else if (mat.HasProperty("_Color"))
-                mat.SetColor("_Color", col);
+            if (mat.HasProperty("_BaseColor")) mat.SetColor("_BaseColor", col);
+            else if (mat.HasProperty("_Color")) mat.SetColor("_Color", col);
         }
 
         public void GenerateCitySandbox()
         {
-            EnsureMaterials();
-
-            // Create Ground / Road Plane
-            GameObject ground = GameObject.CreatePrimitive(PrimitiveType.Plane);
-            ground.name = "CityGroundPlane";
-            ground.transform.position = Vector3.zero;
-            ground.transform.localScale = new Vector3(_gridWidth * 6.0f, 1.0f, _gridLength * 6.0f);
-            ground.layer = LayerMask.NameToLayer("Default");
-
-            Renderer groundRenderer = ground.GetComponent<Renderer>();
-            if (groundRenderer != null && _roadMaterial != null)
+            if (_environmentRoot != null)
             {
-                groundRenderer.sharedMaterial = _roadMaterial;
+                DestroyImmediate(_environmentRoot);
             }
 
-            // Generate Skyscraper Blocks
-            for (int x = -_gridWidth / 2; x <= _gridWidth / 2; x++)
-            {
-                for (int z = -_gridLength / 2; z <= _gridLength / 2; z++)
-                {
-                    // Leave central plaza and main cross avenues open
-                    if (x == 0 && z == 0) continue;
+            _environmentRoot = new GameObject("Karaikal_Environment_Root");
 
-                    Vector3 blockPosition = new Vector3(x * _blockSpacing, 0.0f, z * _blockSpacing);
-                    CreateDestructibleBuilding(blockPosition, x, z);
-                }
-            }
+            if (_roadNetwork == null) _roadNetwork = gameObject.AddComponent<KaraikalRoadNetwork>();
+            if (_buildingSystem == null) _buildingSystem = gameObject.AddComponent<ModularIndianBuildingSystem>();
+
+            // 1. Generate Geographically Grounded Terrain & Water (Bay of Bengal + Arasalar River)
+            _roadNetwork.GenerateTerrainAndWater(_environmentRoot.transform);
+
+            // 2. Generate Road Network (NH32 Kamarajar Salai, Bharathiyar Rd, Beach Rd, Arasalar Bridge)
+            _roadNetwork.GenerateRoadNetwork(_environmentRoot.transform);
+
+            // 3. Generate Karaikal City Districts
+            GenerateDistricts(_environmentRoot.transform);
         }
 
-        private void CreateDestructibleBuilding(Vector3 position, int x, int z)
+        private void GenerateDistricts(Transform parent)
         {
-            GameObject buildingObj = new GameObject($"Building_{x}_{z}");
-            buildingObj.transform.position = position;
+            GameObject districtContainer = new GameObject("Karaikal_Districts");
+            districtContainer.transform.SetParent(parent, false);
 
-            float height = Random.Range(35.0f, _buildingHeightScale);
-            int floors = Mathf.FloorToInt(height / 4.0f);
+            int seed = 1001;
 
-            // Intact Root & Box Collider
-            BoxCollider col = buildingObj.AddComponent<BoxCollider>();
-            col.size = new Vector3(18.0f, height, 18.0f);
-            col.center = new Vector3(0.0f, height * 0.5f, 0.0f);
-
-            GameObject intactModel = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            intactModel.name = "IntactModel";
-            intactModel.transform.SetParent(buildingObj.transform, false);
-            intactModel.transform.localPosition = new Vector3(0.0f, height * 0.5f, 0.0f);
-            intactModel.transform.localScale = new Vector3(18.0f, height, 18.0f);
-            Destroy(intactModel.GetComponent<Collider>());
-
-            Renderer intactRenderer = intactModel.GetComponent<Renderer>();
-            if (intactRenderer != null && _buildingMaterial != null)
+            // District 1: Town Center & Bazaar (Commercial Complexes along Kamarajar Salai & Bharathiyar Rd)
+            for (float x = -140f; x <= 140f; x += 45f)
             {
-                intactRenderer.sharedMaterial = _buildingMaterial;
-            }
-
-            // Pre-fractured floor slices
-            GameObject fractureRoot = new GameObject("FractureRoot");
-            fractureRoot.transform.SetParent(buildingObj.transform, false);
-
-            GameObject[] floorSlices = new GameObject[floors];
-            for (int f = 0; f < floors; f++)
-            {
-                GameObject floorObj = new GameObject($"Floor_{f}");
-                floorObj.transform.SetParent(fractureRoot.transform, false);
-                floorObj.transform.localPosition = new Vector3(0.0f, f * 4.0f + 2.0f, 0.0f);
-
-                for (int cx = -1; cx <= 1; cx += 2)
+                for (float z = -120f; z <= 150f; z += 45f)
                 {
-                    for (int cz = -1; cz <= 1; cz += 2)
-                    {
-                        GameObject chunk = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                        chunk.name = $"Chunk_{cx}_{cz}";
-                        chunk.transform.SetParent(floorObj.transform, false);
-                        chunk.transform.localPosition = new Vector3(cx * 4.5f, 0.0f, cz * 4.5f);
-                        chunk.transform.localScale = new Vector3(8.5f, 3.8f, 8.5f);
-
-                        Renderer chunkRenderer = chunk.GetComponent<Renderer>();
-                        if (chunkRenderer != null)
-                        {
-                            chunkRenderer.sharedMaterial = _chunkMaterial != null ? _chunkMaterial : _buildingMaterial;
-                        }
-
-                        Rigidbody rb = chunk.AddComponent<Rigidbody>();
-                        rb.isKinematic = true;
-                        rb.mass = 250.0f;
-                    }
+                    // Leave main intersection and avenues clear
+                    if (Mathf.Abs(x) < 22f || Mathf.Abs(z) < 20f) continue;
+                    Vector3 pos = new Vector3(x, 0f, z);
+                    GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.TownCenter, seed++);
+                    b.transform.SetParent(districtContainer.transform, true);
                 }
-
-                floorSlices[f] = floorObj;
             }
 
-            fractureRoot.SetActive(false);
+            // District 2: Residential Neighborhoods (South Indian Terrace Houses to West & South-West)
+            for (float x = -320f; x <= -180f; x += 40f)
+            {
+                for (float z = -150f; z <= 120f; z += 40f)
+                {
+                    Vector3 pos = new Vector3(x, 0f, z);
+                    GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.HeritageTempleZone, seed++);
+                    b.transform.SetParent(districtContainer.transform, true);
+                }
+            }
 
-            DestructibleBuilding destructible = buildingObj.AddComponent<DestructibleBuilding>();
+            // District 3: Karaikal Beach Promenade (Coastal structures along Beach Road X = 520m to 580m)
+            for (float z = -200f; z <= 400f; z += 65f)
+            {
+                if (Mathf.Abs(z) < 30f) continue; // beach entrance plaza open
+                Vector3 pos = new Vector3(560f, 0f, z);
+                GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.BeachPromenade, seed++);
+                b.transform.SetParent(districtContainer.transform, true);
+            }
+
+            // District 4: Heritage & Temple Zone (Near Karaikal Ammaiyar Temple X = -220, Z = +180)
+            for (float x = -300f; x <= -140f; x += 45f)
+            {
+                for (float z = 180f; z <= 320f; z += 45f)
+                {
+                    Vector3 pos = new Vector3(x, 0f, z);
+                    GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.HeritageTempleZone, seed++);
+                    b.transform.SetParent(districtContainer.transform, true);
+                }
+            }
+
+            // District 5: Transport Hub (Bus Stand & Railway Approach Z = +450 to +650, X = -350 to -100)
+            for (float x = -350f; x <= -120f; x += 55f)
+            {
+                for (float z = 480f; z <= 620f; z += 55f)
+                {
+                    Vector3 pos = new Vector3(x, 0f, z);
+                    GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.TransportHub, seed++);
+                    b.transform.SetParent(districtContainer.transform, true);
+                }
+            }
+
+            // District 6: Port & Industrial Zone (South of Arasalar River, Z = -600 to -850, X = 150 to 450)
+            for (float x = 160f; x <= 400f; x += 75f)
+            {
+                for (float z = -800f; z <= -600f; z += 75f)
+                {
+                    Vector3 pos = new Vector3(x, 0f, z);
+                    GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.PortIndustrialZone, seed++);
+                    b.transform.SetParent(districtContainer.transform, true);
+                }
+            }
+
+            // District 7: Modern High-Rise Expansion (Northern Coast X = 250 to 450, Z = 600 to 850)
+            for (float x = 250f; x <= 450f; x += 65f)
+            {
+                for (float z = 600f; z <= 850f; z += 75f)
+                {
+                    Vector3 pos = new Vector3(x, 0f, z);
+                    GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.ModernExpansion, seed++);
+                    b.transform.SetParent(districtContainer.transform, true);
+                }
+            }
         }
 
         private void EnsurePlayerExists()
@@ -196,7 +211,7 @@ namespace CSVS.GodMode.Environment
                 return;
             }
 
-            // Spawn Superhero Character in central plaza
+            // Spawn Superhero Character in central plaza (Town Center)
             GameObject hero = GameObject.CreatePrimitive(PrimitiveType.Capsule);
             hero.name = "SuperheroPlayer";
             hero.tag = "Player";

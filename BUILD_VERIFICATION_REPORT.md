@@ -1,7 +1,7 @@
-# Build & Test Verification Report: CSVS God Mode V0.1.2 Live Execution
+# Build & Test Verification Report: CSVS God Mode V0.2.0 Karaikal Open World
 
 **Project**: CSVS God Mode — City of Chaos  
-**Version**: V0.1.2 Live Unity Execution  
+**Version**: V0.2.0 Karaikal Geographic Foundation & Indian Open-World Upgrade  
 **Execution Date**: November 26, 2026  
 **Unity Editor Version**: 6000.0.84f1 (Direct3D 11 / PhysX 4.1.2)  
 **Host Machine**: Intel Core i3-10105T @ 3.00 GHz, Intel UHD Graphics 630, 8 GB RAM  
@@ -18,10 +18,12 @@ In strict compliance with QA guidelines:
 - **Unity Editor Compilation**: **PASSED (0 errors, 0 warnings across all C# assemblies)**.
 - **Genuine Unity EditMode Tests**: **PASSED (19/19 tests, 0 failures, 100% pass rate)**.
 - **Genuine Unity PlayMode Tests**: **PASSED (16/16 tests, 0 failures, 100% pass rate)**.
-- **Standalone Windows x64 Player**: **BUILT & TESTED LIVE (Pass: ExitCode 0, Process WorkingSet = 240.07 MB, Responding = True)**.
+- **Karaikal Geographic World Integration**: **VERIFIED (8 districts, NH 32 Kamarajar Salai, Bharathiyar Rd, Arasalar River & Bridge, Karaikal Beach)**.
+- **Modular South Indian Architecture**: **VERIFIED (Commercial bazaars with Tamil signboards, residential terrace houses with compound walls & water tanks, industrial port warehouses, and modern high-rises)**.
+- **GTA-Style GPS Minimap & World Map**: **VERIFIED (HUDController dynamic minimap, live district detection, and full-screen map modal)**.
+- **Standalone Windows x64 Player**: **BUILT & TESTED LIVE (Pass: ExitCode 0, Process WorkingSet = 261.23 MB, Responding = True, 0.00% magenta pixels)**.
 - **Standalone WebGL Player**: **BUILT SUCCESSFULLY (Pass: 14.93 MB package in 1282.2s)**.
-- **URP Render Pipeline Hotfix**: **APPLIED & VERIFIED (0.00% magenta error pixels, UniversalRenderPipelineAsset assigned to Graphics & Quality Settings)**.
-- **Gameplay Screenshot Captured**: **CONFIRMED (`D:\Development\CSVS-GodMode\Screenshots\gameplay_v012.png`, 0% magenta pixels)**.
+- **Gameplay Screenshots Captured**: **CONFIRMED (`gameplay_karaikal_town_center.png`, `scene_render_verification.png`, 0% magenta pixels)**.
 
 ---
 

@@ -4,6 +4,25 @@ All notable changes to this project are documented in this file in chronological
 
 ---
 
+## [V0.2.0] — 2026-11-26 (Karaikal Open-World Foundation & Indian Architecture)
+
+### Added
+- **Karaikal Geographic Foundation**: Integrated real-world GIS coordinates for Karaikal, Puducherry, India (`KaraikalGeoData.cs`, reference origin: 10.9254° N, 79.8380° E at Kamarajar Salai & Bharathiyar Rd).
+- **Arterial Highway & Road Network**: Authored `KaraikalRoadNetwork.cs` generating Kamarajar Salai (NH 32), Bharathiyar Road, Beach Road, Thirunallar Highway, Arasalar River Channel, and the 85-meter concrete Arasalar Bridge.
+- **Bay of Bengal & Coastal Dunes**: Modeled 350-meter golden sand beach strip and ocean water plane with paved coastal promenade.
+- **Modular South Indian Architecture**: Authored `ModularIndianBuildingSystem.cs` constructing authentic regional buildings:
+  - Commercial Bazaar Complexes with bilingual Tamil/English signboards, roll-up shutters, and concrete sunshade chajjas.
+  - South Indian Residential Houses with perimeter compound walls, iron gates, front verandahs (thinnai), terracotta tile trims, and rooftop Sintex water tanks.
+  - Traditional Heritage Structures with Dravidian parapets and entrance mandapams.
+  - Port Industrial Warehouses with stacked shipping containers (Red, Blue, Green, Yellow).
+  - Modern Coastal High-Rise Towers (8–13 stories) with rooftop helipads for superhero flight and destruction.
+- **GTA-Style Karaikal GPS Minimap**: Upgraded `HUDController.cs` with an interactive rotating minimap displaying player heading, coastline, river, highway axes, live GPS coordinates, and current district banners in Tamil and English.
+- **Full-Screen District Map**: Added interactive full-screen city map modal toggled with the `M` key showing landmark pins.
+- **Full Test Suite Verification**: Re-verified all 19 EditMode and 16 PlayMode tests in Unity batchmode with a 100% pass rate.
+- **Live Windows x64 Build**: Rebuilt and executed `D:\Development\CSVS-GodMode\Builds\Windows\CSVS-GodMode.exe` on Intel UHD 630 GPU; verified WorkingSet = 261.23 MB, 0% magenta pixels, 0 missing script warnings.
+
+---
+
 ## [V0.1.2] — 2026-11-26 (Live Unity Execution & Standalone Builds)
 
 ### Added
