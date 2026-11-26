@@ -35,19 +35,19 @@ namespace CSVS.GodMode.Core
             if (Keyboard.current == null) return;
 
             // P or Escape key toggles Pause
-            if (Keyboard.current.pKey.wasPressedThisFrame || Keyboard.current.escapeKey.wasPressedThisFrame)
+            if (GameInputManager.WasPauseTriggered)
             {
                 TogglePause();
             }
 
             // T key skips Tutorial
-            if (Keyboard.current.tKey.wasPressedThisFrame && IsTutorialActive)
+            if (Keyboard.current != null && Keyboard.current.tKey.wasPressedThisFrame && IsTutorialActive)
             {
                 SkipTutorial();
             }
 
             // R key triggers Scene Reset
-            if (Keyboard.current.rKey.wasPressedThisFrame)
+            if (GameInputManager.WasResetTriggered)
             {
                 ResetCurrentScene();
             }

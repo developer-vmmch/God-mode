@@ -12,7 +12,8 @@ namespace CSVS.GodMode.AI
         Hatchback = 0,
         AutoRickshaw = 1,
         Sedan = 2,
-        Motorcycle = 3
+        Motorcycle = 3,
+        CityBus = 4
     }
 
     /// <summary>
@@ -76,8 +77,8 @@ namespace CSVS.GodMode.AI
             switch (_vehicleType)
             {
                 case IndianVehicleType.AutoRickshaw:
-                    bodyColor = new Color(0.95f, 0.78f, 0.12f); // Indian Auto Yellow & Black Hood
-                    bodySize = new Vector3(1.4f, 1.6f, 2.6f);
+                    bodyColor = new Color(0.12f, 0.12f, 0.14f); // Black lower metal tub
+                    bodySize = new Vector3(1.4f, 1.7f, 2.6f);
                     break;
                 case IndianVehicleType.Sedan:
                     bodyColor = new Color(0.85f, 0.88f, 0.90f); // Silver White
@@ -87,8 +88,12 @@ namespace CSVS.GodMode.AI
                     bodyColor = new Color(0.80f, 0.15f, 0.15f); // Commuter Crimson Red
                     bodySize = new Vector3(0.7f, 1.1f, 2.0f);
                     break;
+                case IndianVehicleType.CityBus:
+                    bodyColor = new Color(0.20f, 0.55f, 0.25f); // Indian State Transport Green Bus
+                    bodySize = new Vector3(2.5f, 3.2f, 9.5f);
+                    break;
                 default:
-                    bodyColor = new Color(0.18f, 0.42f, 0.75f); // Indian City Blue Hatchback
+                    bodyColor = new Color(0.18f, 0.42f, 0.75f); // City Blue Hatchback
                     bodySize = new Vector3(1.7f, 1.4f, 3.8f);
                     break;
             }
@@ -97,44 +102,47 @@ namespace CSVS.GodMode.AI
             if (bodyMat.HasProperty("_BaseColor")) bodyMat.SetColor("_BaseColor", bodyColor);
             if (bodyMat.HasProperty("_Smoothness")) bodyMat.SetFloat("_Smoothness", 0.7f);
 
+            Material yellowCanopyMat = new Material(litShader);
+            if (yellowCanopyMat.HasProperty("_BaseColor")) yellowCanopyMat.SetColor("_BaseColor", new Color(0.96f, 0.78f, 0.10f));
+            if (yellowCanopyMat.HasProperty("_Smoothness")) yellowCanopyMat.SetFloat("_Smoothness", 0.25f);
+
             Material blackTireMat = new Material(litShader);
-            if (blackTireMat.HasProperty("_BaseColor")) blackTireMat.SetColor("_BaseColor", new Color(0.12f, 0.12f, 0.14f));
-            if (blackTireMat.HasProperty("_Smoothness")) blackTireMat.SetFloat("_Smoothness", 0.1f);
+            if (blackTireMat.HasProperty("_BaseColor")) blackTireMat.SetColor("_BaseColor", new Color(0.10f, 0.10f, 0.12f));
+            if (blackTireMat.HasProperty("_Smoothness")) blackTireMat.SetFloat("_Smoothness", 0.15f);
+
+            Material chromeMat = new Material(litShader);
+            if (chromeMat.HasProperty("_BaseColor")) chromeMat.SetColor("_BaseColor", new Color(0.80f, 0.82f, 0.85f));
+            if (chromeMat.HasProperty("_Metallic")) chromeMat.SetFloat("_Metallic", 0.85f);
+            if (chromeMat.HasProperty("_Smoothness")) chromeMat.SetFloat("_Smoothness", 0.85f);
+
+            Material glassMat = new Material(litShader);
+            if (glassMat.HasProperty("_BaseColor")) glassMat.SetColor("_BaseColor", new Color(0.25f, 0.38f, 0.48f, 0.8f));
+            if (glassMat.HasProperty("_Smoothness")) glassMat.SetFloat("_Smoothness", 0.95f);
+
+            Material lightMat = new Material(litShader);
+            if (lightMat.HasProperty("_BaseColor")) lightMat.SetColor("_BaseColor", new Color(1.0f, 0.98f, 0.85f));
+            if (lightMat.HasProperty("_EmissionColor"))
+            {
+                lightMat.EnableKeyword("_EMISSION");
+                lightMat.SetColor("_EmissionColor", new Color(1.2f, 1.1f, 0.8f));
+            }
 
             _boxCollider.size = bodySize;
             _boxCollider.center = new Vector3(0f, bodySize.y * 0.5f, 0f);
 
-            // Vehicle Body Visual
-            GameObject body = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            body.name = "VehicleBodyVisual";
-            body.transform.SetParent(transform, false);
-            body.transform.localPosition = new Vector3(0f, bodySize.y * 0.5f, 0f);
-            body.transform.localScale = bodySize;
-            Destroy(body.GetComponent<Collider>());
-            body.GetComponent<Renderer>().sharedMaterial = bodyMat;
+            // Generate detailed multi-element vehicle geometry
+            VehicleModelGenerator.GenerateVehicleModel(gameObject, _vehicleType, bodyMat, yellowCanopyMat, chromeMat, glassMat, blackTireMat, lightMat);
 
-            // Auto-Rickshaw Black Canopy Hood
-            if (_vehicleType == IndianVehicleType.AutoRickshaw)
-            {
-                GameObject hood = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                hood.name = "AutoHood";
-                hood.transform.SetParent(transform, false);
-                hood.transform.localPosition = new Vector3(0f, bodySize.y + 0.1f, 0.1f);
-                hood.transform.localScale = new Vector3(bodySize.x * 0.95f, 0.25f, bodySize.z * 0.95f);
-                Destroy(hood.GetComponent<Collider>());
-                hood.GetComponent<Renderer>().sharedMaterial = blackTireMat;
-            }
-
-            // Headlights
+            // Operational Headlights
             GameObject hlL = new GameObject("Headlight_L");
             hlL.transform.SetParent(transform, false);
             hlL.transform.localPosition = new Vector3(-bodySize.x * 0.35f, 0.5f, bodySize.z * 0.5f + 0.1f);
             _headlightLeft = hlL.AddComponent<Light>();
             _headlightLeft.type = LightType.Spot;
-            _headlightLeft.range = 25f;
-            _headlightLeft.spotAngle = 45f;
-            _headlightLeft.color = new Color(1f, 0.95f, 0.85f);
-            _headlightLeft.intensity = 1.5f;
+            _headlightLeft.range = 30f;
+            _headlightLeft.spotAngle = 50f;
+            _headlightLeft.color = new Color(1f, 0.96f, 0.88f);
+            _headlightLeft.intensity = 2.0f;
             _headlightLeft.enabled = false;
 
             GameObject hlR = new GameObject("Headlight_R");
@@ -142,10 +150,10 @@ namespace CSVS.GodMode.AI
             hlR.transform.localPosition = new Vector3(bodySize.x * 0.35f, 0.5f, bodySize.z * 0.5f + 0.1f);
             _headlightRight = hlR.AddComponent<Light>();
             _headlightRight.type = LightType.Spot;
-            _headlightRight.range = 25f;
-            _headlightRight.spotAngle = 45f;
-            _headlightRight.color = new Color(1f, 0.95f, 0.85f);
-            _headlightRight.intensity = 1.5f;
+            _headlightRight.range = 30f;
+            _headlightRight.spotAngle = 50f;
+            _headlightRight.color = new Color(1f, 0.96f, 0.88f);
+            _headlightRight.intensity = 2.0f;
             _headlightRight.enabled = false;
         }
 
@@ -171,18 +179,10 @@ namespace CSVS.GodMode.AI
 
         private void DriveVehiclePhysics()
         {
-            float motor = 0f;
-            float steer = 0f;
-            bool brake = false;
-
-            if (Keyboard.current != null)
-            {
-                if (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed) motor += 1f;
-                if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed) motor -= 0.6f;
-                if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed) steer -= 1f;
-                if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) steer += 1f;
-                if (Keyboard.current.spaceKey.isPressed) brake = true;
-            }
+            Vector2 move = GameInputManager.MoveInput;
+            float motor = move.y;
+            float steer = move.x;
+            bool brake = GameInputManager.IsAscendPressed;
 
             // Apply Motor Force
             float forwardSpeed = Vector3.Dot(_rigidbody.linearVelocity, transform.forward);
@@ -213,8 +213,8 @@ namespace CSVS.GodMode.AI
 
         private void CheckProximityPlayerEntry()
         {
-            // Player enters vehicle with F key when within 3.5 meters
-            if (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
+            // Player enters vehicle with G key when within 3.5 meters
+            if (GameInputManager.WasVehicleInteractTriggered)
             {
                 var hero = GameObject.FindGameObjectWithTag("Player");
                 if (hero != null && Vector3.Distance(transform.position, hero.transform.position) < 3.5f)
@@ -226,7 +226,8 @@ namespace CSVS.GodMode.AI
 
         private void HandlePlayerExitInput()
         {
-            if (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
+            // Player exits vehicle with G key
+            if (GameInputManager.WasVehicleInteractTriggered)
             {
                 ExitVehicle();
             }

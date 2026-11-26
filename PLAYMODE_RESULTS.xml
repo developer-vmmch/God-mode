@@ -1,127 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="16" result="Passed" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.1683201">
-  <test-suite type="TestSuite" id="1029" name="CSVS-GodMode" fullname="CSVS-GodMode" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.168320" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="16" result="Passed" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.1381431">
+  <test-suite type="TestSuite" id="1029" name="CSVS-GodMode" fullname="CSVS-GodMode" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.138143" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties>
       <property name="platform" value="PlayMode" />
     </properties>
-    <test-suite type="Assembly" id="1022" name="CSVS.GodMode.Runtime.Tests.dll" fullname="D:/Development/CSVS-GodMode/UnityProject/Library/ScriptAssemblies/CSVS.GodMode.Runtime.Tests.dll" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.154761" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1022" name="CSVS.GodMode.Runtime.Tests.dll" fullname="D:/Development/CSVS-GodMode/UnityProject/Library/ScriptAssemblies/CSVS.GodMode.Runtime.Tests.dll" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.119419" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="11236" />
+        <property name="_PID" value="9404" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
         <property name="EditorOnly" value="False" />
       </properties>
-      <test-suite type="TestSuite" id="1023" name="CSVS" fullname="CSVS" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.153746" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1023" name="CSVS" fullname="CSVS" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.118144" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="TestSuite" id="1024" name="GodMode" fullname="CSVS.GodMode" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.153147" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestSuite" id="1024" name="GodMode" fullname="CSVS.GodMode" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.117232" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-suite type="TestSuite" id="1025" name="Tests" fullname="CSVS.GodMode.Tests" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.152530" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestSuite" id="1025" name="Tests" fullname="CSVS.GodMode.Tests" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.116380" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties />
-            <test-suite type="TestFixture" id="1001" name="AbilityStateTests" fullname="CSVS.GodMode.Tests.AbilityStateTests" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.053287" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-suite type="TestFixture" id="1001" name="AbilityStateTests" fullname="CSVS.GodMode.Tests.AbilityStateTests" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.069460" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
               <properties />
-              <test-case id="1004" name="FiringHeatVision_PreventsConflictingGrab" fullname="CSVS.GodMode.Tests.AbilityStateTests.FiringHeatVision_PreventsConflictingGrab" methodname="FiringHeatVision_PreventsConflictingGrab" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" seed="687854929" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.032391" asserts="0">
+              <test-case id="1004" name="FiringHeatVision_PreventsConflictingGrab" fullname="CSVS.GodMode.Tests.AbilityStateTests.FiringHeatVision_PreventsConflictingGrab" methodname="FiringHeatVision_PreventsConflictingGrab" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" seed="1873706021" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.040905" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1005" name="GravityTether_CoordinatesStateProperly" fullname="CSVS.GodMode.Tests.AbilityStateTests.GravityTether_CoordinatesStateProperly" methodname="GravityTether_CoordinatesStateProperly" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" seed="1339891702" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.000989" asserts="0">
+              <test-case id="1005" name="GravityTether_CoordinatesStateProperly" fullname="CSVS.GodMode.Tests.AbilityStateTests.GravityTether_CoordinatesStateProperly" methodname="GravityTether_CoordinatesStateProperly" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" seed="209408921" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.001336" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1003" name="HoldingObject_LocksOutHeatVisionAndOffensiveAbilities" fullname="CSVS.GodMode.Tests.AbilityStateTests.HoldingObject_LocksOutHeatVisionAndOffensiveAbilities" methodname="HoldingObject_LocksOutHeatVisionAndOffensiveAbilities" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" seed="1646409930" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.000441" asserts="0">
+              <test-case id="1003" name="HoldingObject_LocksOutHeatVisionAndOffensiveAbilities" fullname="CSVS.GodMode.Tests.AbilityStateTests.HoldingObject_LocksOutHeatVisionAndOffensiveAbilities" methodname="HoldingObject_LocksOutHeatVisionAndOffensiveAbilities" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" seed="1073842357" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.000703" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1002" name="InitialAbilityState_IsIdle" fullname="CSVS.GodMode.Tests.AbilityStateTests.InitialAbilityState_IsIdle" methodname="InitialAbilityState_IsIdle" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" seed="254989052" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.000358" asserts="0">
+              <test-case id="1002" name="InitialAbilityState_IsIdle" fullname="CSVS.GodMode.Tests.AbilityStateTests.InitialAbilityState_IsIdle" methodname="InitialAbilityState_IsIdle" classname="CSVS.GodMode.Tests.AbilityStateTests" runstate="Runnable" seed="540994725" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.000534" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
             </test-suite>
-            <test-suite type="TestFixture" id="1006" name="ChaosSystemTests" fullname="CSVS.GodMode.Tests.ChaosSystemTests" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.066005" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-suite type="TestFixture" id="1006" name="ChaosSystemTests" fullname="CSVS.GodMode.Tests.ChaosSystemTests" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.009293" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
               <properties />
-              <test-case id="1008" name="AddChaos_AccumulatesScoreAndAppliesMultiplier" fullname="CSVS.GodMode.Tests.ChaosSystemTests.AddChaos_AccumulatesScoreAndAppliesMultiplier" methodname="AddChaos_AccumulatesScoreAndAppliesMultiplier" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" seed="320441504" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.061152" asserts="0">
+              <test-case id="1008" name="AddChaos_AccumulatesScoreAndAppliesMultiplier" fullname="CSVS.GodMode.Tests.ChaosSystemTests.AddChaos_AccumulatesScoreAndAppliesMultiplier" methodname="AddChaos_AccumulatesScoreAndAppliesMultiplier" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" seed="1003451818" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.002576" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1007" name="InitialWantedTier_IsPeaceful" fullname="CSVS.GodMode.Tests.ChaosSystemTests.InitialWantedTier_IsPeaceful" methodname="InitialWantedTier_IsPeaceful" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" seed="1268345665" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.000435" asserts="0">
+              <test-case id="1007" name="InitialWantedTier_IsPeaceful" fullname="CSVS.GodMode.Tests.ChaosSystemTests.InitialWantedTier_IsPeaceful" methodname="InitialWantedTier_IsPeaceful" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" seed="658842057" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.002379" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1010" name="WantedTier_EscalatesToHelicopters_AtMaxThreshold" fullname="CSVS.GodMode.Tests.ChaosSystemTests.WantedTier_EscalatesToHelicopters_AtMaxThreshold" methodname="WantedTier_EscalatesToHelicopters_AtMaxThreshold" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" seed="2112111619" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.000334" asserts="0">
+              <test-case id="1010" name="WantedTier_EscalatesToHelicopters_AtMaxThreshold" fullname="CSVS.GodMode.Tests.ChaosSystemTests.WantedTier_EscalatesToHelicopters_AtMaxThreshold" methodname="WantedTier_EscalatesToHelicopters_AtMaxThreshold" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" seed="897265329" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.000783" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1009" name="WantedTier_EscalatesToPolice_AtThreshold" fullname="CSVS.GodMode.Tests.ChaosSystemTests.WantedTier_EscalatesToPolice_AtThreshold" methodname="WantedTier_EscalatesToPolice_AtThreshold" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" seed="1070177479" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.001199" asserts="0">
+              <test-case id="1009" name="WantedTier_EscalatesToPolice_AtThreshold" fullname="CSVS.GodMode.Tests.ChaosSystemTests.WantedTier_EscalatesToPolice_AtThreshold" methodname="WantedTier_EscalatesToPolice_AtThreshold" classname="CSVS.GodMode.Tests.ChaosSystemTests" runstate="Runnable" seed="455106819" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.001047" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
             </test-suite>
-            <test-suite type="TestFixture" id="1011" name="DestructionLogicTests" fullname="CSVS.GodMode.Tests.DestructionLogicTests" classname="CSVS.GodMode.Tests.DestructionLogicTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.015866" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-suite type="TestFixture" id="1011" name="DestructionLogicTests" fullname="CSVS.GodMode.Tests.DestructionLogicTests" classname="CSVS.GodMode.Tests.DestructionLogicTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.017697" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
               <properties />
-              <test-case id="1012" name="DebrisPoolManager_ConfiguresStandardizedBudgets" fullname="CSVS.GodMode.Tests.DestructionLogicTests.DebrisPoolManager_ConfiguresStandardizedBudgets" methodname="DebrisPoolManager_ConfiguresStandardizedBudgets" classname="CSVS.GodMode.Tests.DestructionLogicTests" runstate="Runnable" seed="71812331" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.003378" asserts="0">
+              <test-case id="1012" name="DebrisPoolManager_ConfiguresStandardizedBudgets" fullname="CSVS.GodMode.Tests.DestructionLogicTests.DebrisPoolManager_ConfiguresStandardizedBudgets" methodname="DebrisPoolManager_ConfiguresStandardizedBudgets" classname="CSVS.GodMode.Tests.DestructionLogicTests" runstate="Runnable" seed="1254428084" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.002586" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1013" name="DebrisPoolManager_EnforcesLowGraphicsCapOf50Bodies" fullname="CSVS.GodMode.Tests.DestructionLogicTests.DebrisPoolManager_EnforcesLowGraphicsCapOf50Bodies" methodname="DebrisPoolManager_EnforcesLowGraphicsCapOf50Bodies" classname="CSVS.GodMode.Tests.DestructionLogicTests" runstate="Runnable" seed="535877268" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.007878" asserts="0">
+              <test-case id="1013" name="DebrisPoolManager_EnforcesLowGraphicsCapOf50Bodies" fullname="CSVS.GodMode.Tests.DestructionLogicTests.DebrisPoolManager_EnforcesLowGraphicsCapOf50Bodies" methodname="DebrisPoolManager_EnforcesLowGraphicsCapOf50Bodies" classname="CSVS.GodMode.Tests.DestructionLogicTests" runstate="Runnable" seed="1459668518" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.012093" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1014" name="FractureChunk_FreezesWhenVelocityBelowThreshold" fullname="CSVS.GodMode.Tests.DestructionLogicTests.FractureChunk_FreezesWhenVelocityBelowThreshold" methodname="FractureChunk_FreezesWhenVelocityBelowThreshold" classname="CSVS.GodMode.Tests.DestructionLogicTests" runstate="Runnable" seed="713461011" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.001219" asserts="0">
+              <test-case id="1014" name="FractureChunk_FreezesWhenVelocityBelowThreshold" fullname="CSVS.GodMode.Tests.DestructionLogicTests.FractureChunk_FreezesWhenVelocityBelowThreshold" methodname="FractureChunk_FreezesWhenVelocityBelowThreshold" classname="CSVS.GodMode.Tests.DestructionLogicTests" runstate="Runnable" seed="1794835072" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.001194" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
             </test-suite>
-            <test-suite type="TestFixture" id="1015" name="FlightKinematicsTests" fullname="CSVS.GodMode.Tests.FlightKinematicsTests" classname="CSVS.GodMode.Tests.FlightKinematicsTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.011577" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-suite type="TestFixture" id="1015" name="FlightKinematicsTests" fullname="CSVS.GodMode.Tests.FlightKinematicsTests" classname="CSVS.GodMode.Tests.FlightKinematicsTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.012202" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
               <properties />
-              <test-case id="1016" name="FlightController_InitializesInHoverMode_WithoutInput" fullname="CSVS.GodMode.Tests.FlightKinematicsTests.FlightController_InitializesInHoverMode_WithoutInput" methodname="FlightController_InitializesInHoverMode_WithoutInput" classname="CSVS.GodMode.Tests.FlightKinematicsTests" runstate="Runnable" seed="293836509" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.007355" asserts="0">
+              <test-case id="1016" name="FlightController_InitializesInHoverMode_WithoutInput" fullname="CSVS.GodMode.Tests.FlightKinematicsTests.FlightController_InitializesInHoverMode_WithoutInput" methodname="FlightController_InitializesInHoverMode_WithoutInput" classname="CSVS.GodMode.Tests.FlightKinematicsTests" runstate="Runnable" seed="1179412292" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.007327" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1018" name="GroundSlam_ExactQuadraticRadialImpulseValidation" fullname="CSVS.GodMode.Tests.FlightKinematicsTests.GroundSlam_ExactQuadraticRadialImpulseValidation" methodname="GroundSlam_ExactQuadraticRadialImpulseValidation" classname="CSVS.GodMode.Tests.FlightKinematicsTests" runstate="Runnable" seed="1494143094" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.001710" asserts="0">
+              <test-case id="1018" name="GroundSlam_ExactQuadraticRadialImpulseValidation" fullname="CSVS.GodMode.Tests.FlightKinematicsTests.GroundSlam_ExactQuadraticRadialImpulseValidation" methodname="GroundSlam_ExactQuadraticRadialImpulseValidation" classname="CSVS.GodMode.Tests.FlightKinematicsTests" runstate="Runnable" seed="1097138453" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.001542" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1017" name="TargetMaxSpeed_ReflectsStandardizedSpeeds" fullname="CSVS.GodMode.Tests.FlightKinematicsTests.TargetMaxSpeed_ReflectsStandardizedSpeeds" methodname="TargetMaxSpeed_ReflectsStandardizedSpeeds" classname="CSVS.GodMode.Tests.FlightKinematicsTests" runstate="Runnable" seed="216449281" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.000398" asserts="0">
+              <test-case id="1017" name="TargetMaxSpeed_ReflectsStandardizedSpeeds" fullname="CSVS.GodMode.Tests.FlightKinematicsTests.TargetMaxSpeed_ReflectsStandardizedSpeeds" methodname="TargetMaxSpeed_ReflectsStandardizedSpeeds" classname="CSVS.GodMode.Tests.FlightKinematicsTests" runstate="Runnable" seed="567486585" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.001661" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
             </test-suite>
-            <test-suite type="TestFixture" id="1019" name="SuperStrengthTests" fullname="CSVS.GodMode.Tests.SuperStrengthTests" classname="CSVS.GodMode.Tests.SuperStrengthTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.003111" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-suite type="TestFixture" id="1019" name="SuperStrengthTests" fullname="CSVS.GodMode.Tests.SuperStrengthTests" classname="CSVS.GodMode.Tests.SuperStrengthTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.004611" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
               <properties />
-              <test-case id="1020" name="GrabSystem_StartsWithoutHoldingObject" fullname="CSVS.GodMode.Tests.SuperStrengthTests.GrabSystem_StartsWithoutHoldingObject" methodname="GrabSystem_StartsWithoutHoldingObject" classname="CSVS.GodMode.Tests.SuperStrengthTests" runstate="Runnable" seed="1353078659" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.000909" asserts="0">
+              <test-case id="1020" name="GrabSystem_StartsWithoutHoldingObject" fullname="CSVS.GodMode.Tests.SuperStrengthTests.GrabSystem_StartsWithoutHoldingObject" methodname="GrabSystem_StartsWithoutHoldingObject" classname="CSVS.GodMode.Tests.SuperStrengthTests" runstate="Runnable" seed="1136025722" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.001341" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
               </test-case>
-              <test-case id="1021" name="ThrowVelocity_CalculatesLinearMomentumVector" fullname="CSVS.GodMode.Tests.SuperStrengthTests.ThrowVelocity_CalculatesLinearMomentumVector" methodname="ThrowVelocity_CalculatesLinearMomentumVector" classname="CSVS.GodMode.Tests.SuperStrengthTests" runstate="Runnable" seed="997297377" result="Passed" start-time="2026-11-26 08:20:01Z" end-time="2026-11-26 08:20:01Z" duration="0.001023" asserts="0">
+              <test-case id="1021" name="ThrowVelocity_CalculatesLinearMomentumVector" fullname="CSVS.GodMode.Tests.SuperStrengthTests.ThrowVelocity_CalculatesLinearMomentumVector" methodname="ThrowVelocity_CalculatesLinearMomentumVector" classname="CSVS.GodMode.Tests.SuperStrengthTests" runstate="Runnable" seed="1852398470" result="Passed" start-time="2026-11-26 09:39:20Z" end-time="2026-11-26 09:39:20Z" duration="0.001389" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />

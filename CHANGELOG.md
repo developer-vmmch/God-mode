@@ -4,6 +4,57 @@ All notable changes to this project are documented in this file in chronological
 
 ---
 
+## [V0.2.2] — 2026-11-26 (Realistic 3D Graphics, Character & Living Karaikal City)
+
+### Added
+- **Centralized Input Management (`GameInputManager.cs`)**:
+  - Unified input action wrapper for the Unity Input System.
+  - Decoupled Vehicle Enter/Exit (`G` key) from Super Punch (`F` key).
+  - Gravity Tether mapped to `Q` key; Super Grab mapped to `E` key.
+  - Contextual firing: Throw (`LMB`) / Crush (`RMB`) when holding objects; Heat Vision (`LMB`) when hands-free.
+  - Map toggle (`M`), Pause (`Escape`), Reset (`R`).
+- **Procedural Detailed 3D Vehicles (`VehicleModelGenerator.cs`)**:
+  - Auto-Rickshaw (Bajaj RE 3-wheeler): front chrome fork, circular headlight with guard, black tub, yellow canvas canopy, rear engine louvers.
+  - Indian Hatchback (Maruti Swift styling), Indian Sedan, Commuter Motorcycle, and City Transit Bus (PRTC green/blue styling).
+- **Armored Superhero Humanoid Model (`SuperheroHumanoidVisual.cs`)**:
+  - Athletic proportions matching official concept art.
+  - Dark cobalt navy reinforced armor plating, geometric silver chest chevron, glowing cyan visor optics and wrist gauntlet power nodes.
+  - Silver knee guards and heavy kinetic impact boots.
+  - 4-segment dynamic physics-reactive cloth cape responding to flight velocity, roll banking, and wind drag.
+- **Living Street Life & Pedestrians (`KaraikalPedestrianSystem.cs`)**:
+  - South Indian civilian pedestrians in traditional white veshti/dhoti, colorful sarees with pleated pallu, casual shirt/trousers, and khaki auto-driver uniforms.
+  - Animated procedural limb swing cycles during navigation.
+- **Authentic South Indian Street Furniture (`StreetFurnitureSystem.cs`)**:
+  - Concrete utility poles with step-down transformers, ceramic insulators, and crossbars.
+  - Roadside Chai Kadai (tea stalls) with glowing incandescent warm yellow bulbs.
+  - Galvanized streetlights, bus shelters, speed breakers with diagonal chevrons, and coastal coconut palms.
+- **Coastal Atmosphere & Weather Engine (`KaraikalAtmosphereSystem.cs`)**:
+  - Four distinct presets: Clear Coastal Day, Golden Sunset / Twilight, Monsoon Rainy Evening (with specular wet road shading), and Night City Lights.
+- **Cinematic Powers FX (`PowersFXManager.cs`)**:
+  - Radial shockwave rings for ground slams, kinetic blast flares for super punches, and twin heat vision beams.
+- **Automated V0.2.2 Feature Tests (`V022FeatureTests.cs`)**:
+  - 5 new EditMode tests verifying input separation, auto-rickshaw geometry, street furniture, atmosphere presets, and superhero visual hierarchy.
+  - Test suite now stands at **48 tests (32 EditMode + 16 PlayMode)** with a 100% pass rate.
+- **Comprehensive Technical Reports**:
+  - `V022_VISUAL_UPGRADE_REPORT.md`
+  - `INPUT_BINDINGS.md`
+  - `GEOGRAPHIC_DATA_VERIFICATION.md`
+  - `BUILDING_MODEL_INVENTORY.md`
+  - `CHARACTER_MODEL_REPORT.md`
+  - `ANIMATION_VERIFICATION_REPORT.md`
+  - `VEHICLE_PHYSICS_REPORT.md`
+  - `PEDESTRIAN_SYSTEM_REPORT.md`
+  - `WEATHER_SYSTEM_REPORT.md`
+  - `ASSET_LICENSES.md`
+
+### Changed
+- Replaced direct `Keyboard.current` calls across all player controllers, powers, and HUD with `GameInputManager` unified API.
+- Updated `CityGenerator.cs` to orchestrate street furniture generation, atmosphere initialization, pedestrian pooling, and multi-element vehicle spawning.
+- Built Windows x64 standalone player `CSVS-GodMode.exe` (ExitCode 0, WorkingSet 282.03 MB < 300 MB budget).
+- Verified runtime screenshots with 0.00% magenta pixels across all views.
+
+---
+
 ## [V0.2.1] — 2026-11-26 (Real Karaikal Map Correction & Realism Upgrade)
 
 ### Added

@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.0/staging' branch; Version is '6000.0.84f1 (78ab6fc243d5) revision 7908207'; Using compiler version '193933523'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin" at "2026-11-26T09:38:22.4042649Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 8065 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-11-26T08:18:55Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin" at "2026-11-26T08:18:55.1286303Z"
+Date: 2026-11-26T09:38:22Z
 
 COMMAND LINE ARGUMENTS:
 D:\Unity\Editors\6000.0.84f1\Editor\Unity.exe
@@ -57,16 +57,16 @@ D:/Development/CSVS-GodMode/UnityProject
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15612]  Target information:
+Player connection [9752]  Target information:
 
-Player connection [15612]  * "[IP] 192.168.1.103 [Port] 55504 [Flags] 2 [Guid] 2748013258 [EditorId] 2748013258 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q81DUC0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [9752]  * "[IP] 192.168.1.103 [Port] 55504 [Flags] 2 [Guid] 2251793482 [EditorId] 2251793482 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q81DUC0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [15612] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [15612] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9752] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [9752] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-17136" after 0.5 seconds.
+[Package Manager] Connected to IPC stream "Upm-2188" after 0.8 seconds.
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
 [Physics::Module] Name: PhysX
@@ -74,29 +74,23 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 0.08 ms, found 0 plugins.
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 9568, path: "C:/Program Files/WindowsApps/UnityTechnologies.UnityHub_4.0.2.65535_x64__2vrhnee42bhxm/app/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.19.0+4cc3dda
+  Session Id:              262313c1b8c949c68edbab0f4a51693a
+  Correlation Id:          cfdac8bf3c85a1653f0e7dec3f925a6a
+  External correlation Id: 7057616328804566209
+  Machine Id:              bJ6jtSnQ9w0IafvvSmKm3cZz9Ak=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Admin" (connect: 0.00s, validation: 0.02s, handshake: 1.26s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin-notifications" at "2026-11-26T09:38:23.680236Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.84f1 (78ab6fc243d5)
 [Subsystems] Discovering subsystems at path D:/Unity/Editors/6000.0.84f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Development/CSVS-GodMode/UnityProject/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics 630 (ID=0x9bc8)
-    Vendor:   Intel
-    VRAM:     4032 MB
-    Driver:   31.0.101.2140
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 9568, path: "C:/Program Files/WindowsApps/UnityTechnologies.UnityHub_4.0.2.65535_x64__2vrhnee42bhxm/app/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.19.0+4cc3dda
-  Session Id:              5761d904f1f5407d83f26f0ed0762c3e
-  Correlation Id:          cfdac8bf3c85a1653f0e7dec3f925a6a
-  External correlation Id: 8591930867640739436
-  Machine Id:              bJ6jtSnQ9w0IafvvSmKm3cZz9Ak=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Admin" (connect: 0.00s, validation: 0.00s, handshake: 0.88s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin-notifications" at "2026-11-26T08:18:56.0081739Z"
-[Licensing::Module] Error: Access token is unavailable; failed to update
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 13470007174292-UnityPersXXXX
@@ -104,12 +98,18 @@ Direct3D:
   Type: Assigned
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
-[Licensing::Module] Licensing Background thread has ended after 0.91s
+[Licensing::Module] Licensing Background thread has ended after 1.29s
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 630 (ID=0x9bc8)
+    Vendor:   Intel
+    VRAM:     4032 MB
+    Driver:   31.0.101.2140
 Initialize mono
 Mono path[0] = 'D:/Unity/Editors/6000.0.84f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/Editors/6000.0.84f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/Editors/6000.0.84f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 ImportWorker Server TCP listen port: 0
@@ -118,41 +118,41 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/Editors/6000.0.84f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity/Editors/6000.0.84f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003013 seconds.
-- Loaded All Assemblies, in  0.604 seconds
+Registered in 0.003246 seconds.
+- Loaded All Assemblies, in  0.671 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.651 seconds
-Domain Reload Profiling: 1255ms
-	BeginReloadAssembly (182ms)
+- Finished resetting the current domain, in  0.655 seconds
+Domain Reload Profiling: 1326ms
+	BeginReloadAssembly (194ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (286ms)
-		LoadAssemblies (182ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (334ms)
+		LoadAssemblies (192ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (282ms)
-			TypeCache.Refresh (279ms)
-				TypeCache.ScanAssembly (254ms)
+		AnalyzeDomain (330ms)
+			TypeCache.Refresh (328ms)
+				TypeCache.ScanAssembly (304ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (652ms)
+	FinalizeReload (655ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (582ms)
+		SetupLoadedEditorAssemblies (598ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (118ms)
-			ProcessInitializeOnLoadAttributes (299ms)
-			ProcessInitializeOnLoadMethodAttributes (119ms)
+			InitializePlatformSupportModulesInManaged (38ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (336ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -197,7 +197,7 @@ Application.AssetDatabase Initial Refresh Start
     com.unity.modules.hierarchycore@1.0.0 (location: D:\Development\CSVS-GodMode\UnityProject\Library\PackageCache\com.unity.modules.hierarchycore)
 [Package Manager] com.unity.textmeshpro is deprecated: This package is no longer supported. TextMeshPro functionalities are now included in the com.unity.ugui package. To continue using them, consider adding it to your project dependencies.
 [Subsystems] No new subsystems found in resolved package list.
-[Package Manager] Done registering packages in 0.04 seconds
+[Package Manager] Done registering packages in 0.03 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
@@ -216,14 +216,14 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 122.6230ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 79.7861ms
 Starting: D:\Unity\Editors\6000.0.84f1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: D:/Development/CSVS-GodMode/UnityProject
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
-DisplayProgressbar: Compiling Scripts
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
       Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+DisplayProgressbar: Compiling Scripts
 warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
       Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "D:\Unity\Editors\6000.0.84f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "D:\Unity\Editors\6000.0.84f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll"
 warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
@@ -235,9 +235,17 @@ info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 126.5847ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 88.0310ms
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
       Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
 info: Unity.ILPP.Runner.PostProcessingPipeline[0]
@@ -245,69 +253,63 @@ info: Unity.ILPP.Runner.PostProcessingPipeline[0]
 info: Unity.ILPP.Runner.PostProcessingPipeline[0]
       processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
 info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Jobs.CodeGen.JobsILPostProcessor
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
-      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Runtime.Tests.dll, with 132 defines and 225 references
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 95.2432ms
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Jobs.CodeGen.JobsILPostProcessor
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 17.1967ms
-info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
-      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.Tests.dll, with 130 defines and 256 references
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running Unity.Jobs.CodeGen.JobsILPostProcessor
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
-      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 37.3215ms
-info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
-      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
-info: Unity.ILPP.Runner.PostProcessingPipeline[0]
       Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.dll, with 130 defines and 263 references
 info: Unity.ILPP.Runner.PostProcessingPipeline[0]
       processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
 info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Runtime.Tests.dll, with 132 defines and 226 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.Tests.dll, with 130 defines and 257 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
       running Unity.Jobs.CodeGen.JobsILPostProcessor
 info: Unity.ILPP.Runner.PostProcessingPipeline[0]
       running zzzUnity.Burst.CodeGen.BurstILPostProcessor
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 38.5208ms
-ExitCode: 0 Duration: 4s112ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 198.0314ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 154.1367ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 303.9500ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 299.0475ms
+ExitCode: 0 Duration: 5s347ms
 [508/645    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-[629/645    2s] Csc Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.dll (+2 others)
+[629/645    3s] Csc Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.dll (+2 others)
 Assets\Scripts\Destruction\DebrisPoolManager.cs(19,40): warning CS0414: The field 'DebrisPoolManager._defaultDespawnTime' is assigned but its value is never used
 
 Assets\Scripts\Player\SuperheroFlightController.cs(29,40): warning CS0414: The field 'SuperheroFlightController._hoverVerticalSpeed' is assigned but its value is never used
 [630/645    0s] Csc Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Runtime.Tests.dll (+2 others)
-[631/645    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.dll (+pdb)
+[631/645    0s] Csc Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.dll (+2 others)
+[632/645    0s] Csc Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.Tests.dll (+2 others)
+[633/645    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.dll (+pdb)
 Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.dll, with 132 defines and 231 references
 
 processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
@@ -315,30 +317,18 @@ processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.Burst
 running Unity.Jobs.CodeGen.JobsILPostProcessor
 
 running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-[632/645    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.Runtime.Tests.dll (+pdb)
-Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Runtime.Tests.dll, with 132 defines and 225 references
-
-processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
-
-running Unity.Jobs.CodeGen.JobsILPostProcessor
-
-running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-[633/645    0s] Csc Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.Tests.dll (+2 others)
 [634/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.pdb
-[635/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Runtime.Tests.pdb
-[636/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Runtime.Tests.dll
-[637/645    0s] Csc Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.dll (+2 others)
-[638/645    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.Editor.Tests.dll (+pdb)
-Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.Tests.dll, with 130 defines and 256 references
+[635/645    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.Runtime.Tests.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Runtime.Tests.dll, with 132 defines and 226 references
 
 processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
 
 running Unity.Jobs.CodeGen.JobsILPostProcessor
 
 running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-[639/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.Tests.pdb
-[640/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.Tests.dll
-[641/645    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.Editor.dll (+pdb)
+[636/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Runtime.Tests.dll
+[637/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Runtime.Tests.pdb
+[638/645    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.Editor.dll (+pdb)
 Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.dll, with 130 defines and 263 references
 
 processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
@@ -346,116 +336,126 @@ processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.Burst
 running Unity.Jobs.CodeGen.JobsILPostProcessor
 
 running zzzUnity.Burst.CodeGen.BurstILPostProcessor
-[642/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.pdb
-[643/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.dll
-[644/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.dll
-*** Tundra build success (4.01 seconds), 17 items updated, 645 evaluated
+[639/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.pdb
+[640/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.dll
+[641/645    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/CSVS.GodMode.Editor.Tests.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/CSVS.GodMode.Editor.Tests.dll, with 130 defines and 257 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[642/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.Tests.pdb
+[643/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.Editor.Tests.dll
+[644/645    0s] CopyFiles Library/ScriptAssemblies/CSVS.GodMode.dll
+*** Tundra build success (5.23 seconds), 17 items updated, 645 evaluated
 Assets\Scripts\Destruction\DebrisPoolManager.cs(19,40): warning CS0414: The field 'DebrisPoolManager._defaultDespawnTime' is assigned but its value is never used
 Assets\Scripts\Player\SuperheroFlightController.cs(29,40): warning CS0414: The field 'SuperheroFlightController._hoverVerticalSpeed' is assigned but its value is never used
-AssetDatabase: script compilation time: 5.036651s
+AssetDatabase: script compilation time: 6.138336s
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.656 seconds
+- Loaded All Assemblies, in  1.963 seconds
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.90 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.649 seconds
-Domain Reload Profiling: 7302ms
-	BeginReloadAssembly (670ms)
+- Finished resetting the current domain, in  4.048 seconds
+Domain Reload Profiling: 6009ms
+	BeginReloadAssembly (561ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (27ms)
+		DisableScriptedObjects (29ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (181ms)
-	RebuildCommonClasses (118ms)
-	RebuildNativeTypeToScriptingClass (35ms)
-	initialDomainReloadingComplete (74ms)
-	LoadAllAssembliesAndSetupDomain (1754ms)
-		LoadAssemblies (1750ms)
+		CreateAndSetChildDomain (176ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (1262ms)
+		LoadAssemblies (1278ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (350ms)
-			TypeCache.Refresh (264ms)
-				TypeCache.ScanAssembly (248ms)
-			BuildScriptInfoCaches (59ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (4650ms)
+		AnalyzeDomain (243ms)
+			TypeCache.Refresh (169ms)
+				TypeCache.ScanAssembly (158ms)
+			BuildScriptInfoCaches (52ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (4049ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (4276ms)
+		SetupLoadedEditorAssemblies (3754ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (267ms)
-			ProcessInitializeOnLoadAttributes (3549ms)
-			ProcessInitializeOnLoadMethodAttributes (423ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (220ms)
+			ProcessInitializeOnLoadAttributes (3054ms)
+			ProcessInitializeOnLoadMethodAttributes (450ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=14f923517bbeacb479cdd7601aa85034): Total: 13.692 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=e1c8a0f182427b7489cf927c05a9fc71): Total: 13.237 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	Summary:
 		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=5470 ms
-		Asset DB Callback time: managed=418 ms, native=63 ms
-		Scripting: domain reloads=1, domain reload time=2656 ms, compile time=5041 ms, other=40 ms
+		Asset DB Process Time: managed=0 ms, native=4723 ms
+		Asset DB Callback time: managed=302 ms, native=58 ms
+		Scripting: domain reloads=1, domain reload time=1963 ms, compile time=6140 ms, other=48 ms
 		Project Asset Count: scripts=824, non-scripts=1583
-		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Asset File Changes: new=0, changed=2, moved=0, deleted=0
 		Scan Filter Count: 0
 	InvokeCustomDependenciesCallbacks: 0.002ms
-	InvokePackagesCallback: 49.982ms
-	ApplyChangesToAssetFolders: 0.577ms
-	Scan: 85.824ms
-	OnSourceAssetsModified: 1.338ms
-	CategorizeAssetsWithTransientArtifact: 39.012ms
-	ProcessAssetsWithTransientArtifactChanges: 197.400ms
-	CategorizeAssets: 249.852ms
-	ImportOutOfDateAssets: 4665.668ms (-380.331ms without children)
-		CompileScripts: 5041.247ms
-		ReloadNativeAssets: 0.069ms
-		UnloadImportedAssets: 1.111ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.496ms
+	InvokePackagesCallback: 41.129ms
+	ApplyChangesToAssetFolders: 0.688ms
+	Scan: 162.211ms
+	OnSourceAssetsModified: 1.764ms
+	CategorizeAssetsWithTransientArtifact: 39.416ms
+	ProcessAssetsWithTransientArtifactChanges: 87.203ms
+	CategorizeAssets: 169.715ms
+	ImportOutOfDateAssets: 4056.898ms (-2085.782ms without children)
+		CompileScripts: 6140.181ms
+		ReloadNativeAssets: 0.024ms
+		UnloadImportedAssets: 0.905ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.519ms
 		InitializingProgressBar: 0.001ms
-		PostProcessAllAssetNotificationsAddChangedAssets: 0.002ms
-		OnDemandSchedulerStart: 2.074ms
-	PostProcessAllAssets: 428.023ms
-	Hotreload: 5.396ms
-	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
-	UnloadStreamsBegin: 1.726ms
-	PersistCurrentRevisions: 0.545ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 1.050ms
+	PostProcessAllAssets: 316.198ms
+	Hotreload: 5.521ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.001ms
+	UnloadStreamsBegin: 1.660ms
+	PersistCurrentRevisions: 0.089ms
 	UnloadStreamsEnd: 0.002ms
-	GenerateScriptTypeHashes: 32.643ms
-	Untracked: 7966.564ms
+	GenerateScriptTypeHashes: 5.207ms
+	Untracked: 8354.490ms
 
 Application.AssetDatabase Initial Refresh End
-Scanning for USB devices : 5.543ms
+Scanning for USB devices : 6.746ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-CSVS-GodMode
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3949 unused Assets / (5.9 MB). Loaded Objects now: 4649.
-Memory consumption went from 160.2 MB to 154.3 MB.
-Total: 22.584600 ms (FindLiveObjects: 1.384200 ms CreateObjectMapping: 2.247600 ms MarkObjects: 9.758700 ms  DeleteObjects: 9.190500 ms)
+Unloading 3957 unused Assets / (5.0 MB). Loaded Objects now: 4657.
+Memory consumption went from 158.8 MB to 153.8 MB.
+Total: 23.413600 ms (FindLiveObjects: 0.901900 ms CreateObjectMapping: 2.206400 ms MarkObjects: 13.746100 ms  DeleteObjects: 6.556600 ms)
 
-[Project] Loading completed in 18.227 seconds
-	Project init time: 				16.528 seconds
+[Project] Loading completed in 17.907 seconds
+	Project init time: 				16.754 seconds
 		Template init time: 		0.000 seconds
-		Package Manager init time: 		0.490 seconds
-		Asset Database init time: 		0.194 seconds
-		Global illumination init time: 	0.003 seconds
-		Assemblies load time: 			1.280 seconds
-		Unity extensions init time: 	0.005 seconds
-		Asset Database refresh time: 	13.693 seconds
-	Scene opening time: 			1.594 seconds
-##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1795681153317,"processId":17136,"projectLoad":18.2267917,"projectInit":16.5275082,"templateInit":0.0,"packageManagerInit":0.4902976,"assetDatabaseInit":0.1943965,"globalIlluminationInit":0.0030255,"assembliesLoad":1.2802459,"unityExtensionsInit":0.0054217,"assetDatabaseRefresh":13.6927072,"sceneOpening":1.5939289}
-##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1795681153317,"processId":17136,"editorVersion":"6000.0.84f1 (78ab6fc243d5)","branch":"6000.0/staging","buildType":"Release","platform":"Windows"}
-Asset Pipeline Refresh (id=ca7fb352b9f30b446992fe64f4163a1c): Total: 0.097 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+		Package Manager init time: 		0.796 seconds
+		Asset Database init time: 		0.284 seconds
+		Global illumination init time: 	0.005 seconds
+		Assemblies load time: 			1.356 seconds
+		Unity extensions init time: 	0.017 seconds
+		Asset Database refresh time: 	13.238 seconds
+	Scene opening time: 			1.093 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1795685920295,"processId":2188,"projectLoad":17.9074478,"projectInit":16.7543739,"templateInit":0.0,"packageManagerInit":0.7957104,"assetDatabaseInit":0.2839341,"globalIlluminationInit":0.0048515,"assembliesLoad":1.3556445,"unityExtensionsInit":0.0166805,"assetDatabaseRefresh":13.2377571,"sceneOpening":1.0931757}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1795685920295,"processId":2188,"editorVersion":"6000.0.84f1 (78ab6fc243d5)","branch":"6000.0/staging","buildType":"Release","platform":"Windows"}
+Asset Pipeline Refresh (id=fa2a0cf2d185de0448ec2aaf846b07ac): Total: 0.063 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
 Running tests for ExecutionSettings with details:
 targetPlatform = 
 playerHeartbeatTimeout = 600
@@ -483,96 +483,96 @@ UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 (Filename: ./Library/PackageCache/com.unity.test-framework@082c24152fd4/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 53)
 
 DisplayProgressbar: Material Upgrader re-import
-Start importing Assets/Materials/BuildingMaterial.mat using Guid(0097ab78ef33d75459a7b579e09d442a) (NativeFormatImporter) -> (artifact id: '315395ca9f4a655b42c86715bf1265b5') in 0.0314113 seconds
-Start importing Assets/Materials/PlayerMaterial.mat using Guid(802acb16ac40a734a8fe184cf2f82732) (NativeFormatImporter) -> (artifact id: 'c09748b80be8c6f5c2a2e0eff9266278') in 0.0057702 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat using Guid(31d0dcc6f2dd4e4408d18036a2c93862) (NativeFormatImporter) -> (artifact id: '8f3d32c29394a79b41f28a25b53defe8') in 0.0050944 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat using Guid(31321ba15b8f8eb4c954353edc038b1d) (NativeFormatImporter) -> (artifact id: '960643f9fe6857c5d72b0d2fd2085c0e') in 0.0023228 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Standard/Materials/Gold.mat using Guid(c2e40fa84d53ccd428f640eac126b1fb) (NativeFormatImporter) -> (artifact id: '9a75d51d1e747d94c5fd36e74b0d88c1') in 0.0032051 seconds
-Start importing Assets/Materials/RoadMaterial.mat using Guid(d35611f151f9b614fa885f9d8aba5291) (NativeFormatImporter) -> (artifact id: '757e9f9f7780b36143b58e362cbe5fc5') in 0.0053964 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpriteMask-Default.mat using Guid(15d0c3709176029428a0da2f8cecf0b5) (NativeFormatImporter) -> (artifact id: '9b9123c1145efbdb38e316f85cad951e') in 0.0021841 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingOcclusion.mat using Guid(b51db210fe78df745a372851b3db949e) (NativeFormatImporter) -> (artifact id: 'e725b235a682e6bf286c10ab07552b74') in 0.0022004 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Standard/Materials/Ground.mat using Guid(761d8e1f988ed2345a28312145c79c6e) (NativeFormatImporter) -> (artifact id: '97be10e07c1f855859a62635d45b8539') in 0.0027545 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/FullscreenInvertColors.mat using Guid(78a08787ca30045abb69f6f7dd878e09) (NativeFormatImporter) -> (artifact id: 'ee24d1240c4d3093a35a8ce9cd6a6123') in 0.0060297 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat using Guid(9875a245ac49007498213638a307faa1) (NativeFormatImporter) -> (artifact id: '40a3a03ad30c23572795ee7951b74454') in 0.0023415 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) (NativeFormatImporter) -> (artifact id: 'aa862bff269d59d834f13819255630e6') in 0.0030994 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/TerrainLit.mat using Guid(594ea882c5a793440b60ff72d896021e) (NativeFormatImporter) -> (artifact id: '32c0756065a4c99773d8b19abfdb7370') in 0.0033553 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat using Guid(a97c105638bdf8b4a8650670310a4cd3) (NativeFormatImporter) -> (artifact id: 'b2cd4e4a5173cb188e255112e4a6b285') in 0.0019467 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Standard/Materials/White.mat using Guid(f96821bbefeea864b9b418af4b8615ac) (NativeFormatImporter) -> (artifact id: 'b0a10ce88eba78cadb227317064359ad') in 0.0028805 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SimpleLit.mat using Guid(6a1143ee683302f4aa628c052723efc1) (NativeFormatImporter) -> (artifact id: '4e947c4ad6c49ec8c3dbccd89f2ba9c5') in 0.0036431 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat using Guid(9dfc825aed78fcd4ba02077103263b40) (NativeFormatImporter) -> (artifact id: '3535407266e63a704ebed07394e8e29d') in 0.0036902 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Standard/Materials/Black.mat using Guid(4f1ef37ae953c484bbc5d5e4049147e5) (NativeFormatImporter) -> (artifact id: 'c073248664ba5268b69bc9cf80293393') in 0.0026698 seconds
-Start importing Assets/Materials/BuildingChunkMaterial.mat using Guid(7f4ae98ae88192d4d995076f12d81ede) (NativeFormatImporter) -> (artifact id: '0d3c318ba350836bfc91a51a1512f7ff') in 0.0029625 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf using Guid(1062c701058745940ae5dca6219c64c8) (TrueTypeFontImporter) -> (artifact id: 'cb57e9dbbccddb4f478ff36ceba7e240') in 0.0150786 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf using Guid(30dc370b164eefc43b95744fc796dad0) (TrueTypeFontImporter) -> (artifact id: 'cdee9edd624941ffd0fa4f8e87673f4e') in 0.004871 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) (TrueTypeFontImporter) -> (artifact id: '1f04495c4fc61ee62ccf0b8bfe73f03f') in 0.0077061 seconds
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) (TrueTypeFontImporter) -> (artifact id: 'ee899e113e3ac9f57359c8e56ccdddba') in 0.0040636 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf using Guid(a51a3aebb43ac044989270407476b208) (TrueTypeFontImporter) -> (artifact id: '7453a7c8963b46e51fc7322cf929e8d5') in 0.0066789 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf using Guid(3750c318f40cab44a97d3a81beaefeb3) (TrueTypeFontImporter) -> (artifact id: 'eacb8266a5ad622a73a76e2a830003b9') in 0.0047754 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) (TrueTypeFontImporter) -> (artifact id: '1da7c4bbac33caca04bf2f4cef329af4') in 0.0043035 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) (TrueTypeFontImporter) -> (artifact id: '252d7439bf4ff3a72e11cda2dce1afe8') in 0.0067488 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) (TrueTypeFontImporter) -> (artifact id: '8dacd4ac1bd95975e8de96eb6623481d') in 0.0044861 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) (TrueTypeFontImporter) -> (artifact id: '0b16d05ed90d360c9f618f366eabb223') in 0.0044894 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf using Guid(2a29e27936eb547458f646f71125b264) (TrueTypeFontImporter) -> (artifact id: '3cd84a159b93c10d1ec13b2033c30961') in 0.0065471 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf using Guid(5e63515167650a541b309ba3bfd4db3d) (TrueTypeFontImporter) -> (artifact id: 'b844d935c869fbc13c1337c988eaa2fa') in 0.0044988 seconds
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) (TrueTypeFontImporter) -> (artifact id: '445a2f66266a2d651959b4f02836fa5f') in 0.0065066 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph using Guid(30fa68ce467463643a86b839ca0eb195) (ScriptedImporter) -> (artifact id: 'b21c0c8e722ba990730cbee6d09dd658') in 0.6604096 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph using Guid(80aa867ac363ac043847b06ad71604cd) (ScriptedImporter) -> (artifact id: '35fccba7f64aab9e799b39c604fb0e34') in 0.208989 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph using Guid(24a73dccd7b6fad4798be282f96a21f4) (ScriptedImporter) -> (artifact id: '686ef5f79e3cf816481257a8559e38ec') in 0.1350945 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph using Guid(44245ab89240f51459a5077d7145c452) (ScriptedImporter) -> (artifact id: 'e88b6cdcee7608f5d02aafc5de705a71') in 0.1869522 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph using Guid(3739e562a03fc0b4982d8aa66cc50865) (ScriptedImporter) -> (artifact id: '0654f581ed9798a109ab0778eef5c672') in 0.1795337 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph using Guid(d7288f66e4fb0634c9afef98c31b722a) (ScriptedImporter) -> (artifact id: 'a68248e1ddbda896bb2afc399923fd55') in 0.1242258 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph using Guid(9920c1f1781549a46ba081a2a15a16ec) (ScriptedImporter) -> (artifact id: '180db03f39ae1f2253753a1112f08b71') in 1.6947871 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph using Guid(1a207e3bee00db44b940e6f362a8e148) (ScriptedImporter) -> (artifact id: '2cacc16d70d5dfe5d3eba5d402d0653a') in 0.2093501 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph using Guid(9b4e681081e2b4c469111bb649e2f7ee) (ScriptedImporter) -> (artifact id: '5d8e90947ae941d192a6c3263db78f30') in 0.1586425 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph using Guid(cbd3e1cc4ae141c42a30e33b4d666a61) (ScriptedImporter) -> (artifact id: '362834b693b5e17b6fff65afafbbb063') in 2.2454705 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph using Guid(fb6390f650ca44a5ba3246d8dda47927) (ScriptedImporter) -> (artifact id: 'd9c56529a6f1d4b814350e63d4e77763') in 0.3166643 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph using Guid(5c81372d981403744adbdda4433c9c11) (ScriptedImporter) -> (artifact id: 'd588cef8b2ba6a3d53cd2ee4ab2e3a81') in 0.5618672 seconds
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph using Guid(0e9d5a909a1f7e84882a534d0d11e49f) (ScriptedImporter) -> (artifact id: 'c4cd0cc8f245cb2ae16259566bea0d02') in 0.4457005 seconds
-Start importing Packages/com.unity.cinemachine/Runtime/Debug/CinemachineRuntimeTheme.tss using Guid(df9aec944f4474a04847b6d6375e4138) (ScriptedImporter) -> (artifact id: '7bd09223f7aca19e1d4385104ea508b6') in 0.2269435 seconds
-Refreshing native plugins compatible for Editor in 1.81 ms, found 0 plugins.
+Start importing Assets/Materials/BuildingMaterial.mat using Guid(0097ab78ef33d75459a7b579e09d442a) (NativeFormatImporter) -> (artifact id: '315395ca9f4a655b42c86715bf1265b5') in 0.0252407 seconds
+Start importing Assets/Materials/PlayerMaterial.mat using Guid(802acb16ac40a734a8fe184cf2f82732) (NativeFormatImporter) -> (artifact id: 'c09748b80be8c6f5c2a2e0eff9266278') in 0.0106659 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat using Guid(31d0dcc6f2dd4e4408d18036a2c93862) (NativeFormatImporter) -> (artifact id: '8f3d32c29394a79b41f28a25b53defe8') in 0.0029162 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat using Guid(31321ba15b8f8eb4c954353edc038b1d) (NativeFormatImporter) -> (artifact id: '960643f9fe6857c5d72b0d2fd2085c0e') in 0.0023974 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Standard/Materials/Gold.mat using Guid(c2e40fa84d53ccd428f640eac126b1fb) (NativeFormatImporter) -> (artifact id: '9a75d51d1e747d94c5fd36e74b0d88c1') in 0.0031109 seconds
+Start importing Assets/Materials/RoadMaterial.mat using Guid(d35611f151f9b614fa885f9d8aba5291) (NativeFormatImporter) -> (artifact id: '757e9f9f7780b36143b58e362cbe5fc5') in 0.0038976 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpriteMask-Default.mat using Guid(15d0c3709176029428a0da2f8cecf0b5) (NativeFormatImporter) -> (artifact id: '9b9123c1145efbdb38e316f85cad951e') in 0.0026676 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingOcclusion.mat using Guid(b51db210fe78df745a372851b3db949e) (NativeFormatImporter) -> (artifact id: 'e725b235a682e6bf286c10ab07552b74') in 0.003355 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Standard/Materials/Ground.mat using Guid(761d8e1f988ed2345a28312145c79c6e) (NativeFormatImporter) -> (artifact id: '97be10e07c1f855859a62635d45b8539') in 0.0034504 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/FullscreenInvertColors.mat using Guid(78a08787ca30045abb69f6f7dd878e09) (NativeFormatImporter) -> (artifact id: 'ee24d1240c4d3093a35a8ce9cd6a6123') in 0.0046633 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat using Guid(9875a245ac49007498213638a307faa1) (NativeFormatImporter) -> (artifact id: '40a3a03ad30c23572795ee7951b74454') in 0.0029152 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) (NativeFormatImporter) -> (artifact id: 'aa862bff269d59d834f13819255630e6') in 0.0047345 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/TerrainLit.mat using Guid(594ea882c5a793440b60ff72d896021e) (NativeFormatImporter) -> (artifact id: '32c0756065a4c99773d8b19abfdb7370') in 0.0034654 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat using Guid(a97c105638bdf8b4a8650670310a4cd3) (NativeFormatImporter) -> (artifact id: 'b2cd4e4a5173cb188e255112e4a6b285') in 0.002806 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Standard/Materials/White.mat using Guid(f96821bbefeea864b9b418af4b8615ac) (NativeFormatImporter) -> (artifact id: 'b0a10ce88eba78cadb227317064359ad') in 0.0031803 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SimpleLit.mat using Guid(6a1143ee683302f4aa628c052723efc1) (NativeFormatImporter) -> (artifact id: '4e947c4ad6c49ec8c3dbccd89f2ba9c5') in 0.0050295 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat using Guid(9dfc825aed78fcd4ba02077103263b40) (NativeFormatImporter) -> (artifact id: '3535407266e63a704ebed07394e8e29d') in 0.0027168 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Standard/Materials/Black.mat using Guid(4f1ef37ae953c484bbc5d5e4049147e5) (NativeFormatImporter) -> (artifact id: 'c073248664ba5268b69bc9cf80293393') in 0.0050664 seconds
+Start importing Assets/Materials/BuildingChunkMaterial.mat using Guid(7f4ae98ae88192d4d995076f12d81ede) (NativeFormatImporter) -> (artifact id: '0d3c318ba350836bfc91a51a1512f7ff') in 0.0056046 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf using Guid(1062c701058745940ae5dca6219c64c8) (TrueTypeFontImporter) -> (artifact id: 'cb57e9dbbccddb4f478ff36ceba7e240') in 0.015415 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf using Guid(30dc370b164eefc43b95744fc796dad0) (TrueTypeFontImporter) -> (artifact id: 'cdee9edd624941ffd0fa4f8e87673f4e') in 0.0048047 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) (TrueTypeFontImporter) -> (artifact id: '1f04495c4fc61ee62ccf0b8bfe73f03f') in 0.0046568 seconds
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) (TrueTypeFontImporter) -> (artifact id: 'ee899e113e3ac9f57359c8e56ccdddba') in 0.0063246 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf using Guid(a51a3aebb43ac044989270407476b208) (TrueTypeFontImporter) -> (artifact id: '7453a7c8963b46e51fc7322cf929e8d5') in 0.0051552 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf using Guid(3750c318f40cab44a97d3a81beaefeb3) (TrueTypeFontImporter) -> (artifact id: 'eacb8266a5ad622a73a76e2a830003b9') in 0.0079557 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) (TrueTypeFontImporter) -> (artifact id: '1da7c4bbac33caca04bf2f4cef329af4') in 0.0065316 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) (TrueTypeFontImporter) -> (artifact id: '252d7439bf4ff3a72e11cda2dce1afe8') in 0.0079536 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) (TrueTypeFontImporter) -> (artifact id: '8dacd4ac1bd95975e8de96eb6623481d') in 0.0066724 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) (TrueTypeFontImporter) -> (artifact id: '0b16d05ed90d360c9f618f366eabb223') in 0.006831 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf using Guid(2a29e27936eb547458f646f71125b264) (TrueTypeFontImporter) -> (artifact id: '3cd84a159b93c10d1ec13b2033c30961') in 0.0051284 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf using Guid(5e63515167650a541b309ba3bfd4db3d) (TrueTypeFontImporter) -> (artifact id: 'b844d935c869fbc13c1337c988eaa2fa') in 0.0043373 seconds
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) (TrueTypeFontImporter) -> (artifact id: '445a2f66266a2d651959b4f02836fa5f') in 0.0080541 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurfaceTransparent.shadergraph using Guid(30fa68ce467463643a86b839ca0eb195) (ScriptedImporter) -> (artifact id: 'b21c0c8e722ba990730cbee6d09dd658') in 0.7556419 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph using Guid(80aa867ac363ac043847b06ad71604cd) (ScriptedImporter) -> (artifact id: '35fccba7f64aab9e799b39c604fb0e34') in 0.2117734 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteLit.shadergraph using Guid(24a73dccd7b6fad4798be282f96a21f4) (ScriptedImporter) -> (artifact id: '686ef5f79e3cf816481257a8559e38ec') in 0.136586 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMax.shadergraph using Guid(44245ab89240f51459a5077d7145c452) (ScriptedImporter) -> (artifact id: 'e88b6cdcee7608f5d02aafc5de705a71') in 0.2453475 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ArnoldStandardSurface/ArnoldStandardSurface.shadergraph using Guid(3739e562a03fc0b4982d8aa66cc50865) (ScriptedImporter) -> (artifact id: '0654f581ed9798a109ab0778eef5c672') in 0.2546026 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/2D/VFXSpriteUnlit.shadergraph using Guid(d7288f66e4fb0634c9afef98c31b722a) (ScriptedImporter) -> (artifact id: 'a68248e1ddbda896bb2afc399923fd55') in 0.1045598 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree8_PBRLit.shadergraph using Guid(9920c1f1781549a46ba081a2a15a16ec) (ScriptedImporter) -> (artifact id: '180db03f39ae1f2253753a1112f08b71') in 2.4346026 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/PhysicalMaterial3DsMax/PhysicalMaterial3DsMaxTransparent.shadergraph using Guid(1a207e3bee00db44b940e6f362a8e148) (ScriptedImporter) -> (artifact id: '2cacc16d70d5dfe5d3eba5d402d0653a') in 0.4476516 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph using Guid(9b4e681081e2b4c469111bb649e2f7ee) (ScriptedImporter) -> (artifact id: '5d8e90947ae941d192a6c3263db78f30') in 0.3183385 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph using Guid(cbd3e1cc4ae141c42a30e33b4d666a61) (ScriptedImporter) -> (artifact id: '362834b693b5e17b6fff65afafbbb063') in 1.7119312 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/FullscreenInvertColors.shadergraph using Guid(fb6390f650ca44a5ba3246d8dda47927) (ScriptedImporter) -> (artifact id: 'd9c56529a6f1d4b814350e63d4e77763') in 0.1124626 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveTransparent.shadergraph using Guid(5c81372d981403744adbdda4433c9c11) (ScriptedImporter) -> (artifact id: 'd588cef8b2ba6a3d53cd2ee4ab2e3a81') in 0.1876666 seconds
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractive.shadergraph using Guid(0e9d5a909a1f7e84882a534d0d11e49f) (ScriptedImporter) -> (artifact id: 'c4cd0cc8f245cb2ae16259566bea0d02') in 0.1942075 seconds
+Start importing Packages/com.unity.cinemachine/Runtime/Debug/CinemachineRuntimeTheme.tss using Guid(df9aec944f4474a04847b6d6375e4138) (ScriptedImporter) -> (artifact id: '7bd09223f7aca19e1d4385104ea508b6') in 0.1072902 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=6aa8fab69a6ecd94892fa7b910b9871a): Total: 9.178 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=fb1dad8b41eeeae4497ddf2afdd08469): Total: 7.997 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
 	Summary:
 		Imports: total=46 (actual=46, local cache=0, cache server=0)
-		Asset DB Process Time: managed=8 ms, native=8109 ms
-		Asset DB Callback time: managed=125 ms, native=934 ms
+		Asset DB Process Time: managed=9 ms, native=7714 ms
+		Asset DB Callback time: managed=50 ms, native=222 ms
 		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
 		Project Asset Count: scripts=824, non-scripts=1583
 		Asset File Changes: new=0, changed=0, moved=0, deleted=0
 		Scan Filter Count: 74
-	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokeCustomDependenciesCallbacks: 0.001ms
 	InvokePackagesCallback: 0.000ms
-	ApplyChangesToAssetFolders: 0.084ms
-	Scan: 309.014ms
+	ApplyChangesToAssetFolders: 0.081ms
+	Scan: 34.275ms
 	OnSourceAssetsModified: 0.001ms
-	CategorizeAssetsWithTransientArtifact: 0.106ms
-	ProcessAssetsWithTransientArtifactChanges: 0.187ms
-	CategorizeAssets: 2.503ms
-	ImportOutOfDateAssets: 7793.285ms (-37.371ms without children)
-		ImportManagerImport: 7777.705ms (184.889ms without children)
-			ImportInProcess: 7586.890ms
-			UpdateCategorizedAssets: 5.926ms
-		ReloadNativeAssets: 0.041ms
-		UnloadImportedAssets: 11.819ms
-		ReloadImportedAssets: 38.273ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.768ms
-		InitializingProgressBar: 0.015ms
+	CategorizeAssetsWithTransientArtifact: 0.095ms
+	ProcessAssetsWithTransientArtifactChanges: 0.143ms
+	CategorizeAssets: 2.384ms
+	ImportOutOfDateAssets: 7682.706ms (-36.502ms without children)
+		ImportManagerImport: 7676.975ms (186.336ms without children)
+			ImportInProcess: 7485.608ms
+			UpdateCategorizedAssets: 5.031ms
+		ReloadNativeAssets: 0.058ms
+		UnloadImportedAssets: 3.055ms
+		ReloadImportedAssets: 37.555ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.934ms
+		InitializingProgressBar: 0.011ms
 		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
-		OnDemandSchedulerStart: 2.034ms
-	PostProcessAllAssets: 1046.878ms
-	Hotreload: 13.006ms
-	GatherAllCurrentPrimaryArtifactRevisions: 0.712ms
-	UnloadStreamsBegin: 0.003ms
-	PersistCurrentRevisions: 0.112ms
-	UnloadStreamsEnd: 0.174ms
-	Untracked: 11.891ms
+		OnDemandSchedulerStart: 0.619ms
+	PostProcessAllAssets: 271.455ms
+	Hotreload: 1.261ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.191ms
+	UnloadStreamsBegin: 0.004ms
+	PersistCurrentRevisions: 0.110ms
+	UnloadStreamsEnd: 0.192ms
+	Untracked: 3.797ms
 
 [UnityConnectServicesConfig] config is NOT valid, switching to default
-Created GICache directory at C:/Users/Admin/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.059s, timestamps: [18.277 - 18.337]
+Created GICache directory at C:/Users/Admin/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.042s, timestamps: [17.940 - 17.982]
 Unloading 64 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 112 unused Assets / (3.5 MB). Loaded Objects now: 4721.
-Memory consumption went from 242.3 MB to 238.8 MB.
-Total: 30.433900 ms (FindLiveObjects: 0.435800 ms CreateObjectMapping: 0.366900 ms MarkObjects: 27.795300 ms  DeleteObjects: 1.833800 ms)
+Unloading 112 unused Assets / (3.5 MB). Loaded Objects now: 4729.
+Memory consumption went from 244.4 MB to 240.8 MB.
+Total: 16.841800 ms (FindLiveObjects: 0.464600 ms CreateObjectMapping: 0.485600 ms MarkObjects: 14.134100 ms  DeleteObjects: 1.754700 ms)
 
 Executing IPrebuildSetup for: Unity.PerformanceTesting.Editor.TestRunBuilder.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
@@ -606,10 +606,10 @@ UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 
 (Filename: ./Library/PackageCache/com.unity.test-framework@082c24152fd4/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs Line: 48)
 
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 0 unused Assets / (0 B). Loaded Objects now: 4721.
-Memory consumption went from 230.3 MB to 230.3 MB.
-Total: 22.514300 ms (FindLiveObjects: 0.442900 ms CreateObjectMapping: 0.299100 ms MarkObjects: 21.553500 ms  DeleteObjects: 0.212600 ms)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (2.2 KB). Loaded Objects now: 4732.
+Memory consumption went from 232.8 MB to 232.8 MB.
+Total: 19.163300 ms (FindLiveObjects: 0.455200 ms CreateObjectMapping: 0.244500 ms MarkObjects: 18.404400 ms  DeleteObjects: 0.056200 ms)
 
 DisplayProgressbar: Undo
 Test run completed. Exiting with code 0 (Ok). Run completed.
@@ -625,6 +625,8 @@ UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
 
 (Filename: ./Library/PackageCache/com.unity.test-framework@082c24152fd4/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 81)
 
+Request timed out while processing request "https://public-cdn.cloud.unity3d.com/config/production", HTTP error code 0
+.[UnityConnect] Request timed out.
 [Physics::Module] Cleanup current backned.
 [Physics::Module] Id: 0xf2b8ea05
 Input System module state changed to: ShutdownInProgress.
@@ -634,20 +636,16 @@ Input System module state changed to: Shutdown.
 [Licensing::IpcConnector] LicenseClient-Admin channel disconnected successfully.
 AcceleratorClientConnectionCallback - disconnected - :0
 Cleanup mono
-abort_threads: Failed aborting id: 00000000000009F8, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000004D2C, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000003DAC, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 000000000000437C, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 000000000000455C, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 0000000000004D2C, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 00000000000009F8, mono_thread_manage will ignore it
+abort_threads: Failed aborting id: 000000000000437C, mono_thread_manage will ignore it
 
-abort_threads: Failed aborting id: 0000000000003DAC, mono_thread_manage will ignore it
-
-abort_threads: Failed aborting id: 000000000000455C, mono_thread_manage will ignore it
-
-debugger-agent: Unable to listen on 3580
+debugger-agent: Unable to listen on 2524
 Checking for leaked weakptr:
   Found no leaked weakptrs.
 [Package Manager] Server process was shutdown
-##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1795681167423,"processId":17136,"allocatedMemory":14090817,"memoryLabels":[{"Default":14269},{"Permanent":15356},{"NewDelete":72425},{"Thread":4230344},{"Manager":21434},{"VertexData":8},{"Geometry":816},{"VFX":-104},{"Texture":296},{"Shader":81065},{"Material":24},{"GfxDevice":55784},{"Animation":392},{"Audio":4040},{"Font":1782565},{"FreeType":50544},{"FontEngine":256},{"Physics":2081},{"Serialization":752},{"Input":14824},{"JobScheduler":33024},{"TextLib":160},{"Mono":32},{"MonoCode":64},{"ScriptingNativeRuntime":155060},{"BaseObject":1620176},{"Resource":1304},{"Renderer":2928},{"Transform":4646},{"File":1016},{"WebCam":616},{"Culling":32},{"Terrain":11394},{"Wind":24},{"STL":40},{"String":9251},{"DynamicArray":107381},{"HashMap":67488},{"Utility":2659534},{"Curl":48},{"PoolAlloc":1864},{"AI":104},{"TypeTree":5005},{"ScriptManager":512},{"RuntimeInitializeOnLoadManager":64},{"SpriteAtlas":112},{"GI":7888},{"Director":8240},{"WebRequest":552},{"VR":45969},{"SceneManager":496},{"Video":208},{"LazyScriptCache":32},{"Camera":17},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":336},{"Hierarchy":272},{"CoreStats":12536},{"Identifiers":6192},{"Gui":80},{"EditorUtility":67949},{"VersionControl":4},{"Undo":947},{"AssetDatabase":2520553},{"EditorGi":328},{"UnityConnect":24208},{"Upm":2036},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3222},{"Licensing":696},{"AssetReference":32},{"IPCStream":32}]}
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1795685931521,"processId":2188,"allocatedMemory":14091065,"memoryLabels":[{"Default":14269},{"Permanent":15356},{"NewDelete":72561},{"Thread":4230344},{"Manager":21434},{"VertexData":8},{"Geometry":816},{"VFX":-104},{"Texture":296},{"Shader":81065},{"Material":24},{"GfxDevice":55784},{"Animation":392},{"Audio":4040},{"Font":1782565},{"FreeType":50544},{"FontEngine":256},{"Physics":2081},{"Serialization":752},{"Input":14824},{"JobScheduler":33024},{"TextLib":160},{"Mono":32},{"MonoCode":64},{"ScriptingNativeRuntime":155060},{"BaseObject":1620176},{"Resource":1304},{"Renderer":2928},{"Transform":4646},{"File":1016},{"WebCam":616},{"Culling":32},{"Terrain":11394},{"Wind":24},{"STL":40},{"String":9176},{"DynamicArray":107568},{"HashMap":67488},{"Utility":2659534},{"Curl":48},{"PoolAlloc":1864},{"AI":104},{"TypeTree":5005},{"ScriptManager":512},{"RuntimeInitializeOnLoadManager":64},{"SpriteAtlas":112},{"GI":7888},{"Director":8240},{"WebRequest":552},{"VR":45969},{"SceneManager":496},{"Video":208},{"LazyScriptCache":32},{"Camera":17},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":336},{"Hierarchy":272},{"CoreStats":12536},{"Identifiers":6192},{"Gui":80},{"EditorUtility":67949},{"VersionControl":4},{"Undo":947},{"AssetDatabase":2520553},{"EditorGi":328},{"UnityConnect":24208},{"Upm":2036},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3222},{"Licensing":696},{"AssetReference":32},{"IPCStream":32}]}

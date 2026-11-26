@@ -42,11 +42,7 @@ namespace CSVS.GodMode.Powers
         {
             if (_mainCamera == null) _mainCamera = Camera.main;
 
-            bool punchPressed = false;
-            if (Keyboard.current != null && Keyboard.current.fKey.wasPressedThisFrame)
-            {
-                punchPressed = true;
-            }
+            bool punchPressed = GameInputManager.WasSuperPunchTriggered;
 
             if (punchPressed)
             {

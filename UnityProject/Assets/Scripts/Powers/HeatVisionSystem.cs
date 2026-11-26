@@ -60,11 +60,9 @@ namespace CSVS.GodMode.Powers
 
         private void CheckInput()
         {
-            if (Mouse.current == null) return;
-
             // Only fire if not holding an object, tethering, or executing another ability
             bool canFire = _flightController == null || _flightController.CanActivateHeatVision();
-            bool fireRequested = Mouse.current.leftButton.isPressed && canFire;
+            bool fireRequested = GameInputManager.IsPrimaryFireHeld && canFire;
 
             if (fireRequested != IsFiring)
             {

@@ -62,10 +62,9 @@ namespace CSVS.GodMode.Powers
         private void Update()
         {
             if (_mainCamera == null) _mainCamera = Camera.main;
-            if (Keyboard.current == null || Mouse.current == null) return;
 
             // E key toggles Grab / Release
-            if (Keyboard.current.eKey.wasPressedThisFrame)
+            if (GameInputManager.WasGrabInteractTriggered)
             {
                 if (IsHoldingObject)
                 {
@@ -80,12 +79,12 @@ namespace CSVS.GodMode.Powers
             if (IsHoldingObject)
             {
                 // Left Click = Throw forward
-                if (Mouse.current.leftButton.wasPressedThisFrame)
+                if (GameInputManager.WasPrimaryFireTriggered)
                 {
                     ThrowObject();
                 }
                 // Right Click = Crush in hands
-                else if (Mouse.current.rightButton.wasPressedThisFrame)
+                else if (GameInputManager.WasSecondaryFireTriggered)
                 {
                     CrushObject();
                 }

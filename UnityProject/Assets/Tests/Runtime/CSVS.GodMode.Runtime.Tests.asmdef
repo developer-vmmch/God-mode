@@ -3,6 +3,7 @@
     "rootNamespace": "CSVS.GodMode.Tests.Runtime",
     "references": [
         "CSVS.GodMode",
+        "Unity.InputSystem",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],

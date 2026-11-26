@@ -117,10 +117,8 @@ namespace CSVS.GodMode.Player
 
         private void ReadInput()
         {
-            if (Keyboard.current == null) return;
-
             // Shift for Supersonic Boost / Ground Sprint
-            bool boostPressed = Keyboard.current.leftShiftKey.isPressed || Keyboard.current.rightShiftKey.isPressed;
+            bool boostPressed = GameInputManager.IsSprintOrBoostPressed;
             if (boostPressed != IsBoosting)
             {
                 IsBoosting = boostPressed;
@@ -128,7 +126,7 @@ namespace CSVS.GodMode.Player
             }
 
             // Space: in ground mode, jumps or transitions to flight
-            if (Keyboard.current.spaceKey.wasPressedThisFrame)
+            if (GameInputManager.WasAscendTriggered)
             {
                 if (_currentMode == LocomotionMode.Ground)
                 {
@@ -145,7 +143,7 @@ namespace CSVS.GodMode.Player
             // Auto-land to ground mode if touching ground with low vertical velocity
             if (_isGrounded && _currentMode != LocomotionMode.Ground && _rigidbody.linearVelocity.y <= 0.5f)
             {
-                if (Keyboard.current == null || !Keyboard.current.spaceKey.isPressed)
+                if (!GameInputManager.IsAscendPressed)
                 {
                     SetLocomotionMode(LocomotionMode.Ground);
                 }
@@ -184,16 +182,10 @@ namespace CSVS.GodMode.Player
             Vector3 camForward = _cameraTransform != null ? _cameraTransform.forward : transform.forward;
             Vector3 camRight = _cameraTransform != null ? _cameraTransform.right : transform.right;
 
-            Vector3 moveInput = Vector3.zero;
-            if (Keyboard.current != null)
-            {
-                if (Keyboard.current.wKey.isPressed) moveInput += camForward;
-                if (Keyboard.current.sKey.isPressed) moveInput -= camForward;
-                if (Keyboard.current.dKey.isPressed) moveInput += camRight;
-                if (Keyboard.current.aKey.isPressed) moveInput -= camRight;
-                if (Keyboard.current.spaceKey.isPressed) moveInput += Vector3.up;
-                if (Keyboard.current.cKey.isPressed || Keyboard.current.leftCtrlKey.isPressed) moveInput += Vector3.down;
-            }
+            Vector2 rawMove = GameInputManager.MoveInput;
+            Vector3 moveInput = camForward * rawMove.y + camRight * rawMove.x;
+            if (GameInputManager.IsAscendPressed) moveInput += Vector3.up;
+            if (GameInputManager.IsDescendPressed) moveInput += Vector3.down;
 
             if (moveInput.sqrMagnitude > 0.001f)
             {
@@ -241,17 +233,10 @@ namespace CSVS.GodMode.Player
             Vector3 camForward = _cameraTransform != null ? _cameraTransform.forward : transform.forward;
             Vector3 camRight = _cameraTransform != null ? _cameraTransform.right : transform.right;
 
-            Vector3 moveInput = Vector3.zero;
-            if (Keyboard.current != null)
-            {
-                Vector3 flatForward = Vector3.ProjectOnPlane(camForward, Vector3.up).normalized;
-                Vector3 flatRight = Vector3.ProjectOnPlane(camRight, Vector3.up).normalized;
-
-                if (Keyboard.current.wKey.isPressed) moveInput += flatForward;
-                if (Keyboard.current.sKey.isPressed) moveInput -= flatForward;
-                if (Keyboard.current.dKey.isPressed) moveInput += flatRight;
-                if (Keyboard.current.aKey.isPressed) moveInput -= flatRight;
-            }
+            Vector3 flatForward = Vector3.ProjectOnPlane(camForward, Vector3.up).normalized;
+            Vector3 flatRight = Vector3.ProjectOnPlane(camRight, Vector3.up).normalized;
+            Vector2 rawMove = GameInputManager.MoveInput;
+            Vector3 moveInput = flatForward * rawMove.y + flatRight * rawMove.x;
 
             float speed = IsBoosting ? _runSpeed : _walkSpeed;
 

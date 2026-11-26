@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using CSVS.GodMode.Core;
 
 namespace CSVS.GodMode.Player
 {
@@ -101,17 +102,15 @@ namespace CSVS.GodMode.Player
 
         private void HandleInput()
         {
-            if (Mouse.current == null || Cursor.lockState != CursorLockMode.Locked) return;
-
-            Vector2 mouseDelta = Mouse.current.delta.ReadValue() * (_mouseSensitivity * 0.1f);
-            _yaw += mouseDelta.x;
-            _pitch -= mouseDelta.y;
+            Vector2 delta = GameInputManager.MouseDelta * (_mouseSensitivity * 0.1f);
+            _yaw += delta.x;
+            _pitch -= delta.y;
             _pitch = Mathf.Clamp(_pitch, _minPitch, _maxPitch);
         }
 
         private void HandlePerspectiveToggle()
         {
-            if (Keyboard.current != null && Keyboard.current.vKey.wasPressedThisFrame)
+            if (GameInputManager.WasCameraToggleTriggered)
             {
                 _perspective = (_perspective == CameraPerspective.ThirdPerson)
                     ? CameraPerspective.FirstPerson

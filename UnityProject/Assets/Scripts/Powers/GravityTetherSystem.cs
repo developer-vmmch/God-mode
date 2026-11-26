@@ -43,17 +43,16 @@ namespace CSVS.GodMode.Powers
         private void Update()
         {
             if (_mainCamera == null) _mainCamera = Camera.main;
-            if (Keyboard.current == null) return;
 
             // Q key hold initiates tether
-            if (Keyboard.current.qKey.wasPressedThisFrame)
+            if (GameInputManager.WasGravityTetherTriggered)
             {
                 if (_flightController == null || _flightController.CanActivateOffensiveAbility())
                 {
                     TryAttachTether();
                 }
             }
-            else if (Keyboard.current.qKey.wasReleasedThisFrame)
+            else if (GameInputManager.WasGravityTetherReleased)
             {
                 ReleaseTether();
             }

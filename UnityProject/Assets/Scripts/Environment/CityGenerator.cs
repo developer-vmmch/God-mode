@@ -121,6 +121,123 @@ namespace CSVS.GodMode.Environment
 
             // 3. Generate Initial Karaikal Playable Urban Core
             GenerateDistricts(_environmentRoot.transform);
+
+            // 4. Generate South Indian Street Furniture (Utility Poles, Tea Stalls, Bus Shelters, Palms)
+            GenerateStreetFurniture(_environmentRoot.transform);
+
+            // 5. Initialize Coastal Atmosphere & Weather
+            EnsureAtmosphereSystem(_environmentRoot.transform);
+
+            // 6. Initialize Street Life & Civilian Pedestrians
+            EnsurePedestrianSystem(_environmentRoot.transform);
+
+            // 7. Initialize Superhero Powers Cinematic FX Manager
+            EnsurePowersFXManager();
+        }
+
+        private void EnsureAtmosphereSystem(Transform parent)
+        {
+            KaraikalAtmosphereSystem atmo = FindFirstObjectByType<KaraikalAtmosphereSystem>();
+            if (atmo == null)
+            {
+                GameObject atmoObj = new GameObject("KaraikalAtmosphereSystem");
+                atmoObj.transform.SetParent(parent, false);
+                atmo = atmoObj.AddComponent<KaraikalAtmosphereSystem>();
+            }
+            atmo.SetWeatherMode(KaraikalWeatherMode.GoldenSunset);
+        }
+
+        private void EnsurePedestrianSystem(Transform parent)
+        {
+            KaraikalPedestrianSystem peds = FindFirstObjectByType<KaraikalPedestrianSystem>();
+            if (peds == null)
+            {
+                GameObject pedObj = new GameObject("KaraikalPedestrianSystem");
+                pedObj.transform.SetParent(parent, false);
+                pedObj.AddComponent<KaraikalPedestrianSystem>();
+            }
+        }
+
+        private void EnsurePowersFXManager()
+        {
+            PowersFXManager fx = FindFirstObjectByType<PowersFXManager>();
+            if (fx == null)
+            {
+                GameObject fxObj = new GameObject("PowersFXManager");
+                fxObj.AddComponent<PowersFXManager>();
+            }
+        }
+
+        private void GenerateStreetFurniture(Transform parent)
+        {
+            GameObject furnitureGroup = new GameObject("Karaikal_StreetFurniture");
+            furnitureGroup.transform.SetParent(parent, false);
+
+            Shader litShader = Shader.Find("Universal Render Pipeline/Lit");
+            if (litShader == null) litShader = Shader.Find("Universal Render Pipeline/Simple Lit");
+            if (litShader == null) litShader = Shader.Find("Standard");
+
+            Material concretePoleMat = new Material(litShader);
+            if (concretePoleMat.HasProperty("_BaseColor")) concretePoleMat.SetColor("_BaseColor", new Color(0.65f, 0.68f, 0.70f));
+
+            Material metalMat = new Material(litShader);
+            if (metalMat.HasProperty("_BaseColor")) metalMat.SetColor("_BaseColor", new Color(0.35f, 0.38f, 0.42f));
+            if (metalMat.HasProperty("_Metallic")) metalMat.SetFloat("_Metallic", 0.75f);
+
+            Material woodMat = new Material(litShader);
+            if (woodMat.HasProperty("_BaseColor")) woodMat.SetColor("_BaseColor", new Color(0.48f, 0.32f, 0.18f));
+
+            Material roofMat = new Material(litShader);
+            if (roofMat.HasProperty("_BaseColor")) roofMat.SetColor("_BaseColor", new Color(0.35f, 0.45f, 0.55f)); // Corrugated blue tin sheet
+
+            Material bulbMat = new Material(litShader);
+            if (bulbMat.HasProperty("_BaseColor")) bulbMat.SetColor("_BaseColor", new Color(1.0f, 0.82f, 0.35f));
+            if (bulbMat.HasProperty("_EmissionColor"))
+            {
+                bulbMat.EnableKeyword("_EMISSION");
+                bulbMat.SetColor("_EmissionColor", new Color(2.5f, 1.8f, 0.6f));
+            }
+
+            Material lightGlowMat = new Material(litShader);
+            if (lightGlowMat.HasProperty("_BaseColor")) lightGlowMat.SetColor("_BaseColor", new Color(1.0f, 0.95f, 0.85f));
+            if (lightGlowMat.HasProperty("_EmissionColor"))
+            {
+                lightGlowMat.EnableKeyword("_EMISSION");
+                lightGlowMat.SetColor("_EmissionColor", new Color(2.0f, 1.8f, 1.2f));
+            }
+
+            Material chevronMat = new Material(litShader);
+            if (chevronMat.HasProperty("_BaseColor")) chevronMat.SetColor("_BaseColor", new Color(0.95f, 0.80f, 0.10f)); // Yellow warning
+
+            Material trunkMat = new Material(litShader);
+            if (trunkMat.HasProperty("_BaseColor")) trunkMat.SetColor("_BaseColor", new Color(0.45f, 0.35f, 0.25f));
+
+            Material frondMat = new Material(litShader);
+            if (frondMat.HasProperty("_BaseColor")) frondMat.SetColor("_BaseColor", new Color(0.18f, 0.55f, 0.22f));
+
+            // 1. Concrete Utility Poles along Kamarajar Salai (NH 32)
+            for (float z = -200f; z <= 200f; z += 40f)
+            {
+                StreetFurnitureSystem.SpawnConcreteUtilityPole(furnitureGroup.transform, new Vector3(9.2f, 0f, z), concretePoleMat, metalMat);
+                StreetFurnitureSystem.SpawnStreetlight(furnitureGroup.transform, new Vector3(-9.2f, 0f, z), metalMat, lightGlowMat);
+            }
+
+            // 2. Roadside Tea Stall (Chai Kadai) near Town Center junction
+            StreetFurnitureSystem.SpawnTeaStall(furnitureGroup.transform, new Vector3(12.5f, 0f, 18f), woodMat, roofMat, metalMat, bulbMat);
+
+            // 3. Karaikal Bus Shelter near Town Center
+            StreetFurnitureSystem.SpawnBusShelter(furnitureGroup.transform, new Vector3(-12.5f, 0f, -25f), metalMat, _roadMaterial, _buildingMaterial);
+
+            // 4. Speed Breakers across Kamarajar Salai near intersections
+            StreetFurnitureSystem.SpawnSpeedBreaker(furnitureGroup.transform, new Vector3(0f, 0f, -45f), 16f, chevronMat);
+            StreetFurnitureSystem.SpawnSpeedBreaker(furnitureGroup.transform, new Vector3(0f, 0f, 45f), 16f, chevronMat);
+
+            // 5. Coconut Palms along Beach Promenade
+            for (float z = -200f; z <= 400f; z += 35f)
+            {
+                StreetFurnitureSystem.SpawnCoconutPalm(furnitureGroup.transform, new Vector3(925f, 0f, z), trunkMat, frondMat, 12f);
+                StreetFurnitureSystem.SpawnCoconutPalm(furnitureGroup.transform, new Vector3(870f, 0f, z + 15f), trunkMat, frondMat, 10f);
+            }
         }
 
         private void GenerateDistricts(Transform parent)
@@ -220,6 +337,12 @@ namespace CSVS.GodMode.Environment
 
             // 3. Indian Commuter Motorcycle near Tea Stall
             SpawnVehicle("Vehicle_Motorcycle", new Vector3(14.5f, 0.3f, 10f), Quaternion.Euler(0f, 90f, 0f), IndianVehicleType.Motorcycle, vehicleGroup.transform);
+
+            // 4. Executive Sedan on Kamarajar Salai
+            SpawnVehicle("Vehicle_Sedan", new Vector3(-4f, 0.4f, 65f), Quaternion.Euler(0f, 180f, 0f), IndianVehicleType.Sedan, vehicleGroup.transform);
+
+            // 5. State Transport City Bus near Bus Shelter
+            SpawnVehicle("Vehicle_CityBus", new Vector3(4f, 0.6f, -75f), Quaternion.identity, IndianVehicleType.CityBus, vehicleGroup.transform);
         }
 
         private void SpawnVehicle(string name, Vector3 pos, Quaternion rot, IndianVehicleType type, Transform parent)

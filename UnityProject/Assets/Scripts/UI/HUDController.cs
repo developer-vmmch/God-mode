@@ -101,7 +101,7 @@ namespace CSVS.GodMode.UI
             }
 
             // Toggle Full-Screen Karaikal Map with M key
-            if (Input.GetKeyDown(KeyCode.M))
+            if (GameInputManager.WasMapToggleTriggered)
             {
                 _showFullMap = !_showFullMap;
             }
@@ -225,8 +225,8 @@ namespace CSVS.GodMode.UI
             GUILayout.Label($"ALTITUDE: {playerPos.y:F1} m | HEADING: {GetCompassHeading(playerFlightYaw())}");
             GUILayout.Space(4);
             GUILayout.Label("CONTROLS:", titleStyle);
-            GUILayout.Label("WASD: Move | Shift: Supersonic Boost | Space/Ctrl: Ascend/Descend");
-            GUILayout.Label("L-Click: Punch/Laser | R-Click: Grab/Throw | F: Slam | V: 1P/3P | M: Map");
+            GUILayout.Label("WASD: Move/Drive | L-Shift: Boost (95 m/s) | Space/Ctrl: Ascend/Descend");
+            GUILayout.Label("F: Super Punch | E: Grab | LMB: Laser/Throw | RMB: Crush | Q: Tether | G: Vehicle | V: 1P/3P | M: Map");
             GUILayout.EndArea();
         }
 
