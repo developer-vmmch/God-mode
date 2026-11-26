@@ -5,9 +5,10 @@ using UnityEngine;
 namespace CSVS.GodMode.Environment
 {
     /// <summary>
-    /// Procedural road and terrain network generator reflecting the actual geography of Karaikal, Puducherry.
+    /// Procedural road and terrain network generator reflecting the exact GIS geography of Karaikal, Puducherry.
     /// Constructs Kamarajar Salai (NH 32), Bharathiyar Road, Beach Road, Arasalar River & Bridge,
-    /// and secondary streets with Indian road markings, curbs, and street props.
+    /// and secondary streets with Indian road markings, warning curbs, and street props.
+    /// Aligned with KaraikalGeoProjection WGS84 coordinates.
     /// </summary>
     public class KaraikalRoadNetwork : MonoBehaviour
     {
@@ -57,35 +58,35 @@ namespace CSVS.GodMode.Environment
             ground.name = "Karaikal_Terrain_Base";
             ground.transform.SetParent(parent, false);
             ground.transform.position = new Vector3(-200f, -0.05f, 0f);
-            ground.transform.localScale = new Vector3(140f, 1f, 200f);
+            ground.transform.localScale = new Vector3(240f, 1f, 320f);
             SetSharedMat(ground, _paddyFieldMaterial);
 
-            // 2. Karaikal Beach Sand Strip (Bay of Bengal Coastline on East: X = +550 to +900)
+            // 2. Karaikal Beach Sand Strip (Bay of Bengal Coastline at X = +930m)
             GameObject beach = GameObject.CreatePrimitive(PrimitiveType.Plane);
             beach.name = "Karaikal_Beach_Sand";
             beach.transform.SetParent(parent, false);
-            beach.transform.position = new Vector3(720f, -0.02f, 50f);
-            beach.transform.localScale = new Vector3(35f, 1f, 180f);
+            beach.transform.position = new Vector3(980f, -0.02f, 50f);
+            beach.transform.localScale = new Vector3(30f, 1f, 300f);
             SetSharedMat(beach, _beachSandMaterial);
 
-            // 3. Bay of Bengal Ocean Water Plane (X > +800)
+            // 3. Bay of Bengal Ocean Water Plane (X > +1100m)
             GameObject ocean = GameObject.CreatePrimitive(PrimitiveType.Plane);
             ocean.name = "Bay_Of_Bengal_Ocean";
             ocean.transform.SetParent(parent, false);
-            ocean.transform.position = new Vector3(1200f, -0.8f, 50f);
-            ocean.transform.localScale = new Vector3(60f, 1f, 200f);
+            ocean.transform.position = new Vector3(1450f, -0.8f, 50f);
+            ocean.transform.localScale = new Vector3(70f, 1f, 300f);
             SetSharedMat(ocean, _waterMaterial);
 
-            // 4. Arasalar River Channel (Flows West to East at Z = -380m into the Sea)
+            // 4. Arasalar River Channel (Flows West to East at Z = -818.5m into the Sea)
             GameObject river = GameObject.CreatePrimitive(PrimitiveType.Plane);
             river.name = "Arasalar_River_Water";
             river.transform.SetParent(parent, false);
-            river.transform.position = new Vector3(0f, -0.6f, -380f);
-            river.transform.localScale = new Vector3(180f, 1f, 7f); // ~70m wide river channel
+            river.transform.position = new Vector3(0f, -0.6f, -818.5f);
+            river.transform.localScale = new Vector3(250f, 1f, 8f); // ~80m wide river channel
             SetSharedMat(river, _waterMaterial);
 
-            // 5. Beach Promenade Paved Walkway (along Beach Road at X = +620)
-            CreateRoadSegment(parent, "Beach_Promenade_Walkway", new Vector3(625f, 0.05f, 50f), new Vector3(10f, 0.15f, 1200f), _promenadeMaterial);
+            // 5. Beach Promenade Paved Walkway (along Beach Road at X = +945m)
+            CreateRoadSegment(parent, "Beach_Promenade_Walkway", new Vector3(945f, 0.05f, 50f), new Vector3(12f, 0.15f, 2400f), _promenadeMaterial);
         }
 
         public void GenerateRoadNetwork(Transform parent)
@@ -93,28 +94,28 @@ namespace CSVS.GodMode.Environment
             InitializeMaterials();
 
             // 1. Kamarajar Salai (NH 32 North-South Major Highway)
-            CreateRoadSegment(parent, "Road_KamarajarSalai_NH32", new Vector3(0f, 0.02f, 0f), new Vector3(18f, 0.08f, 2200f), _asphaltMaterial);
-            CreateCurbs(parent, "Curbs_KamarajarSalai", new Vector3(0f, 0.1f, 0f), 18.2f, 2200f, true);
+            CreateRoadSegment(parent, "Road_KamarajarSalai_NH32", new Vector3(0f, 0.02f, 0f), new Vector3(18f, 0.08f, 3200f), _asphaltMaterial);
+            CreateCurbs(parent, "Curbs_KamarajarSalai", new Vector3(0f, 0.1f, 0f), 18.2f, 3200f, true);
 
-            // 2. Bharathiyar Road (East-West Commercial Spine connecting town center to beach)
-            CreateRoadSegment(parent, "Road_BharathiyarRoad", new Vector3(0f, 0.02f, 0f), new Vector3(1300f, 0.08f, 14f), _asphaltMaterial);
-            CreateCurbs(parent, "Curbs_BharathiyarRoad", new Vector3(0f, 0.1f, 0f), 1300f, 14.2f, false);
+            // 2. Bharathiyar Road (East-West Commercial Spine connecting town center to beach at X = +930m)
+            CreateRoadSegment(parent, "Road_BharathiyarRoad", new Vector3(-80f, 0.02f, 0f), new Vector3(2100f, 0.08f, 14f), _asphaltMaterial);
+            CreateCurbs(parent, "Curbs_BharathiyarRoad", new Vector3(-80f, 0.1f, 0f), 2100f, 14.2f, false);
 
-            // 3. Beach Road (North-South Coastal Arterial parallel to promenade)
-            CreateRoadSegment(parent, "Road_BeachRoad", new Vector3(610f, 0.02f, 50f), new Vector3(14f, 0.08f, 1400f), _asphaltMaterial);
+            // 3. Beach Road (North-South Coastal Arterial parallel to coastline at X = +930m)
+            CreateRoadSegment(parent, "Road_BeachRoad", new Vector3(930f, 0.02f, 50f), new Vector3(16f, 0.08f, 2400f), _asphaltMaterial);
 
-            // 4. Thirunallar Highway (Westward road toward Thirunallar Temple)
-            CreateRoadSegment(parent, "Road_ThirunallarHighway", new Vector3(-650f, 0.02f, 180f), new Vector3(1100f, 0.08f, 14f), _asphaltMaterial);
+            // 4. Thirunallar Highway (Westward road toward Thirunallar Temple at Z = +200m)
+            CreateRoadSegment(parent, "Road_ThirunallarHighway", new Vector3(-1200f, 0.02f, 200f), new Vector3(2000f, 0.08f, 14f), _asphaltMaterial);
 
-            // 5. Arasalar River Bridge (Spanning the Arasalar River on Kamarajar Salai)
+            // 5. Arasalar River Bridge (Spanning the Arasalar River on Kamarajar Salai at Z = -818.5m)
             BuildArasalarBridge(parent);
 
             // 6. Secondary Grid Streets (Residential and Market Avenues)
-            for (int z = -200; z <= 600; z += 180)
+            for (int z = -600; z <= 800; z += 200)
             {
-                if (Mathf.Abs(z) < 30 || Mathf.Abs(z - (-380)) < 80) continue;
-                CreateRoadSegment(parent, $"Street_Cross_{z}", new Vector3(250f, 0.02f, z), new Vector3(500f, 0.06f, 10f), _asphaltMaterial);
-                CreateRoadSegment(parent, $"Street_West_{z}", new Vector3(-250f, 0.02f, z), new Vector3(500f, 0.06f, 10f), _asphaltMaterial);
+                if (Mathf.Abs(z) < 30 || Mathf.Abs(z - (-818)) < 120) continue;
+                CreateRoadSegment(parent, $"Street_Cross_{z}", new Vector3(450f, 0.02f, z), new Vector3(900f, 0.06f, 10f), _asphaltMaterial);
+                CreateRoadSegment(parent, $"Street_West_{z}", new Vector3(-450f, 0.02f, z), new Vector3(900f, 0.06f, 10f), _asphaltMaterial);
             }
 
             // 7. Place Indian Street Props along Kamarajar Salai & Bharathiyar Rd
@@ -125,31 +126,31 @@ namespace CSVS.GodMode.Environment
         {
             GameObject bridge = new GameObject("Arasalar_Bridge_Structure");
             bridge.transform.SetParent(parent, false);
-            bridge.transform.position = new Vector3(0f, 0f, -380f);
+            bridge.transform.position = new Vector3(0f, 0f, -818.5f);
 
             // Bridge Deck
             GameObject deck = GameObject.CreatePrimitive(PrimitiveType.Cube);
             deck.name = "BridgeDeck";
             deck.transform.SetParent(bridge.transform, false);
             deck.transform.localPosition = new Vector3(0f, 0.6f, 0f);
-            deck.transform.localScale = new Vector3(18f, 1.2f, 85f);
+            deck.transform.localScale = new Vector3(18f, 1.2f, 95f);
             SetSharedMat(deck, _asphaltMaterial);
 
             // Bridge Concrete Railings (East & West sides)
             GameObject railL = GameObject.CreatePrimitive(PrimitiveType.Cube);
             railL.transform.SetParent(bridge.transform, false);
             railL.transform.localPosition = new Vector3(-9.2f, 1.8f, 0f);
-            railL.transform.localScale = new Vector3(0.6f, 1.2f, 85f);
+            railL.transform.localScale = new Vector3(0.6f, 1.2f, 95f);
             SetSharedMat(railL, _curbMaterial);
 
             GameObject railR = GameObject.CreatePrimitive(PrimitiveType.Cube);
             railR.transform.SetParent(bridge.transform, false);
             railR.transform.localPosition = new Vector3(9.2f, 1.8f, 0f);
-            railR.transform.localScale = new Vector3(0.6f, 1.2f, 85f);
+            railR.transform.localScale = new Vector3(0.6f, 1.2f, 95f);
             SetSharedMat(railR, _curbMaterial);
 
             // Bridge Support Pillars beneath in river
-            for (float pz = -25f; pz <= 25f; pz += 25f)
+            for (float pz = -30f; pz <= 30f; pz += 30f)
             {
                 GameObject pillar = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
                 pillar.transform.SetParent(bridge.transform, false);
@@ -194,10 +195,10 @@ namespace CSVS.GodMode.Environment
             GameObject propsGroup = new GameObject("Karaikal_Street_Props");
             propsGroup.transform.SetParent(parent, false);
 
-            // Concrete Electric Poles along Kamarajar Salai
-            for (float z = -250f; z <= 500f; z += 60f)
+            // Concrete Electric Utility Poles with transformers along Kamarajar Salai
+            for (float z = -600f; z <= 600f; z += 65f)
             {
-                if (Mathf.Abs(z - (-380)) < 60) continue; // skip bridge span
+                if (Mathf.Abs(z - (-818.5f)) < 70) continue; // skip bridge span
 
                 // Electric Pole (Left)
                 GameObject poleL = GameObject.CreatePrimitive(PrimitiveType.Cylinder);

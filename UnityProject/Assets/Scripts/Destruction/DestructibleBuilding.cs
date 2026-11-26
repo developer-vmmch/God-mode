@@ -68,6 +68,11 @@ namespace CSVS.GodMode.Destruction
             ActivateFloorRigidbodies(floorIndex);
         }
 
+        public void FractureBuilding()
+        {
+            CollapseEntireBuilding(transform.position, Vector3.up);
+        }
+
         public void CollapseEntireBuilding(Vector3 epicenter, Vector3 impulseNormal)
         {
             if (_isCollapsed) return;

@@ -4,20 +4,23 @@ using CSVS.GodMode.Core;
 using CSVS.GodMode.Destruction;
 using CSVS.GodMode.Player;
 using CSVS.GodMode.Powers;
+using CSVS.GodMode.AI;
 
 namespace CSVS.GodMode.Environment
 {
     /// <summary>
     /// Master Open-World Generator for Karaikal, Puducherry, India.
-    /// Replaces generic city blocks with geographically grounded Karaikal districts,
-    /// authentic South Indian architecture, Kamarajar Salai (NH 32), Bharathiyar Road,
-    /// Karaikal Beach, Arasalar River & Bridge, and modular destructible structures.
+    /// Geographically grounded in real Karaikal coordinates (10.9254° N, 79.8380° E).
+    /// Assembles Kamarajar Salai (NH 32), Bharathiyar Road, Arasalar River & Bridge,
+    /// Karaikal Beach Promenade, modular South Indian architectural complexes,
+    /// humanoid superhero actor, and playable Indian vehicles.
     /// </summary>
     public class CityGenerator : MonoBehaviour
     {
         [Header("Modular Systems")]
         [SerializeField] private KaraikalRoadNetwork _roadNetwork;
         [SerializeField] private ModularIndianBuildingSystem _buildingSystem;
+        [SerializeField] private KaraikalWorldStreamer _worldStreamer;
 
         [Header("Materials")]
         [SerializeField] private Material _buildingMaterial;
@@ -41,6 +44,12 @@ namespace CSVS.GodMode.Environment
                 if (_buildingSystem == null) _buildingSystem = gameObject.AddComponent<ModularIndianBuildingSystem>();
             }
 
+            if (_worldStreamer == null)
+            {
+                _worldStreamer = GetComponent<KaraikalWorldStreamer>();
+                if (_worldStreamer == null) _worldStreamer = gameObject.AddComponent<KaraikalWorldStreamer>();
+            }
+
             EnsureMaterials();
         }
 
@@ -48,6 +57,7 @@ namespace CSVS.GodMode.Environment
         {
             GenerateCitySandbox();
             EnsurePlayerExists();
+            SpawnPlayableVehicles();
         }
 
         public void EnsureMaterials()
@@ -103,13 +113,13 @@ namespace CSVS.GodMode.Environment
             if (_roadNetwork == null) _roadNetwork = gameObject.AddComponent<KaraikalRoadNetwork>();
             if (_buildingSystem == null) _buildingSystem = gameObject.AddComponent<ModularIndianBuildingSystem>();
 
-            // 1. Generate Geographically Grounded Terrain & Water (Bay of Bengal + Arasalar River)
+            // 1. Generate Geographically Validated Terrain & Water (Bay of Bengal + Arasalar River)
             _roadNetwork.GenerateTerrainAndWater(_environmentRoot.transform);
 
             // 2. Generate Road Network (NH32 Kamarajar Salai, Bharathiyar Rd, Beach Rd, Arasalar Bridge)
             _roadNetwork.GenerateRoadNetwork(_environmentRoot.transform);
 
-            // 3. Generate Karaikal City Districts
+            // 3. Generate Initial Karaikal Playable Urban Core
             GenerateDistricts(_environmentRoot.transform);
         }
 
@@ -118,14 +128,13 @@ namespace CSVS.GodMode.Environment
             GameObject districtContainer = new GameObject("Karaikal_Districts");
             districtContainer.transform.SetParent(parent, false);
 
-            int seed = 1001;
+            int seed = 2001;
 
             // District 1: Town Center & Bazaar (Commercial Complexes along Kamarajar Salai & Bharathiyar Rd)
-            for (float x = -140f; x <= 140f; x += 45f)
+            for (float x = -150f; x <= 150f; x += 45f)
             {
-                for (float z = -120f; z <= 150f; z += 45f)
+                for (float z = -140f; z <= 160f; z += 45f)
                 {
-                    // Leave main intersection and avenues clear
                     if (Mathf.Abs(x) < 22f || Mathf.Abs(z) < 20f) continue;
                     Vector3 pos = new Vector3(x, 0f, z);
                     GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.TownCenter, seed++);
@@ -134,9 +143,9 @@ namespace CSVS.GodMode.Environment
             }
 
             // District 2: Residential Neighborhoods (South Indian Terrace Houses to West & South-West)
-            for (float x = -320f; x <= -180f; x += 40f)
+            for (float x = -380f; x <= -200f; x += 42f)
             {
-                for (float z = -150f; z <= 120f; z += 40f)
+                for (float z = -180f; z <= 140f; z += 42f)
                 {
                     Vector3 pos = new Vector3(x, 0f, z);
                     GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.HeritageTempleZone, seed++);
@@ -144,19 +153,19 @@ namespace CSVS.GodMode.Environment
                 }
             }
 
-            // District 3: Karaikal Beach Promenade (Coastal structures along Beach Road X = 520m to 580m)
-            for (float z = -200f; z <= 400f; z += 65f)
+            // District 3: Karaikal Beach Promenade (Coastal structures along Beach Road X = 860m to 920m)
+            for (float z = -250f; z <= 450f; z += 70f)
             {
-                if (Mathf.Abs(z) < 30f) continue; // beach entrance plaza open
-                Vector3 pos = new Vector3(560f, 0f, z);
+                if (Mathf.Abs(z) < 35f) continue; // beach entrance plaza open
+                Vector3 pos = new Vector3(880f, 0f, z);
                 GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.BeachPromenade, seed++);
                 b.transform.SetParent(districtContainer.transform, true);
             }
 
-            // District 4: Heritage & Temple Zone (Near Karaikal Ammaiyar Temple X = -220, Z = +180)
-            for (float x = -300f; x <= -140f; x += 45f)
+            // District 4: Heritage & Temple Zone (Near Karaikal Ammaiyar Temple X = -280, Z = +200)
+            for (float x = -360f; x <= -180f; x += 45f)
             {
-                for (float z = 180f; z <= 320f; z += 45f)
+                for (float z = 190f; z <= 340f; z += 45f)
                 {
                     Vector3 pos = new Vector3(x, 0f, z);
                     GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.HeritageTempleZone, seed++);
@@ -164,10 +173,10 @@ namespace CSVS.GodMode.Environment
                 }
             }
 
-            // District 5: Transport Hub (Bus Stand & Railway Approach Z = +450 to +650, X = -350 to -100)
-            for (float x = -350f; x <= -120f; x += 55f)
+            // District 5: Transport Hub (Bus Stand & Railway Approach Z = +550 to +750, X = -450 to -150)
+            for (float x = -420f; x <= -160f; x += 55f)
             {
-                for (float z = 480f; z <= 620f; z += 55f)
+                for (float z = 550f; z <= 720f; z += 55f)
                 {
                     Vector3 pos = new Vector3(x, 0f, z);
                     GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.TransportHub, seed++);
@@ -175,10 +184,10 @@ namespace CSVS.GodMode.Environment
                 }
             }
 
-            // District 6: Port & Industrial Zone (South of Arasalar River, Z = -600 to -850, X = 150 to 450)
-            for (float x = 160f; x <= 400f; x += 75f)
+            // District 6: Port & Industrial Zone (South of Arasalar River, Z = -950 to -1150, X = 200 to 500)
+            for (float x = 200f; x <= 460f; x += 80f)
             {
-                for (float z = -800f; z <= -600f; z += 75f)
+                for (float z = -1100f; z <= -900f; z += 80f)
                 {
                     Vector3 pos = new Vector3(x, 0f, z);
                     GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.PortIndustrialZone, seed++);
@@ -186,10 +195,10 @@ namespace CSVS.GodMode.Environment
                 }
             }
 
-            // District 7: Modern High-Rise Expansion (Northern Coast X = 250 to 450, Z = 600 to 850)
-            for (float x = 250f; x <= 450f; x += 65f)
+            // District 7: Modern High-Rise Expansion (Northern Coast X = 300 to 550, Z = 650 to 950)
+            for (float x = 300f; x <= 520f; x += 70f)
             {
-                for (float z = 600f; z <= 850f; z += 75f)
+                for (float z = 650f; z <= 920f; z += 80f)
                 {
                     Vector3 pos = new Vector3(x, 0f, z);
                     GameObject b = _buildingSystem.ConstructBuilding(pos, KaraikalDistrictType.ModernExpansion, seed++);
@@ -198,15 +207,42 @@ namespace CSVS.GodMode.Environment
             }
         }
 
+        private void SpawnPlayableVehicles()
+        {
+            GameObject vehicleGroup = new GameObject("Karaikal_Playable_Vehicles");
+            vehicleGroup.transform.position = Vector3.zero;
+
+            // 1. Indian City Hatchback on Bharathiyar Road
+            SpawnVehicle("Vehicle_IndianHatchback", new Vector3(14f, 0.4f, 25f), Quaternion.identity, IndianVehicleType.Hatchback, vehicleGroup.transform);
+
+            // 2. Auto-Rickshaw parked near Town Center junction
+            SpawnVehicle("Vehicle_AutoRickshaw", new Vector3(-13f, 0.4f, 32f), Quaternion.Euler(0f, 180f, 0f), IndianVehicleType.AutoRickshaw, vehicleGroup.transform);
+
+            // 3. Indian Commuter Motorcycle near Tea Stall
+            SpawnVehicle("Vehicle_Motorcycle", new Vector3(14.5f, 0.3f, 10f), Quaternion.Euler(0f, 90f, 0f), IndianVehicleType.Motorcycle, vehicleGroup.transform);
+        }
+
+        private void SpawnVehicle(string name, Vector3 pos, Quaternion rot, IndianVehicleType type, Transform parent)
+        {
+            GameObject vObj = new GameObject(name);
+            vObj.transform.SetParent(parent, false);
+            vObj.transform.position = pos;
+            vObj.transform.rotation = rot;
+
+            var veh = vObj.AddComponent<PlayableIndianVehicle>();
+            // Use reflection or serialized fields to set vehicle type if private
+            var field = typeof(PlayableIndianVehicle).GetField("_vehicleType", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            if (field != null) field.SetValue(veh, type);
+        }
+
         private void EnsurePlayerExists()
         {
             SuperheroFlightController existing = FindFirstObjectByType<SuperheroFlightController>();
             if (existing != null)
             {
-                Renderer exRenderer = existing.GetComponent<Renderer>();
-                if (exRenderer != null && _heroMaterial != null)
+                if (existing.GetComponentInChildren<SuperheroHumanoidVisual>() == null)
                 {
-                    exRenderer.sharedMaterial = _heroMaterial;
+                    existing.gameObject.AddComponent<SuperheroHumanoidVisual>();
                 }
                 return;
             }
@@ -216,12 +252,6 @@ namespace CSVS.GodMode.Environment
             hero.name = "SuperheroPlayer";
             hero.tag = "Player";
             hero.transform.position = new Vector3(0.0f, 15.0f, 0.0f);
-
-            Renderer heroRenderer = hero.GetComponent<Renderer>();
-            if (heroRenderer != null && _heroMaterial != null)
-            {
-                heroRenderer.sharedMaterial = _heroMaterial;
-            }
 
             Rigidbody rb = hero.GetComponent<Rigidbody>();
             if (rb == null) rb = hero.AddComponent<Rigidbody>();
@@ -235,6 +265,9 @@ namespace CSVS.GodMode.Environment
             hero.AddComponent<GravityTetherSystem>();
             hero.AddComponent<SuperPunchSystem>();
             hero.AddComponent<GroundSlamSystem>();
+
+            // Attach Original Humanoid Armored Superhero Model
+            hero.AddComponent<SuperheroHumanoidVisual>();
 
             // Setup Camera
             Camera mainCam = Camera.main;

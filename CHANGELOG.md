@@ -4,6 +4,40 @@ All notable changes to this project are documented in this file in chronological
 
 ---
 
+## [V0.2.1] — 2026-11-26 (Real Karaikal Map Correction & Realism Upgrade)
+
+### Added
+- **Authoritative WGS84 Local Tangent Plane Projection (`KaraikalGeoProjection.cs`)**:
+  - Implemented exact geodesic metric conversion evaluated at reference origin ($10.925417^\circ\,\text{N}, 79.838028^\circ\,\text{E}$ at Kamarajar Salai [NH 32] & Bharathiyar Rd).
+  - Meridional scale $M = 110,574.6\,\text{m/deg}$ Lat, Parallel scale $S_{\lambda} = 109,281.3\,\text{m/deg}$ Lon.
+  - Bidirectional conversion round-trip verified at $< 10^{-6}$ degrees ($< 0.1\,\text{m}$).
+- **Authoritative Landmark Registry**: Corrected and verified landmark offsets:
+  - Karaikal Beach Promenade: $X = +929.4\,\text{m}, Z = +65.8\,\text{m}$ (corrected from inaccurate $650, 20$).
+  - Arasalar River Bridge: $X = -55.0\,\text{m}, Z = -818.5\,\text{m}$ (corrected from inaccurate $0, -380$).
+  - Karaikal Railway Station: $X = -1093.7\,\text{m}, Z = +784.3\,\text{m}$ (corrected from inaccurate $-550, 650$).
+  - Karaikal Deepwater Port: $X = +761.9\,\text{m}, Z = -9997.7\,\text{m}$ (corrected from inaccurate $350, -850$).
+  - Karaikal Ammaiyar Temple: $X = -278.4\,\text{m}, Z = +200.5\,\text{m}$.
+  - New Bus Stand Terminal: $X = -423.8\,\text{m}, Z = +619.6\,\text{m}$.
+- **250m Chunk Spatial World Streaming (`KaraikalWorldStreamer.cs`)**:
+  - Distance-based dynamic chunk loading (500m load radius, 650m unload radius hysteresis).
+  - Preserves persistent building collapse and destruction state across chunk lifecycles.
+- **Original Armored Humanoid Superhero Model (`SuperheroHumanoidVisual.cs`)**:
+  - Athletic anatomy, deep cobalt armor, heavy silver pauldrons, glowing cyan visor and chest core.
+  - Dynamic procedural cape simulation responding to flight velocity and aerodynamics.
+  - Procedural kinematic animation driving walk/run, hover, supersonic boost, punch, and ground slam.
+- **Playable Indian Vehicles (`PlayableIndianVehicle.cs`)**:
+  - Drivable Indian Hatchback, Sedan, South Indian Auto-Rickshaw (yellow/black canopy), and Commuter Motorcycle.
+  - Player enter/exit (`F` key), suspension physics, steering, headlights, and damage handling.
+- **Automated GIS Test Suite (`KaraikalGeoTests.cs`)**:
+  - Added 8 automated EditMode tests verifying WGS84 projection, round-trip fidelity, landmark offsets, and 250m chunk coordinates.
+  - Total automated test count increased to **43 tests** (27 EditMode + 16 PlayMode), achieving a 100% pass rate.
+- **Live Windows Standalone Verification**:
+  - Built and executed `CSVS-GodMode.exe` (ExitCode 0).
+  - Measured live memory footprint: WorkingSet = 270.66 MB (within $< 300\,\text{MB}$ strict target).
+  - Captured verified screenshots `gameplay_v021_town_center.png` and `gameplay_v021_minimap.png` with 0.00% magenta shader errors.
+
+---
+
 ## [V0.2.0] — 2026-11-26 (Karaikal Open-World Foundation & Indian Architecture)
 
 ### Added
