@@ -1,9 +1,25 @@
-# OS generated files
+# ==============================================================================
+# CSVS GOD MODE — CITY OF CHAOS
+# Unity 6 LTS / Blender 4.5 / Git LFS Production .gitignore
+# Studio: CSVS IT Tech | setting: Karaikal, Puducherry, India
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# OS and System Files
+# ------------------------------------------------------------------------------
 [Dd]esktop.ini
 Thumbs.db
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
 
-# Unity generated
+# ------------------------------------------------------------------------------
+# Unity Project Directories & Caches
+# ------------------------------------------------------------------------------
 /[Uu]nity[Pp]roject/[Ll]ibrary/
 /[Uu]nity[Pp]roject/[Tt]emp/
 /[Uu]nity[Pp]roject/[Oo]bj/
@@ -12,8 +28,27 @@ Thumbs.db
 /[Uu]nity[Pp]roject/[Ll]ogs/
 /[Uu]nity[Pp]roject/[Uu]ser[Ss]ettings/
 /[Uu]nity[Pp]roject/[Mm]emoryCaptures/
+/[Uu]nity[Pp]roject/[Rr]ecordings/
 
-# Visual Studio / Rider / VS Code cache
+# Root-level builds, logs, and artifacts
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Aa]rtifacts/
+/[Tt]emp/
+
+# Unity crash dumps and profiling data
+sysinfo.txt
+*.stackdump
+Crashdump*
+*.dmp
+
+# Unity package manager cache
+/[Uu]nity[Pp]roject/Packages/packages-lock.json.bak
+
+# ------------------------------------------------------------------------------
+# IDE and Editor Temporary Files
+# ------------------------------------------------------------------------------
 .vs/
 .idea/
 .vscode/
@@ -30,5 +65,42 @@ Thumbs.db
 *.opendb
 *.VC.db
 
-# Executables
+# ------------------------------------------------------------------------------
+# Blender Auto-Saves and Backups
+# ------------------------------------------------------------------------------
+*.blend1
+*.blend2
+*.blend@
+*~
+
+# ------------------------------------------------------------------------------
+# Python Cache and Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# ------------------------------------------------------------------------------
+# Compiled Binaries (Build outputs should not be committed to Git source)
+# ------------------------------------------------------------------------------
+*.apk
+*.aab
 *.exe
+*.dll
+!UnityProject/Assets/**/*.dll
+*.so
+*.dylib
+
+# ------------------------------------------------------------------------------
+# Preserved Directories Explicitly Tracked
+# ------------------------------------------------------------------------------
+!UnityProject/Assets/
+!UnityProject/Packages/
+!UnityProject/ProjectSettings/
+!BlenderAssets/
+!Tools/
+!Docs/
