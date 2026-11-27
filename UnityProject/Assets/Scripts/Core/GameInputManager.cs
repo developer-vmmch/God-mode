@@ -1,115 +1,91 @@
-using System;
+// GameInputManager.cs  — UPDATED V0.3
+// CSVS GOD MODE — Unified input management
+// Supports both property access and method calls seamlessly.
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace CSVS.GodMode.Core
 {
-    /// <summary>
-    /// Centralized, configurable input manager for CSVS God Mode.
-    /// Eliminates all input conflicts across superhero powers, camera perspectives,
-    /// vehicle entry/exit, UI modals, and flight locomotion.
-    /// Supports the new Unity Input System with fallback safety.
-    /// </summary>
     public static class GameInputManager
     {
-        // Configurable Input Bindings
-        public static Key KeyMoveForward = Key.W;
-        public static Key KeyMoveBackward = Key.S;
-        public static Key KeyMoveLeft = Key.A;
-        public static Key KeyMoveRight = Key.D;
+        // ─── Key mappings (for tests & remapping) ──────────────────────────
+        public const Key KeySuperPunch       = Key.F;
+        public const Key KeyVehicleInteract  = Key.G;
+        public const Key KeyGravityTether    = Key.Q;
+        public const Key KeyGrabInteract     = Key.E;
+        public const Key KeyCameraToggle     = Key.V;
+        public const Key KeyMapToggle        = Key.M;
+        public const Key KeyTransform        = Key.T;
 
-        public static Key KeyJumpOrAscend = Key.Space;
-        public static Key KeyDescend = Key.LeftCtrl;
-        public static Key KeyDescendAlt = Key.C;
-        public static Key KeySprintOrBoost = Key.LeftShift;
+        private static Keyboard K => Keyboard.current;
+        private static Mouse    M => Mouse.current;
 
-        public static Key KeyGrabInteract = Key.E;
-        public static Key KeyGravityTether = Key.Q;
-        public static Key KeySuperPunch = Key.F;
-        public static Key KeyVehicleInteract = Key.G;
-        public static Key KeyCameraToggle = Key.V;
-        public static Key KeyMapToggle = Key.M;
-        public static Key KeyReset = Key.R;
-        public static Key KeyPause = Key.Escape;
-        public static Key KeyPauseAlt = Key.P;
+        // ─── Movement ─────────────────────────────────────────────────────
+        public static Vector2 MoveInput => new Vector2(
+            (K != null ? (K.aKey.isPressed ? -1f : K.dKey.isPressed ? 1f : 0f) : 0f),
+            (K != null ? (K.sKey.isPressed ? -1f : K.wKey.isPressed ? 1f : 0f) : 0f)
+        );
 
-        public static Vector2 MoveInput
+        public static bool IsSprintHeld() => K != null && K.leftShiftKey.isPressed;
+        public static bool WasJumpTriggered() => K != null && K.spaceKey.wasPressedThisFrame;
+
+        // Flight controller aliases
+        public static bool IsSprintOrBoostPressed => K != null && K.leftShiftKey.isPressed;
+        public static bool WasAscendTriggered => K != null && K.spaceKey.wasPressedThisFrame;
+        public static bool IsAscendPressed => K != null && K.spaceKey.isPressed;
+        public static bool IsDescendPressed => K != null && (K.leftCtrlKey.isPressed || K.cKey.isPressed);
+
+        // Vehicle: G key
+        public static bool WasVehicleInteractTriggered => K != null && K.gKey.wasPressedThisFrame;
+        public static bool WasVehicleInteractTriggeredMethod() => WasVehicleInteractTriggered;
+
+        // Powers - Properties and methods
+        public static bool WasSuperPunchTriggered => K != null && K.fKey.wasPressedThisFrame;
+        public static bool WasGravityTetherTriggered => K != null && K.qKey.wasPressedThisFrame;
+        public static bool WasGravityTetherReleased => K != null && K.qKey.wasReleasedThisFrame;
+        public static bool WasGrabInteractTriggered => K != null && K.eKey.wasPressedThisFrame;
+        public static bool WasPrimaryFireTriggered => M != null && M.leftButton.wasPressedThisFrame;
+        public static bool IsPrimaryFireHeld => M != null && M.leftButton.isPressed;
+        public static bool WasSecondaryFireTriggered => M != null && M.rightButton.wasPressedThisFrame;
+
+        // Method variants for invocations
+        public static bool WasSuperPunchTriggeredMethod() => WasSuperPunchTriggered;
+        public static bool WasGravityTetherTriggeredMethod() => WasGravityTetherTriggered;
+        public static bool WasGravityTetherReleasedMethod() => WasGravityTetherReleased;
+        public static bool WasGrabInteractTriggeredMethod() => WasGrabInteractTriggered;
+        public static bool WasPrimaryFireTriggeredMethod() => WasPrimaryFireTriggered;
+        public static bool IsPrimaryFireHeldMethod() => IsPrimaryFireHeld;
+        public static bool WasSecondaryFireTriggeredMethod() => WasSecondaryFireTriggered;
+
+        // Transformation: T key (V0.3 new)
+        public static bool WasTransformTriggered => K != null && K.tKey.wasPressedThisFrame;
+        public static bool WasTransformTriggeredMethod() => WasTransformTriggered;
+
+        // Camera
+        public static bool WasCameraToggleTriggered => K != null && K.vKey.wasPressedThisFrame;
+        public static bool WasCameraToggleTriggeredMethod() => WasCameraToggleTriggered;
+
+        public static Vector2 LookDelta => M != null ? M.delta.ReadValue() : Vector2.zero;
+        public static Vector2 MouseDelta => M != null ? M.delta.ReadValue() : Vector2.zero;
+        public static float   ScrollDelta => M != null ? M.scroll.ReadValue().y : 0f;
+
+        // UI
+        public static bool WasMapToggleTriggered => K != null && K.mKey.wasPressedThisFrame;
+        public static bool WasMapToggleTriggeredMethod() => WasMapToggleTriggered;
+        public static bool WasPauseTriggered => K != null && K.escapeKey.wasPressedThisFrame;
+        public static bool WasResetTriggered => K != null && K.rKey.wasPressedThisFrame;
+
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+        public static int WeatherPresetIndex()
         {
-            get
-            {
-                if (Keyboard.current == null) return Vector2.zero;
-                float x = 0f;
-                float y = 0f;
-
-                if (Keyboard.current[KeyMoveRight].isPressed || Keyboard.current.rightArrowKey.isPressed) x += 1f;
-                if (Keyboard.current[KeyMoveLeft].isPressed || Keyboard.current.leftArrowKey.isPressed) x -= 1f;
-                if (Keyboard.current[KeyMoveForward].isPressed || Keyboard.current.upArrowKey.isPressed) y += 1f;
-                if (Keyboard.current[KeyMoveBackward].isPressed || Keyboard.current.downArrowKey.isPressed) y -= 1f;
-
-                Vector2 input = new Vector2(x, y);
-                if (input.sqrMagnitude > 1f) input.Normalize();
-                return input;
-            }
+            if (K == null) return -1;
+            if (K.numpad1Key.wasPressedThisFrame) return 0;
+            if (K.numpad2Key.wasPressedThisFrame) return 1;
+            if (K.numpad3Key.wasPressedThisFrame) return 2;
+            if (K.numpad4Key.wasPressedThisFrame) return 3;
+            return -1;
         }
-
-        public static Vector2 MouseDelta
-        {
-            get
-            {
-                if (Mouse.current == null || Cursor.lockState != CursorLockMode.Locked) return Vector2.zero;
-                return Mouse.current.delta.ReadValue();
-            }
-        }
-
-        public static bool IsAscendPressed => Keyboard.current != null && Keyboard.current[KeyJumpOrAscend].isPressed;
-        public static bool WasAscendTriggered => Keyboard.current != null && Keyboard.current[KeyJumpOrAscend].wasPressedThisFrame;
-        public static bool IsDescendPressed => Keyboard.current != null && (Keyboard.current[KeyDescend].isPressed || Keyboard.current[KeyDescendAlt].isPressed);
-        public static bool IsSprintOrBoostPressed => Keyboard.current != null && (Keyboard.current[KeySprintOrBoost].isPressed || Keyboard.current.rightShiftKey.isPressed);
-
-        public static bool WasSuperPunchTriggered => Keyboard.current != null && Keyboard.current[KeySuperPunch].wasPressedThisFrame;
-        public static bool WasVehicleInteractTriggered => Keyboard.current != null && Keyboard.current[KeyVehicleInteract].wasPressedThisFrame;
-        public static bool WasGrabInteractTriggered => Keyboard.current != null && Keyboard.current[KeyGrabInteract].wasPressedThisFrame;
-
-        public static bool WasGravityTetherTriggered => Keyboard.current != null && Keyboard.current[KeyGravityTether].wasPressedThisFrame;
-        public static bool WasGravityTetherReleased => Keyboard.current != null && Keyboard.current[KeyGravityTether].wasReleasedThisFrame;
-        public static bool IsGravityTetherHeld => Keyboard.current != null && Keyboard.current[KeyGravityTether].isPressed;
-
-        public static bool IsPrimaryFireHeld => Mouse.current != null && Mouse.current.leftButton.isPressed;
-        public static bool WasPrimaryFireTriggered => Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
-        public static bool WasSecondaryFireTriggered => Mouse.current != null && Mouse.current.rightButton.wasPressedThisFrame;
-        public static bool IsSecondaryFireHeld => Mouse.current != null && Mouse.current.rightButton.isPressed;
-
-        public static bool WasCameraToggleTriggered => Keyboard.current != null && Keyboard.current[KeyCameraToggle].wasPressedThisFrame;
-        public static bool WasMapToggleTriggered => Keyboard.current != null && Keyboard.current[KeyMapToggle].wasPressedThisFrame;
-        public static bool WasResetTriggered => Keyboard.current != null && Keyboard.current[KeyReset].wasPressedThisFrame;
-        public static bool WasPauseTriggered => Keyboard.current != null && (Keyboard.current[KeyPause].wasPressedThisFrame || Keyboard.current[KeyPauseAlt].wasPressedThisFrame);
-
-        /// <summary>
-        /// Generates a clean, context-sensitive string of on-screen control hints for the HUD.
-        /// </summary>
-        public static string GetCurrentControlHints(bool isFlying, bool isHoldingObject, bool isDriving, bool nearVehicle)
-        {
-            if (isDriving)
-            {
-                return "[W/S] Accelerate/Brake   [A/D] Steer   [SPACE] Handbrake   [G] Exit Vehicle   [V] Camera";
-            }
-
-            if (isHoldingObject)
-            {
-                return "[LMB] Throw Object   [RMB] Crush Object   [E] Drop   [WASD] Move   [V] Camera";
-            }
-
-            if (isFlying)
-            {
-                string baseHints = "[WASD] Fly   [L-SHIFT] Supersonic (95 m/s)   [SPACE] Ascend   [CTRL] Descend   [LMB] Heat Vision   [F] Super Punch   [Q] Tether";
-                if (nearVehicle) baseHints += "   [G] Enter Vehicle";
-                return baseHints;
-            }
-
-            // Ground Locomotion
-            string groundHints = "[WASD] Move   [L-SHIFT] Sprint   [SPACE x2] Takeoff / Hover   [F] Super Punch   [E] Grab Car/Debris   [LMB] Heat Vision   [Q] Tether";
-            if (nearVehicle) groundHints += "   [G] Enter Vehicle";
-            return groundHints;
-        }
+#endif
     }
 }

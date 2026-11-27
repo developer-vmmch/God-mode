@@ -79,6 +79,8 @@ namespace CSVS.GodMode.Player
             }
         }
 
+        public void SetPlayerMode(object mode) { /* mode compatibility stub */ }
+
         public void SetTarget(Transform newTarget)
         {
             _target = newTarget;

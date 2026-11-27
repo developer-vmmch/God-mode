@@ -1,40 +1,54 @@
-# CSVS GOD MODE — INPUT BINDINGS SPECIFICATION
-**Version:** V0.2.2  
-**Studio:** CSVS IT Tech  
-**Status:** Unified & Conflict-Free  
+# INPUT BINDINGS — CSVS GOD MODE V0.3
 
----
+## Complete Control Matrix
 
-## 1. Centralized Input Map (`GameInputManager.cs`)
+### Human Mode
 
-All user input handling has been unified into `GameInputManager.cs` under the new Unity Input System. Conflicting bindings from previous prototypes have been eliminated:
+| Action | Key / Button | Notes |
+| :--- | :--- | :--- |
+| Move Forward | W | |
+| Move Backward | S | |
+| Move Left | A | |
+| Move Right | D | |
+| Sprint | Left Shift + WASD | |
+| Jump | Space | |
+| Enter / Exit Vehicle | **G** | Dedicated — no conflict with powers |
+| **Transform to Superhero** | **T** | NEW in V0.3 |
+| Camera Look | Mouse Move | |
+| Toggle 1st / 3rd Person | **V** | NEW in V0.3 |
+| Toggle Map | M | |
+| Pause | Escape | |
 
-| Action Category | Key / Button | Function | Context / Mutual Exclusivity |
-|---|---|---|---|
-| **Locomotion** | `W`, `A`, `S`, `D` | Ground Move / Flight Direction / Vehicle Drive | Universal |
-| **Camera Orbit** | `Mouse Delta` | 360° Yaw and Pitch look | Active when cursor locked |
-| **Vertical / Jump** | `Space` | Jump (Ground) / Ascend (Flight) / Handbrake (Vehicle) | Contextual |
-| **Descend** | `Left Ctrl` or `C` | Descend downward in flight / hover | Flight only |
-| **Supersonic Boost** | `Left Shift` | Sprint (Ground) / Supersonic Flight up to 95 m/s | Ground / Flight |
-| **Super Punch** | `F` | Kinetic physical strike (1,200 N, localized fracture) | Cannot activate while holding object |
-| **Vehicle Interact** | `G` | Enter vehicle (within 3.5m) / Exit vehicle | Decoupled from F key |
-| **Grab / Interact** | `E` | Grab car or concrete debris / Drop held object | Mutual exclusivity via AbilityState |
-| **Throw Object** | `Left Mouse Button` | Launch held physics object at 45 m/s | When holding object |
-| **Heat Vision** | `Left Mouse Button` | Twin continuous thermal laser beams (450 DPS) | When hands free |
-| **Crush Object** | `Right Mouse Button` | Crush held vehicle or debris into fragments | When holding object |
-| **Gravity Tether** | `Q` | Connect and suspend physics objects in anti-gravity | Press/Hold Q |
-| **Ground Slam** | Space $\rightarrow$ Dive $\rightarrow$ Ground | High-velocity downward strike with radial shockwave | Initiated mid-air |
-| **Camera Perspective** | `V` | Toggle First-Person / Third-Person view | Smooth damping |
-| **Full-Screen Map** | `M` | Toggle full-screen Karaikal GPS landmark map | Overlay modal |
-| **Scene Reset** | `R` | Reload main city scene and reset score | Debug / Gameplay |
-| **Pause** | `Esc` or `P` | Pause simulation and open menu | UI modal |
+### Superhero Mode
 
----
+| Action | Key / Button | Notes |
+| :--- | :--- | :--- |
+| Fly / Move | WASD | |
+| Fly Up | Space | |
+| Fly Down | Left Ctrl | |
+| Boost | Left Shift | |
+| **Super Punch** | **F** | Decoupled from vehicle key |
+| **Gravity Tether** | **Q** | Hold → tether; release → snap |
+| **Super Grab** | **E** | Grabs objects or vehicles |
+| **Throw** | **LMB** | Contextual — when holding object |
+| **Crush** | **RMB** | Contextual — when holding object |
+| **Heat Vision** | **LMB** | Contextual — when hands free |
+| Enter / Exit Vehicle | **G** | Shared with human mode |
+| **Transform to Human** | **T** | Toggle |
+| Camera Zoom | Mouse Scroll | |
+| Toggle Map | M | |
 
-## 2. On-Screen Dynamic Control Hints
+### Key Conflict Audit (All Clear)
 
-`GameInputManager.GetCurrentControlHints(...)` dynamically supplies context-sensitive HUD hints:
-- **Driving:** `[W/S] Accelerate/Brake   [A/D] Steer   [SPACE] Handbrake   [G] Exit Vehicle   [V] Camera`
-- **Holding Object:** `[LMB] Throw Object   [RMB] Crush Object   [E] Drop   [WASD] Move   [V] Camera`
-- **Free Flight:** `[WASD] Fly   [L-SHIFT] Supersonic (95 m/s)   [SPACE] Ascend   [CTRL] Descend   [LMB] Heat Vision   [F] Super Punch   [Q] Tether`
-- **Ground:** `[WASD] Move   [L-SHIFT] Sprint   [SPACE x2] Takeoff   [F] Super Punch   [E] Grab Car/Debris   [LMB] Heat Vision   [Q] Tether`
+| Key | V0.2.2 Role | V0.3 Role | Conflict? |
+| :--- | :--- | :--- | :--- |
+| **F** | Super Punch | Super Punch | ✅ None |
+| **G** | Vehicle enter/exit | Vehicle enter/exit | ✅ None |
+| **T** | (unbound) | **Transform** | ✅ None (new) |
+| **Q** | Gravity Tether | Gravity Tether | ✅ None |
+| **E** | Grab | Grab | ✅ None |
+| **V** | (unbound) | **Camera toggle** | ✅ None (new) |
+| **LMB** | Throw / Heat Vision | Throw / Heat Vision | ✅ None (contextual) |
+| **RMB** | Crush | Crush | ✅ None |
+| **M** | Map toggle | Map toggle | ✅ None |
+| **Escape** | Pause | Pause | ✅ None |

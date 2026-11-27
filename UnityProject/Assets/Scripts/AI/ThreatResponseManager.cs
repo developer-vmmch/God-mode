@@ -38,6 +38,19 @@ namespace CSVS.GodMode.AI
             }
         }
 
+        public void EscalateThreat(int level)
+        {
+            if (level <= 0) return;
+            WantedTier tier = level switch
+            {
+                1 => WantedTier.Police,
+                2 => WantedTier.Swat,
+                3 => WantedTier.MilitaryTanks,
+                _ => WantedTier.AttackHelicopters
+            };
+            HandleWantedEscalation(tier);
+        }
+
         private void HandleWantedEscalation(WantedTier newTier)
         {
             if (_playerTransform == null) return;

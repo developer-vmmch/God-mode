@@ -51,6 +51,7 @@ namespace CSVS.GodMode.Player
         public bool IsBoosting { get; private set; }
         public bool IsHovering => _currentMode == LocomotionMode.Hover;
         public float CurrentSpeed => _rigidbody != null ? _rigidbody.linearVelocity.magnitude : 0.0f;
+        public Vector3 CurrentVelocity => _rigidbody != null ? _rigidbody.linearVelocity : Vector3.zero;
         public float TargetMaxSpeed => IsBoosting ? _boostFlightSpeed : _baseFlightSpeed;
 
         public event Action<bool> OnBoostChanged;
